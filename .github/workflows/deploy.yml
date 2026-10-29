@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
@@ -29,7 +29,7 @@ jobs:
         run: npm run build -- --configuration production --base-href /${{ github.event.repository.name }}/
 
       - name: Create 404.html for SPA routing
-        run: cp ./dist/YOUR_ANGULAR_PROJECT_NAME/browser/index.html ./dist/YOUR_ANGULAR_PROJECT_NAME/browser/404.html
+        run: cp ./dist/Jantek/browser/index.html ./dist/Jantek/browser/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/YOUR_ANGULAR_PROJECT_NAME/browser
+          path: ./dist/Jantek/browser
 
       - name: Deploy to GitHub Pages
         id: deployment
