@@ -1,0 +1,44 @@
+name: Deploy Angular to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ] # Change to "master" if your default branch is master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build -- --configuration production --base-href /${{ github.event.repository.name }}/
+
+      - name: Create 404.html for SPA routing
+        run: cp ./dist/YOUR_ANGULAR_PROJECT_NAME/browser/index.html ./dist/YOUR_ANGULAR_PROJECT_NAME/browser/404.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist/YOUR_ANGULAR_PROJECT_NAME/browser
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
