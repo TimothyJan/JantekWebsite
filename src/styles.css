@@ -1,1 +1,676 @@
-/* You can add global styles to this file, and also import other style files */
+/* ==========================================================================
+   1. Base Reset & Fonts
+   ========================================================================== */
+html {
+    margin-top: 0 !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 19px;
+    color: #000000;
+    line-height: 1.8;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+    font-family: "Nunito", sans-serif;
+    color: #3162C9; /* e-global-color-primary */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================================================
+   2. Crucial Fix: Force Elementor Animations to Show
+   ========================================================================== */
+.elementor-invisible,
+.animated-slow {
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: none !important;
+}
+
+/* ==========================================================================
+   3. Elementor Layout & Grid (Page Content)
+   ========================================================================== */
+.elementor-section {
+    position: relative;
+    padding: 40px 0;
+}
+.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.elementor-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.elementor-column {
+    position: relative;
+    min-height: 1px;
+    display: flex;
+    flex-direction: column;
+}
+.elementor-widget-wrap {
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+/* Column Widths (Desktop) */
+.elementor-col-25 { width: 25%; }
+.elementor-col-33 { width: 33.3333%; }
+.elementor-col-50 { width: 50%; }
+.elementor-col-100 { width: 100%; }
+
+/* Column Widths (Mobile) */
+@media (max-width: 767px) {
+    .elementor-col-25,
+    .elementor-col-33,
+    .elementor-col-50 {
+        width: 100%;
+    }
+}
+
+/* Elementor Responsive Visibility Utilities */
+@media (max-width: 767px) {
+    .elementor-hidden-mobile { display: none !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .elementor-hidden-tablet { display: none !important; }
+}
+@media (min-width: 1025px) {
+    .elementor-hidden-desktop { display: none !important; }
+}
+
+/* ==========================================================================
+   4. Typography & Elements
+   ========================================================================== */
+.elementor-widget-heading .elementor-heading-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.elementor-widget-text-editor {
+    font-size: 19px;
+    font-weight: 400;
+    color: #000000;
+}
+.elementor-widget-text-editor p {
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   5. Buttons
+   ========================================================================== */
+.elementor-button {
+    display: inline-block;
+    background-color: #151515;
+    color: #ffffff !important;
+    padding: 12px 24px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.elementor-button:hover {
+    background-color: #3162C9;
+    transform: translateY(-2px);
+}
+.elementor-button-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.elementor-button-icon svg {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+}
+.elementor-align-center { text-align: center; }
+
+/* ==========================================================================
+   6. Product Icons
+   ========================================================================== */
+.elementor-icon-wrapper {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.elementor-icon-wrapper .elementor-icon svg {
+    width: 60px !important;
+    height: 60px !important;
+    fill: #3162C9;
+    transition: fill 0.3s ease;
+}
+.elementor-icon-wrapper .elementor-icon:hover svg {
+    fill: #16AAF0;
+}
+
+/* ==========================================================================
+   7. Image Carousel (Industries)
+   ========================================================================== */
+.elementor-image-carousel-wrapper {
+    position: relative;
+    padding: 0 40px;
+}
+.elementor-image-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+.elementor-image-carousel::-webkit-scrollbar { display: none; }
+.elementor-image-carousel { -ms-overflow-style: none; scrollbar-width: none; }
+
+.elementor-image-carousel .swiper-slide {
+    flex: 0 0 calc(25% - 15px);
+    box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+    .elementor-image-carousel .swiper-slide { flex: 0 0 calc(50% - 15px); }
+}
+@media (max-width: 767px) {
+    .elementor-image-carousel .swiper-slide { flex: 0 0 100%; }
+}
+.elementor-image-carousel .swiper-slide-inner {
+    margin: 0;
+    text-align: center;
+}
+.elementor-image-carousel .swiper-slide-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.elementor-image-carousel-caption {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #3162C9;
+}
+.elementor-swiper-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    z-index: 2;
+    color: #3162C9;
+    border: none;
+}
+.elementor-swiper-button svg {
+    width: 20px !important;
+    height: 20px !important;
+    fill: currentColor;
+}
+.elementor-swiper-button-prev { left: 0; }
+.elementor-swiper-button-next { right: 0; }
+.elementor-swiper-button:hover { color: #16AAF0; }
+
+/* ==========================================================================
+   8. Post Cards (Recent Blogs)
+   ========================================================================== */
+.elementor-grid {
+    display: grid;
+    gap: 30px;
+}
+.elementor-grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1024px) {
+    .elementor-grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+    .elementor-grid-3 { grid-template-columns: 1fr; }
+}
+
+.elementor-post__card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.elementor-post__card:hover {
+    transform: translateY(-5px);
+}
+.elementor-post__thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+.elementor-post__text {
+    padding: 20px;
+    flex-grow: 1;
+}
+.elementor-post__title {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: "Nunito", sans-serif;
+}
+.elementor-post__title a {
+    color: #3162C9;
+    transition: color 0.3s;
+}
+.elementor-post__title a:hover {
+    color: #16AAF0;
+}
+.elementor-post__excerpt p {
+    font-size: 15px;
+    margin: 0;
+    color: #555;
+}
+.elementor-post__meta-data {
+    padding: 15px 20px;
+    font-size: 13px;
+    color: #888;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+
+/* ==========================================================================
+   9. Utilities
+   ========================================================================== */
+.elementor-background-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+}
+#wpadminbar, .admin-bar { display: none !important; }
+
+
+/* ==========================================================================
+   10. UPGRADED HEADER CSS
+   ========================================================================== */
+
+/* Top Bar */
+.custom-header .elementor-element-737a56c {
+    background-color: #F9F9F9;
+    padding: 8px 20px;
+    border-bottom: 1px solid #eee;
+}
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.custom-header .elementor-button {
+    background-color: #FAB607 !important; /* Jantek Yellow */
+    color: #ffffff !important;
+    border-radius: 20px;
+    padding: 8px 24px;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 3px 3px 25px rgba(0,0,0,0.07);
+    margin: 0;
+}
+.custom-header .elementor-button:hover {
+    background-color: #e0a200 !important;
+    transform: translateY(-1px);
+}
+
+/* Main Nav Bar */
+.custom-header .elementor-element-37264bc {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+    padding: 15px 20px;
+    position: relative;
+    z-index: 100;
+}
+.nav-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo-column {
+    width: 200px;
+}
+.logo-column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Menu Column */
+.menu-column {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.desktop-nav {
+    display: block;
+}
+.search-column {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Desktop Nav List */
+.nav-menu-main {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+    align-items: center;
+}
+.nav-menu-main > li {
+    position: relative;
+}
+.nav-menu-main > li > a {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #3162C9;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+.nav-menu-main > li > a:hover,
+.nav-menu-main > li.current-menu-item > a {
+    color: #16AAF0;
+    border-bottom: 2px solid #16AAF0;
+}
+.sub-arrow {
+    display: inline-flex;
+    align-items: center;
+}
+.sub-arrow svg {
+    fill: currentColor !important;
+}
+
+/* Dropdown Menus */
+.nav-menu-main .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background-color: #81BC06;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.1);
+    z-index: 99;
+    border-radius: 0 0 4px 4px;
+}
+.nav-menu-main > li:hover > .sub-menu {
+    display: block;
+}
+.nav-menu-main .sub-menu a {
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+    transition: background 0.2s;
+}
+.nav-menu-main .sub-menu a:hover {
+    background-color: #6ca304;
+}
+/* Nested Submenus */
+.nav-menu-main .sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+    border-radius: 4px;
+}
+
+/* Mobile Toggle & Dropdown */
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: #3162C9;
+}
+.mobile-nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+.mobile-nav-dropdown.active {
+    display: block;
+}
+.nav-menu-dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+.nav-menu-dropdown li a {
+    display: block;
+    padding: 15px 20px;
+    color: #3162C9;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .desktop-nav, .search-column {
+        display: none;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+    .nav-bar-container {
+        padding: 0;
+    }
+}
+
+/* ==========================================================================
+   11. UPGRADED FOOTER CSS
+   ========================================================================== */
+
+/* Main Footer Background */
+.custom-footer .footer-main-section {
+    background-color: #3162C9; /* Primary Blue */
+    padding: 60px 20px;
+    color: #ffffff;
+}
+.custom-footer .footer-bottom-section {
+    background-color: #16AAF0; /* Secondary Blue */
+    padding: 15px 20px;
+    color: #ffffff;
+}
+
+/* Footer Columns Layout */
+.custom-footer .elementor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom-footer .footer-column {
+    padding: 0 15px;
+}
+
+/* Override global Elementor flexbox to stack items vertically in the footer */
+.custom-footer .elementor-widget-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+}
+
+/* Headings */
+.custom-footer .footer-heading .elementor-heading-title {
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin: 0 0 10px 0;
+}
+
+/* Little blue line under headings */
+.custom-footer .footer-divider {
+    display: block;
+    width: 75px;
+    height: 3px;
+    background-color: #16AAF0;
+    margin-bottom: 25px;
+}
+
+/* Paragraph text */
+.custom-footer .footer-text p {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Lists */
+.custom-footer .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.custom-footer .footer-links li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+.custom-footer .footer-links a {
+    color: #ffffff;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    transition: opacity 0.3s;
+}
+.custom-footer .footer-links a:hover {
+    opacity: 0.7;
+}
+
+/* Icons (Chevrons and Contact icons) */
+.custom-footer .footer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px; /* Align with first line of text */
+}
+.custom-footer .footer-icon svg {
+    fill: #ffffff !important;
+}
+
+/* Specific Contact Icon Alignment */
+.custom-footer .contact-links li {
+    gap: 12px;
+    color: #ffffff;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+.custom-footer .contact-links .footer-icon {
+    margin-top: 2px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Bottom Footer */
+.custom-footer .footer-copyright {
+    font-size: 15px;
+    color: #ffffff;
+}
+.custom-footer .footer-madeby {
+    text-align: right;
+    font-size: 15px;
+    color: #ffffff;
+}
+.custom-footer .footer-madeby a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .custom-footer .footer-column {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .custom-footer .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+    .custom-footer .elementor-widget-wrap {
+        align-items: center;
+    }
+    .custom-footer .footer-divider {
+        margin: 0 auto 25px auto;
+    }
+    .custom-footer .footer-links a,
+    .custom-footer .contact-links li {
+        justify-content: center;
+    }
+    .custom-footer .footer-madeby {
+        text-align: center;
+        margin-top: 10px;
+    }
+}

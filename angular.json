@@ -22,10 +22,27 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/wp-content",
+                "output": "/wp-content"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/wp-content/themes/oceanwp/assets/css/style.min.css",
+              "src/wp-content/plugins/elementor/assets/css/frontend.min.css"
+            ],
+            "scripts": [
+              "src/wp-includes/js/jquery/jquery.min.js",
+              {
+                "input": "src/wp-content/themes/oceanwp/assets/js/theme.min.js",
+                "inject": false
+              },
+              "src/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js",
+              "src/wp-content/plugins/elementor/assets/js/frontend-modules.min.js",
+              "src/wp-content/plugins/elementor/assets/js/frontend.min.js"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
