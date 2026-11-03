@@ -381,10 +381,24 @@ a {
 .desktop-nav {
     display: block;
 }
+
+/* Hide mobile controls by default */
+.mobile-controls {
+    display: none;
+    align-items: center;
+    gap: 20px;
+}
+
 .search-column {
     margin-left: 30px;
     display: flex;
     align-items: center;
+}
+
+.search-column-mobile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 /* Desktop Nav List */
@@ -472,10 +486,23 @@ a {
 .mobile-menu-toggle {
     display: none;
     cursor: pointer;
-    color: #3162C9;
+    color: #3162C9 !important;
+    font-size: 32px; /* Large enough to be easily clickable */
+    line-height: 1;
+    font-weight: bold;
+    user-select: none;
 }
+
+.mobile-menu-toggle .burger-icon,
+.mobile-menu-toggle .close-icon {
+    color: #3162C9 !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Mobile Nav Dropdown */
 .mobile-nav-dropdown {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 100%;
     left: 0;
@@ -485,19 +512,42 @@ a {
     z-index: 999;
 }
 .mobile-nav-dropdown.active {
-    display: block;
+    display: block !important;
 }
+
 .nav-menu-dropdown {
     list-style: none;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
 }
-.nav-menu-dropdown li a {
-    display: block;
+
+.nav-menu-dropdown li > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
     color: #3162C9;
     font-weight: 600;
     text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+}
+
+/* Mobile Submenu Styles */
+.nav-menu-dropdown .sub-menu {
+    display: none !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+.nav-menu-dropdown .sub-menu.active {
+    display: block !important;
+}
+.nav-menu-dropdown .sub-menu li a {
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3162C9;
     border-bottom: 1px solid #eee;
 }
 
@@ -506,6 +556,9 @@ a {
     .desktop-nav, .search-column {
         display: none;
     }
+    .mobile-controls {
+        display: flex;
+    }
     .mobile-menu-toggle {
         display: block;
     }
@@ -513,6 +566,7 @@ a {
         padding: 0;
     }
 }
+
 
 /* ==========================================================================
    11. UPGRADED FOOTER CSS
