@@ -161,83 +161,208 @@ a {
 }
 
 /* ==========================================================================
-   7. Image Carousel (Industries)
+   7. INDUSTRIES SECTION (ANGULAR CAROUSEL)
    ========================================================================== */
-.elementor-image-carousel-wrapper {
-    position: relative;
-    padding: 0 40px;
-}
-.elementor-image-carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 15px;
-    padding-bottom: 10px;
-}
-.elementor-image-carousel::-webkit-scrollbar { display: none; }
-.elementor-image-carousel { -ms-overflow-style: none; scrollbar-width: none; }
 
-.elementor-image-carousel .swiper-slide {
-    flex: 0 0 calc(25% - 15px);
-    box-sizing: border-box;
+/* Heading Section */
+.elementor-element-f347e95 {
+    padding-top: 60px !important;
+    padding-bottom: 20px !important;
+    background-color: #ffffff !important;
 }
-@media (max-width: 1024px) {
-    .elementor-image-carousel .swiper-slide { flex: 0 0 calc(50% - 15px); }
-}
-@media (max-width: 767px) {
-    .elementor-image-carousel .swiper-slide { flex: 0 0 100%; }
-}
-.elementor-image-carousel .swiper-slide-inner {
-    margin: 0;
+
+.elementor-element-f347e95 .elementor-container {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
-.elementor-image-carousel .swiper-slide-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    cursor: pointer;
-    border-radius: 4px;
+
+.elementor-element-f347e95 .elementor-heading-title {
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    text-align: center;
 }
-.elementor-image-carousel-caption {
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: 10px;
-    color: #3162C9;
+
+.elementor-element-f347e95 .elementor-widget-text-editor {
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
-.elementor-swiper-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
+
+/* Carousel Background Section */
+.elementor-element-d9ac033 {
+    background-image: linear-gradient(rgba(22, 170, 240, 0.9), rgba(22, 170, 240, 0.9)), url('/wp-content/uploads/2021/11/Jantek-About-Us-Time-and-Attendance-Workforce-Management-Solution-Provider.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Custom Carousel Container */
+.custom-industry-carousel {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-    cursor: pointer;
-    z-index: 2;
+}
+
+/* The Track holding the visible cards */
+.custom-carousel-track {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/* Individual Card Styling */
+.industry-card {
+    /* Ensure flex items don't shrink too much */
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+
+    /* Center content inside the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.industry-card:hover {
+    transform: translateY(-5px);
+}
+
+.industry-card-inner {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Image */
+.industry-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+}
+
+/* Card Caption */
+.industry-caption {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     color: #3162C9;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+/* Navigation Buttons */
+.custom-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
     border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
 }
-.elementor-swiper-button svg {
-    width: 20px !important;
-    height: 20px !important;
-    fill: currentColor;
+
+.custom-carousel-btn svg {
+    width: 35px;
+    height: 35px;
+    fill: #ffffff;
 }
-.elementor-swiper-button-prev { left: 0; }
-.elementor-swiper-button-next { right: 0; }
-.elementor-swiper-button:hover { color: #16AAF0; }
+
+.custom-carousel-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.custom-carousel-btn:hover svg {
+    fill: #FAB607; /* Yellow hover color */
+}
+
+.custom-carousel-btn.prev {
+    left: 10px;
+}
+
+.custom-carousel-btn.next {
+    right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .industry-card {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+    .elementor-element-f347e95 .elementor-heading-title { font-size: 28px; }
+}
+
+@media (max-width: 767px) {
+    .industry-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .custom-industry-carousel { padding: 0 20px; }
+    .elementor-element-f347e95 .elementor-heading-title { font-size: 24px; }
+}
 
 /* ==========================================================================
-   8. Post Cards (Recent Blogs)
+   8. RECENT BLOGS SECTION
    ========================================================================== */
+
+/* 1. Center the main section heading and text */
+.elementor-element-b691016 .elementor-heading-title {
+    text-align: center;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.elementor-element-0516a99 .elementor-widget-container {
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* 2. Grid Layout */
 .elementor-grid {
     display: grid;
     gap: 30px;
 }
 .elementor-grid-3 { grid-template-columns: repeat(3, 1fr); }
+
 @media (max-width: 1024px) {
     .elementor-grid-3 { grid-template-columns: repeat(2, 1fr); }
 }
@@ -245,35 +370,45 @@ a {
     .elementor-grid-3 { grid-template-columns: 1fr; }
 }
 
+/* 3. Card Styling */
 .elementor-post__card {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 4px; /* Slightly sharper corners */
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Softer shadow */
     height: 100%;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
+    border: 1px solid #eaeaea; /* Subtle border */
 }
+
 .elementor-post__card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
+
+/* Thumbnail Image */
 .elementor-post__thumbnail img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Fixed height for uniformity */
     display: block;
     object-fit: cover;
-    aspect-ratio: 16/9;
 }
+
+/* Text Content Padding */
 .elementor-post__text {
-    padding: 20px;
+    padding: 20px 20px 15px 20px;
     flex-grow: 1;
 }
+
+/* Title */
 .elementor-post__title {
-    margin: 0 0 10px;
-    font-size: 20px;
-    line-height: 1.3;
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 1.4;
     font-family: "Nunito", sans-serif;
+    font-weight: 700;
 }
 .elementor-post__title a {
     color: #3162C9;
@@ -282,17 +417,51 @@ a {
 .elementor-post__title a:hover {
     color: #16AAF0;
 }
+
+/* Excerpt */
 .elementor-post__excerpt p {
     font-size: 15px;
+    line-height: 1.6;
     margin: 0;
-    color: #555;
+    color: #555555;
 }
+
+/* 4. Date/Footer Styling (Separated by line) */
 .elementor-post__meta-data {
     padding: 15px 20px;
     font-size: 13px;
     color: #888;
-    background: #f9f9f9;
-    border-top: 1px solid #eee;
+    background: transparent; /* Remove gray background */
+    border-top: 1px solid #f0f0f0; /* Thin separator line */
+    margin-top: auto; /* Push to bottom */
+}
+
+/* 5. Center the "More Blog Posts" Button */
+.elementor-element-a198797 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.elementor-element-a198797 .elementor-button {
+    background-color: #3162C9 !important; /* Blue */
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: #ffffff !important;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(49, 98, 201, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.elementor-element-a198797 .elementor-button:hover {
+    background-color: #16AAF0 !important;
+    transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -726,5 +895,420 @@ a {
     .custom-footer .footer-madeby {
         text-align: center;
         margin-top: 10px;
+    }
+}
+
+/* ==========================================================================
+   12. HERO SECTION FIXES
+   ========================================================================== */
+
+.hero-section {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 60px 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Abstract Light Blue Background Design */
+.hero-bg-design {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Relative wrapper to contain the image and content together */
+.hero-container-relative {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Constrain to match the header */
+    margin: 0 auto;
+    display: flex;
+    z-index: 10;
+}
+
+/* The image now takes up the right 60% and is centered */
+.hero-image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%; /* Slightly wider */
+
+    background-image: url('/wp-content/uploads/2021/11/vertical-banner.png');
+
+    /*
+      Change background-size to 110% to zoom in slightly,
+      and background-position to 70% center to pull the image leftward.
+    */
+    background-size: 110%;
+    background-position: 70% center;
+    background-repeat: no-repeat;
+
+    /* Fades out the left side of the image so it blends with the white background */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+
+.hero-column {
+    width: 50%; /* Text takes up the left 50% */
+}
+
+.hero-content {
+    max-width: 500px;
+    padding: 40px 20px 40px 0;
+}
+
+.hero-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #3162C9;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 19px;
+    color: #3162C9;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+/* Blue Learn More Button */
+.hero-button {
+    background-color: #3162C9 !important;
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: #ffffff !important;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(49, 98, 201, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.hero-button:hover {
+    background-color: #16AAF0 !important;
+    transform: translateY(-2px);
+}
+
+.hero-button .elementor-button-icon {
+    display: flex;
+    align-items: center;
+}
+
+.hero-button .elementor-button-icon svg {
+    width: 18px !important;
+    height: 18px !important;
+    fill: #ffffff !important;
+}
+
+/* Mobile & Tablet Adjustments */
+@media (max-width: 1024px) {
+    .hero-image-wrapper,
+    .hero-bg-design {
+        display: none;
+    }
+
+    .hero-section {
+        background-color: #F9F9F9;
+        padding: 40px 20px;
+    }
+
+    .hero-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+/* ==========================================================================
+   13. PRODUCTS SECTION FIXES
+   ========================================================================== */
+
+/* 1. Reduce the top/bottom padding of the main section to remove excess white space */
+.elementor-element-0e0c55b {
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+}
+
+/* 2. Center the main section heading and reduce bottom margin */
+.elementor-element-0e0c55b .elementor-element-cb38282 .elementor-heading-title {
+    text-align: center;
+    color: #151515;
+    font-size: 34px; /* Slightly smaller to match image */
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px; /* Reduced from 40px */
+}
+
+/* 3. Container for the cards: Center items and use gap */
+.elementor-element-3b769cc > .elementor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    align-items: stretch;
+    justify-content: center; /* This centers the cards if they don't fill the row */
+}
+
+/* 4. The Cards: Set fixed max-width to match the "Correct" screenshot look */
+.elementor-element-3b769cc .elementor-column {
+    /* Instead of calc(25% - 15px) which stretches, use a fixed width */
+    width: 100%;
+    max-width: 280px; /* Matches the narrower card look */
+    flex: 1 1 260px; /* Allows shrinking/growing slightly but keeps them compact */
+
+    padding: 40px 25px;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.elementor-element-3b769cc .elementor-column:hover {
+    transform: translateY(-5px);
+}
+
+/* Inner wrapper */
+.elementor-element-3b769cc .elementor-column .elementor-widget-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Assign the specific colors to each card (Keep your existing colors) */
+.elementor-element-3b769cc .elementor-element-4ad6300 { background-color: #16AAF0 !important; }
+.elementor-element-3b769cc .elementor-element-79807e4 { background-color: #F35325 !important; }
+.elementor-element-3b769cc .elementor-element-228a493 { background-color: #81BC06 !important; }
+.elementor-element-3b769cc .elementor-element-fa03d4c { background-color: #FAB607 !important; }
+
+/* Fix the icons inside the cards */
+.elementor-element-3b769cc .elementor-icon-wrapper {
+    margin-bottom: 20px;
+}
+
+.elementor-element-3b769cc .elementor-icon-wrapper .elementor-icon svg {
+    width: 50px !important;
+    height: 50px !important;
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
+    stroke-width: 1px;
+}
+
+/* Fix the text inside the cards */
+.elementor-element-3b769cc .elementor-widget-heading .elementor-heading-title,
+.elementor-element-3b769cc .elementor-widget-heading .elementor-heading-title a {
+    color: #ffffff !important;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.elementor-element-3b769cc .elementor-widget-text-editor {
+    color: #ffffff !important;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+/* 5. Fix the "More Products" button spacing */
+.elementor-element-534d009 .elementor-button {
+    background-color: #3162C9 !important;
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: #ffffff !important;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(49, 98, 201, 0.3);
+    margin-top: 10px; /* Reduced from 20px to pull it up */
+}
+
+.elementor-element-534d009 .elementor-button:hover {
+    background-color: #16AAF0 !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .elementor-element-3b769cc .elementor-column {
+        /* Tablet: 2 columns naturally */
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    .elementor-element-3b769cc .elementor-column {
+        /* Mobile: Full width */
+        max-width: 100%;
+    }
+}
+
+/* ==========================================================================
+   14. ABOUT SECTION FIXES
+   ========================================================================== */
+
+/* 1. The Section Container & Background */
+.elementor-element-cb3fc62 {
+    position: relative;
+    padding: 80px 0 !important; /* Adds vertical breathing room */
+    background-color: #ffffff;
+    overflow: hidden; /* Ensures curves don't spill out */
+}
+
+/* 2. The Sweeping Blue Wave Background (CSS Generated) */
+.elementor-element-cb3fc62::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    /* This SVG creates the overlapping curves seen in the screenshot */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' preserveAspectRatio='none'%3E%3Cpath fill='%23E8F4FC' fill-opacity='1' d='M0,160L48,170.7C96,181,192,203,288,208C384,213,480,203,576,170.7C672,139,768,85,864,80C960,75,1056,117,1152,144C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3Cpath fill='%23D0E8F9' fill-opacity='1' d='M0,256L60,245.3C120,235,240,213,360,202.7C480,192,600,192,720,213.3C840,235,960,277,1080,282.7C1200,288,1320,256,1380,240L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%; /* Stretches to fill the bottom */
+}
+
+/* Ensure content sits above the background */
+.elementor-element-cb3fc62 .elementor-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1140px;
+    margin: 0 auto;
+    align-items: center; /* Vertically centers the two columns */
+}
+
+/* 3. Left Column (Heading) */
+/* Align text to the right so it looks centered */
+.elementor-element-cb3fc62 .elementor-element-ceb695c {
+    text-align: right;
+    padding-right: 40px; /* Space between text and columns */
+}
+
+.elementor-element-cb3fc62 .elementor-element-ceb695c .elementor-heading-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000; /* Black text */
+    margin: 0;
+}
+
+/* 4. Right Column (Text & Button) */
+.elementor-element-cb3fc62 .elementor-element-5c369d7 {
+    text-align: left;
+    padding-left: 40px; /* Space between text and columns */
+    border-left: none; /* Remove any default borders */
+}
+
+.elementor-element-cb3fc62 .elementor-widget-text-editor p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/* 5. The Blue Button */
+/* Target the specific button class inside the About section */
+.elementor-element-cb3fc62 .elementor-button {
+    background-color: #3162C9 !important; /* Blue */
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: #ffffff !important;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(49, 98, 201, 0.3);
+    display: inline-flex;
+    align-items: center;
+}
+
+.elementor-element-cb3fc62 .elementor-button:hover {
+    background-color: #16AAF0 !important;
+    transform: translateY(-2px);
+}
+
+/* Ensure the icon is on the right side of the text */
+.elementor-element-cb3fc62 .elementor-button-content-wrapper {
+    flex-direction: row; /* Keep text then icon */
+    gap: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    .elementor-element-cb3fc62 {
+        padding: 50px 0 !important;
+    }
+
+    .elementor-element-cb3fc62 .elementor-element-ceb695c {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .elementor-element-cb3fc62 .elementor-element-5c369d7 {
+        padding-left: 0;
+        text-align: left; /* Keep text readable on mobile */
+    }
+
+    .elementor-element-cb3fc62 .elementor-button-wrapper {
+        text-align: center; /* Center button on mobile */
     }
 }
