@@ -1,0 +1,189 @@
+/* ==========================================================================
+   REQUEST AN RMA PAGE STYLES
+   ========================================================================== */
+
+/* 1. Top Banner */
+.rma-banner {
+    position: relative;
+    background-image: url('/assets/images/Other-Page-Background-Option-1.jpg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.rma-banner .elementor-background-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* White overlay */
+    opacity: 0.2; /* Match original elementor opacity */
+    z-index: 0;
+}
+
+.rma-banner .elementor-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.rma-banner h2 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3162C9;
+    margin-bottom: 10px;
+    line-height: 1em;
+    letter-spacing: 0.6px;
+}
+
+.rma-banner .elementor-widget-text-editor {
+    font-size: 19px;
+    color: #000;
+}
+
+/* 2. Main Form Section */
+.rma-form-section {
+    padding: 50px 0;
+    position: relative;
+    background-image: url('/assets/images/cropped-favicon-1.png'); /* Faint background logo */
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 50px; /* Makes it a subtle pattern */
+}
+
+/* Overlay to fade out the background pattern */
+.rma-form-section .elementor-background-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.98);
+    z-index: 0;
+}
+
+.rma-form-section .elementor-container {
+    position: relative;
+    z-index: 1;
+    max-width: 840px; /* Narrower form container */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.rma-intro-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 3. Form Container Card */
+.rma-form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 30px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Layout */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Inputs and Selects */
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #495057;
+    background-color: #ffffff;
+    border: 1px solid #16AAF0; /* Light blue border */
+    border-radius: 4px; /* Slight rounded corners */
+    box-sizing: border-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3162C9;
+    box-shadow: 0 0 0 0.2rem rgba(49, 98, 201, 0.25);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+select[multiple].form-control {
+    height: auto;
+    min-height: 80px;
+}
+
+/* Submit Button */
+.submit-row {
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background-color: #3162C9;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #16AAF0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .col-50 {
+        width: 100%;
+    }
+
+    .rma-banner h2 {
+        font-size: 28px;
+    }
+}

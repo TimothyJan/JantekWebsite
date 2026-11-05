@@ -1,0 +1,211 @@
+<!-- Top Banner Section -->
+<section class="elementor-section elementor-top-section elementor-element elementor-element-25cf8b8 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle rma-banner">
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-widget elementor-widget-heading">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Request an RMA #</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-widget elementor-widget-text-editor">
+                    <div class="elementor-widget-container">
+                        Fill the form to send an email to JANTEK ELECTRONICS requesting an RMA #
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Form Section -->
+<section class="elementor-section elementor-top-section elementor-element elementor-element-9e79e2d elementor-section-boxed elementor-section-height-default elementor-section-height-default rma-form-section">
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100">
+            <div class="elementor-widget-wrap elementor-element-populated">
+
+                <h3>INCOMPLETE- IN PROGRESS, NEED TO MAKE BACKEND</h3>
+
+                <div class="elementor-element elementor-widget elementor-widget-text-editor rma-intro-text">
+                    <div class="elementor-widget-container">
+                        <p>Fill out the form below as completely as possible to send an email to JANTEK ELECTRONICS requesting an RMA #. Please only use this form for problems pertaining to a hardware failure. If possible include copies of problem reports, texts of error messages, and any relevant details pertaining to your clock's malfunction. Should you need to send attachments, please use our <a href="mailto:support@jantek.com">support@jantek.com</a> email address. If you purchased your system from a dealer, please contact your dealer's representative with any questions.</p>
+                    </div>
+                </div>
+
+                <div class="elementor-element elementor-widget elementor-widget-form rma-form-container">
+                    <div class="elementor-widget-container">
+                        <form (ngSubmit)="onSubmit(rmaForm)" #rmaForm="ngForm" class="elementor-form">
+                            <div class="form-row">
+                                <!-- Name -->
+                                <div class="form-group col-50">
+                                    <label>Name *</label>
+                                    <input type="text" name="name" ngModel required placeholder="Name *" class="form-control">
+                                </div>
+                                <!-- Company -->
+                                <div class="form-group col-50">
+                                    <label>Company *</label>
+                                    <input type="text" name="company" ngModel required placeholder="Company *" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Address -->
+                                <div class="form-group col-100">
+                                    <label>Address *</label>
+                                    <input type="text" name="address" ngModel required placeholder="Address *" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- City -->
+                                <div class="form-group col-50">
+                                    <label>City *</label>
+                                    <input type="text" name="city" ngModel required placeholder="City *" class="form-control">
+                                </div>
+                                <!-- State/Province -->
+                                <div class="form-group col-50">
+                                    <label>State/Province *</label>
+                                    <input type="text" name="state" ngModel required placeholder="State/Province *" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Country -->
+                                <div class="form-group col-100">
+                                    <label>Country *</label>
+                                    <select name="country" ngModel required class="form-control">
+                                        <option value="United States" selected>United States</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Phone -->
+                                <div class="form-group col-50">
+                                    <label>Phone</label>
+                                    <input type="text" name="phone" ngModel placeholder="Phone *" class="form-control">
+                                </div>
+                                <!-- Fax -->
+                                <div class="form-group col-50">
+                                    <label>Fax</label>
+                                    <input type="text" name="fax" ngModel placeholder="Fax *" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Email -->
+                                <div class="form-group col-100">
+                                    <label>Email *</label>
+                                    <input type="email" name="email" ngModel required placeholder="Email" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Best Describes You -->
+                                <div class="form-group col-100">
+                                    <label>What best describes you?</label>
+                                    <select name="describe" ngModel class="form-control">
+                                        <option value="">-- Please Select --</option>
+                                        <option value="End User">End User</option>
+                                        <option value="Dealer">Dealer</option>
+                                        <option value="Systems Integrator">Systems Integrator</option>
+                                        <option value="Value Added Reseller">Value Added Reseller</option>
+                                        <option value="Distributor">Distributor</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Terminal Type -->
+                                <div class="form-group col-50">
+                                    <label>Terminal Type</label>
+                                    <select name="terminalType" ngModel class="form-control">
+                                        <option value="JTA-50PC">JTA-50PC</option>
+                                        <option value="JTA-100PC">JTA-100PC</option>
+                                        <option value="JTA-150 FaceScan">JTA-150 FaceScan</option>
+                                        <option value="JTA-250PC">JTA-250PC</option>
+                                        <option value="Fingerprint Reader">Fingerprint Reader</option>
+                                    </select>
+                                </div>
+                                <!-- Connection Type -->
+                                <div class="form-group col-50">
+                                    <label>Connection Type</label>
+                                    <select name="connectionType" ngModel class="form-control" multiple size="3">
+                                        <option value="Direct Connect (RS232)">Direct Connect (RS232)</option>
+                                        <option value="Ethernet (TCP/IP)">Ethernet (TCP/IP)</option>
+                                        <option value="Modem">Modem</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- External Devices -->
+                                <div class="form-group col-50">
+                                    <label>External Devices attached to reader</label>
+                                    <input type="text" name="externalDevices" ngModel class="form-control">
+                                </div>
+                                <!-- Software Version -->
+                                <div class="form-group col-50">
+                                    <label>Software Version</label>
+                                    <select name="softwareVersion" ngModel required class="form-control">
+                                        <option value="JTA Jupiter 8.2 or earlier">JTA Jupiter 8.2 or earlier</option>
+                                        <option value="JTA Jupiter 8.31">JTA Jupiter 8.31</option>
+                                        <option value="JTA Jupiter 9.0">JTA Jupiter 9.0</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Reproduce Error -->
+                                <div class="form-group col-50">
+                                    <label>Can you reproduce the error?</label>
+                                    <select name="reproduceError" ngModel class="form-control">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                                <!-- If So, How -->
+                                <div class="form-group col-50">
+                                    <label>If so, How?</label>
+                                    <input type="text" name="how" ngModel placeholder="If so, How?" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Problem Description -->
+                                <div class="form-group col-100">
+                                    <label>Problem Description and Notes: (Please be as descriptive as possible)</label>
+                                    <textarea name="problemDescription" ngModel required rows="4" class="form-control"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Preferred Contact -->
+                                <div class="form-group col-100">
+                                    <label>How would you prefer to be contacted?</label>
+                                    <select name="preferredContact" ngModel class="form-control">
+                                        <option value="Phone">Phone</option>
+                                        <option value="Email">Email</option>
+                                        <option value="Postal Mail">Postal Mail</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row submit-row">
+                                <button type="submit" class="submit-btn">
+                                    SEND EMAIL &rarr;
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
