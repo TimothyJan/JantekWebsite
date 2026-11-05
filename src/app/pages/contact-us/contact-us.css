@@ -1,0 +1,258 @@
+/* ==========================================================================
+   CONTACT US PAGE SPECIFIC STYLES
+   ========================================================================== */
+
+/* 1. Banner Section */
+.contact-banner {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.contact-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 2. Top Info Cards */
+.contact-info-cards-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.info-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.info-card {
+    flex: 1 1 150px;
+    max-width: 180px;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon svg {
+    fill: #ffffff;
+    width: 30px;
+    height: 30px;
+}
+
+.info-card h3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.info-card p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Card Colors */
+.card-light-blue { background-color: #16AAF0; }
+.card-red { background-color: #F35325; }
+.card-green { background-color: #81BC06; }
+.card-yellow { background-color: #FAB607; }
+.card-purple { background-color: #6E3DA5; }
+
+/* 3. Main Content Section (Contact Info & Form) */
+.main-contact-section {
+    padding: 60px 0;
+}
+
+.contact-info-col {
+    padding-right: 40px;
+}
+
+.main-contact-section h2 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3162C9;
+    margin-bottom: 15px;
+}
+
+.elementor-divider-separator {
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #F35325;
+    margin-bottom: 25px;
+}
+
+.main-contact-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contact Info List */
+.contact-list-wrapper {
+    margin-top: 30px;
+}
+
+.contact-list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-list-icon {
+    flex: 0 0 30px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.contact-list-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #F35325;
+}
+
+.contact-list-content h3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3162C9;
+    margin: 0 0 5px 0;
+    text-transform: capitalize;
+}
+
+.contact-list-content a {
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-list-content a:hover {
+    color: #16AAF0;
+}
+
+/* Form Placeholder */
+.form-placeholder-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-placeholder-box h3 {
+    font-family: "Exo 2", sans-serif;
+    color: #3162C9;
+    margin-bottom: 15px;
+}
+
+.form-placeholder-box p {
+    font-size: 15px;
+    color: #555;
+}
+
+.form-placeholder-box code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* 4. Bottom Sections (Dealer & Technical Support) */
+.bottom-info-section {
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+.bottom-info-section .elementor-container {
+    align-items: stretch;
+}
+
+.bottom-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
+}
+
+.bottom-text-col h2 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3162C9;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.bottom-text-col p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.bottom-text-col a {
+    color: #3162C9;
+    text-decoration: underline;
+}
+
+.bottom-img-col {
+    min-height: 400px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .contact-info-col {
+        padding-right: 10px;
+        margin-bottom: 40px;
+    }
+
+    .bottom-text-col {
+        padding: 50px 15px;
+    }
+
+    .bottom-img-col {
+        min-height: 250px;
+    }
+}
