@@ -197,7 +197,7 @@ a {
 
 /* Carousel Background Section */
 .elementor-element-d9ac033 {
-    background-image: linear-gradient(rgba(22, 170, 240, 0.9), rgba(22, 170, 240, 0.9)), url('/wp-content/uploads/2021/11/Jantek-About-Us-Time-and-Attendance-Workforce-Management-Solution-Provider.jpg');
+    background-image: linear-gradient(rgba(22, 170, 240, 0.9), rgba(22, 170, 240, 0.9)), url('wp-content/uploads/2021/11/Jantek-About-Us-Time-and-Attendance-Workforce-Management-Solution-Provider.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -942,7 +942,7 @@ a {
     bottom: 0;
     width: 60%; /* Slightly wider */
 
-    background-image: url('/wp-content/uploads/2021/11/vertical-banner.png');
+    background-image: url('wp-content/uploads/2021/11/vertical-banner.png');
 
     /*
       Change background-size to 110% to zoom in slightly,
