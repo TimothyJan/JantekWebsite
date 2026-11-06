@@ -6,6 +6,7 @@ import { CaliforniaConsumerPrivacyAct } from './pages/california-consumer-privac
 import { ClockEthernetUpgrade } from './pages/clock-ethernet-upgrade/clock-ethernet-upgrade';
 import { ContactUs } from './pages/contact-us/contact-us';
 import { DataCollectionTimeClocks } from './pages/data-collection-time-clocks/data-collection-time-clocks';
+import { Demo } from './pages/demo/demo';
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
 import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
@@ -27,6 +28,7 @@ export const routes: Routes = [
   { path: 'contact-us', component: ContactUs },
   { path: 'data-collection-time-clocks', component: DataCollectionTimeClocks },
   { path: 'daylight', component: Daylight },
+  { path: 'demo', component: Demo },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },

@@ -1,0 +1,387 @@
+/* ==========================================================================
+   Demo Page Styles — scoped to .page-demo
+   ========================================================================== */
+
+.page-demo {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-demo .dmo-hero {
+  position: relative;
+  background-image: url('/assets/images/demo-hero.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+}
+
+.page-demo .dmo-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #0349B3;
+  opacity: 0.52;
+}
+
+.page-demo .dmo-hero-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.page-demo .dmo-hero-text {
+  max-width: 400px;
+}
+
+.page-demo .dmo-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.page-demo .dmo-subtitle {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 74px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   2. DIAGONAL PATTERN
+   ========================================================================== */
+.page-demo .dmo-diagonal-pattern {
+  height: 40px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    #333 10px,
+    #333 12px
+  );
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  /* Note: In the original it sits below the hero. We'll push the main container up over it slightly */
+}
+
+/* ==========================================================================
+   3. MAIN SECTION & FORM
+   ========================================================================== */
+.page-demo .dmo-main-section {
+  padding: 40px 0 100px;
+  position: relative;
+}
+
+.page-demo .dmo-main-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+}
+
+/* Left Text Column */
+.page-demo .dmo-info-col {
+  flex: 1 1 40%;
+  padding-top: 60px;
+}
+
+.page-demo .dmo-section-title {
+  font-family: "Arial", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  color: #3162C9;
+  margin-bottom: 20px;
+}
+
+.page-demo .dmo-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-demo .dmo-feature-list li {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17px;
+  color: #3162C9;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.page-demo .dmo-arrow {
+  color: #16AAF0;
+  font-weight: bold;
+}
+
+/* Right Form Column */
+.page-demo .dmo-form-col {
+  flex: 1 1 60%;
+  margin-top: -170px; /* Pulls form up into the hero/pattern area */
+  z-index: 10;
+}
+
+.page-demo .dmo-form-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.page-demo .dmo-form-title {
+  font-family: "Arial", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  color: #3162C9;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px 20px 20px;
+  margin: 0;
+}
+
+.page-demo .dmo-form {
+  padding: 0 40px 30px;
+}
+
+/* Form Elements */
+.page-demo .dmo-form-group {
+  margin-bottom: 15px;
+}
+
+.page-demo .dmo-form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.page-demo .dmo-form-row .dmo-form-group {
+  flex: 1;
+}
+
+.page-demo .dmo-form-group label {
+  display: block;
+  font-family: "Exo 2", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.page-demo .dmo-form-group input[type="text"],
+.page-demo .dmo-form-group input[type="email"],
+.page-demo .dmo-form-group input[type="tel"],
+.page-demo .dmo-form-group select,
+.page-demo .dmo-form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 15px;
+  color: #333;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.page-demo .dmo-form-group input:focus,
+.page-demo .dmo-form-group select:focus,
+.page-demo .dmo-form-group textarea:focus {
+  border-color: #237ACF;
+}
+
+.page-demo .dmo-radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.page-demo .dmo-radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.page-demo .dmo-checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.page-demo .dmo-form-submit {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.page-demo .dmo-btn {
+  display: inline-block;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 12px 30px;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.page-demo .dmo-btn-blue {
+  background-color: #237ACF;
+  color: #ffffff;
+}
+
+.page-demo .dmo-btn-blue:hover {
+  background-color: #1a5fa3;
+}
+
+/* ==========================================================================
+   4. VIDEO SECTIONS
+   ========================================================================== */
+.page-demo .dmo-video-section {
+  padding: 70px 0;
+}
+
+.page-demo .dmo-bg-dark {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.page-demo .dmo-bg-dark .dmo-video-title,
+.page-demo .dmo-bg-dark .dmo-video-desc {
+  color: #ffffff;
+}
+
+.page-demo .dmo-bg-light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.page-demo .dmo-bg-light .dmo-video-title {
+  color: #3162C9;
+}
+
+.page-demo .dmo-video-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.page-demo .dmo-video-image-col {
+  flex: 1 1 50%;
+}
+
+.page-demo .dmo-video-image-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.page-demo .dmo-video-content-col {
+  flex: 1 1 50%;
+}
+
+.page-demo .dmo-eyebrow {
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #16AAF0; /* Blue on light, might want to adjust on dark */
+}
+
+.page-demo .dmo-bg-dark .dmo-eyebrow {
+  color: #ffffff;
+}
+
+.page-demo .dmo-video-title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.page-demo .dmo-video-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   5. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 991px) {
+  .page-demo .dmo-main-container {
+    flex-direction: column;
+  }
+
+  .page-demo .dmo-info-col {
+    padding-top: 40px;
+  }
+
+  .page-demo .dmo-form-col {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .page-demo .dmo-video-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .page-demo .dmo-reverse-layout .dmo-video-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-demo .dmo-subtitle {
+    font-size: 40px;
+  }
+
+  .page-demo .dmo-form {
+    padding: 0 20px 20px;
+  }
+
+  .page-demo .dmo-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .page-demo .dmo-video-title {
+    font-size: 24px;
+  }
+}
