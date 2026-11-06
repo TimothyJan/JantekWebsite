@@ -3,6 +3,7 @@ import { Home } from './pages/home/home';
 import { AboutUs } from './pages/about-us/about-us';
 import { Blogs } from './pages/blogs/blogs';
 import { CaliforniaConsumerPrivacyAct } from './pages/california-consumer-privacy-act/california-consumer-privacy-act';
+import { ClockEthernetUpgrade } from './pages/clock-ethernet-upgrade/clock-ethernet-upgrade';
 import { ContactUs } from './pages/contact-us/contact-us';
 import { DataCollectionTimeClocks } from './pages/data-collection-time-clocks/data-collection-time-clocks';
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
@@ -21,6 +22,7 @@ export const routes: Routes = [
   { path: 'about-us', component: AboutUs },
   { path: 'blogs', component: Blogs },
   { path: 'california_consumer_privacy_act', component: CaliforniaConsumerPrivacyAct },
+  { path: 'clock_ethernet_upgrade', component: ClockEthernetUpgrade },
   { path: 'contact-us', component: ContactUs },
   { path: 'data-collection-time-clocks', component: DataCollectionTimeClocks },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
