@@ -1,0 +1,169 @@
+/* ==========================================================================
+   PRODUCTS PAGE STYLES
+   ========================================================================== */
+
+/* 1. Top Banner */
+.products-banner {
+    background-image: url('/assets/images/Jantek-Jupiter-Time-and-Attendance-Workforce-Management-Products-Banner.jpg'); /* Update path if needed */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 256px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.products-banner .elementor-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.products-banner h2 {
+    display: inline-block;
+    background-color: rgba(21, 21, 21, 0.73); /* Dark semi-transparent background */
+    color: #ffffff;
+    font-family: "Exo 2", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    letter-spacing: 0.6px;
+    margin: 0;
+    line-height: 1em;
+}
+
+/* 2. Main Section */
+.products-main-section {
+    background-color: #F9F9F9;
+    padding: 60px 0;
+}
+
+.products-main-section .elementor-container {
+    max-width: 840px; /* Narrower container to center the stack */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.products-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.products-heading h2 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #151515;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* 3. Product Card Structure */
+.product-card-wrapper {
+    margin-bottom: 30px;
+}
+
+.product-card {
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden; /* Keeps the colored box contained */
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Reverse Layout (Icon on the right) */
+.product-card.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+/* 4. Icon Box */
+.product-icon-box {
+    flex: 0 0 150px; /* Fixed width for icon area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-icon-box svg {
+    width: 100px;
+    height: 100px;
+    fill: #ffffff;
+    stroke: #ffffff;
+}
+
+/* Icon Box Colors */
+.icon-red { background-color: #F35325; }
+.icon-yellow { background-color: #FAB607; }
+.icon-green { background-color: #81BC06; }
+.icon-blue { background-color: #16AAF0; }
+
+/* 5. Content Area */
+.product-content {
+    flex: 1;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-content h3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #3162C9;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: 0.7px;
+}
+
+.product-content p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    margin: 0;
+}
+
+/* 6. Responsive */
+@media (max-width: 767px) {
+    .products-banner h2 {
+        font-size: 28px;
+    }
+
+    .products-heading h2 {
+        font-size: 32px;
+    }
+
+    .product-card, .product-card.reverse-layout {
+        flex-direction: column; /* Stack vertically on mobile */
+    }
+
+    .product-icon-box {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .product-icon-box svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .product-content {
+        padding: 20px;
+        text-align: center;
+    }
+}

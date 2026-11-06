@@ -39,8 +39,8 @@
 							<ul class="nav-menu-main">
 								<li class="menu-item" routerLinkActive="current-menu-item" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
 								<li class="menu-item" routerLinkActive="current-menu-item"><a routerLink="/about-us">About Us</a></li>
-								<li class="menu-item menu-item-has-children">
-									<a href="javascript:void(0)">Products <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
+								<li class="menu-item menu-item-has-children" routerLinkActive="current-menu-item">
+									<a routerLink="/products">Products <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
 									<ul class="sub-menu">
 										<li class="menu-item menu-item-has-children">
 											<a routerLink="/jantek-jupiter-time-and-attendance-system">Time & Attendance <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
@@ -106,7 +106,8 @@
 
 					<!-- Mobile Products Dropdown -->
 					<li class="menu-item-has-children">
-						<a href="javascript:void(0)" (click)="toggleDropdown('products')">Products <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
+						<!-- Changed this to routerLink so clicking the text goes to the page -->
+						<a routerLink="/products" (click)="toggleMenu()">Products <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
 						<ul class="sub-menu" [class.active]="openDropdowns['products']">
 							<li><a routerLink="/jantek-jupiter-time-and-attendance-system" (click)="toggleMenu()">Time & Attendance</a></li>
 							<li><a routerLink="/data-collection-time-clocks" (click)="toggleMenu()">Data Collection & Time Clocks</a></li>

@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common'; // 1. Import this
 
 @Component({
   selector: 'app-home',
-  standalone: true, // Assuming you are using standalone components
-  imports: [CommonModule], // 2. Add it here
+  imports: [CommonModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
