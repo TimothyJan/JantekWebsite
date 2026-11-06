@@ -10,6 +10,7 @@ import { DataCollectionTimeClocks } from './pages/data-collection-time-clocks/da
 import { Demo } from './pages/demo/demo';
 import { Electriclock } from './pages/electriclock/electriclock';
 import { Ftpmerge } from './pages/ftpmerge/ftpmerge';
+import { Government } from './pages/government/government';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
@@ -34,6 +35,7 @@ export const routes: Routes = [
   { path: 'demo', component: Demo },
   { path: 'electriclock', component: Electriclock },
   { path: 'ftpmerge', component: Ftpmerge },
+  { path: 'government', component: Government },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
