@@ -11,9 +11,11 @@ import { JantekAccessControlSecuritySystem } from './pages/jantek-access-control
 import { JantekJupiterTimeAndAttendanceSystem } from './pages/jantek-jupiter-time-and-attendance-system/jantek-jupiter-time-and-attendance-system';
 import { Jobcosting } from './pages/jobcosting/jobcosting';
 import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-attendance-add-on-modules/jantek-time-and-attendance-add-on-modules';
+import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
 
 export const routes: Routes = [
   { path: '', component: Home },
+  { path: '831_832_upgrade', component: Upgrade831832 },
   { path: 'about-us', component: AboutUs },
   { path: 'contact-us', component: ContactUs },
   { path: 'data-collection-time-clocks', component: DataCollectionTimeClocks },

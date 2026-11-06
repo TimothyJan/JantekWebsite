@@ -1,0 +1,259 @@
+/* ==========================================================================
+   UPGRADE 8.31/8.32 PAGE STYLES
+   ========================================================================== */
+
+/* 1. Top Banner */
+.blog-banner {
+    background-image: url('/assets/images/Blog-Banner-News-and-Resources-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 396px;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.blog-banner .elementor-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.blog-banner h2 {
+    color: #3162C9;
+    font-family: "Exo 2", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1em;
+    letter-spacing: 0.6px;
+}
+
+/* 2. Main Content Section */
+.blog-content-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.blog-content-section .elementor-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Post Title */
+.post-title-heading h2 {
+    color: #3162C9;
+    font-family: "Exo 2", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 0.6px;
+    margin-bottom: 15px;
+}
+
+/* Post Meta */
+.post-meta {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    color: #FAB607; /* Yellow color */
+    margin-bottom: 40px;
+}
+
+.post-meta .meta-category {
+    text-transform: capitalize;
+}
+
+.post-meta .meta-separator {
+    margin: 0 10px;
+    color: #ccc;
+}
+
+/* Post Content & Image Layout */
+.post-content-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.post-text-content {
+    flex: 1;
+}
+
+.post-text-content p {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.post-sidebar-image {
+    flex: 0 0 400px; /* Fixed width for image */
+}
+
+.post-sidebar-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 3px 3px 30px rgba(0,0,0,0.1);
+}
+
+/* 3. Post Navigation */
+.post-navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 30px 0;
+    margin-bottom: 60px;
+}
+
+.post-navigation-wrapper a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    max-width: 45%;
+}
+
+.nav-prev { align-items: flex-start; }
+.nav-next { align-items: flex-end; text-align: right; }
+
+.nav-label {
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F35325; /* Red color for labels */
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.nav-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    color: #3162C9;
+    transition: color 0.3s;
+}
+
+.post-navigation-wrapper a:hover .nav-title {
+    color: #16AAF0;
+}
+
+/* 4. Recent Posts Section */
+.recent-posts-title {
+    font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #FAB607; /* Yellow color */
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.recent-post-item {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 25px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.recent-post-item:hover {
+    transform: translateY(-3px);
+}
+
+.recent-post-image-link {
+    flex: 0 0 30%; /* Image takes 30% width */
+}
+
+.recent-post-image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.recent-post-content {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recent-post-content h4 {
+    margin: 0 0 10px 0;
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.recent-post-content h4 a {
+    color: #3162C9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.recent-post-content h4 a:hover {
+    color: #16AAF0;
+}
+
+.recent-post-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* 5. Responsive Design */
+@media (max-width: 767px) {
+    .blog-banner h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .post-title-heading h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .post-meta {
+        text-align: center;
+    }
+
+    .post-content-wrapper {
+        flex-direction: column-reverse; /* Image on top, text below */
+        gap: 20px;
+    }
+
+    .post-sidebar-image {
+        flex: 0 0 auto;
+    }
+
+    .post-navigation-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .post-navigation-wrapper a {
+        max-width: 100%;
+    }
+
+    .nav-next {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .recent-post-item {
+        flex-direction: column;
+    }
+
+    .recent-post-image-link {
+        flex: 0 0 auto;
+        height: 200px;
+    }
+}
