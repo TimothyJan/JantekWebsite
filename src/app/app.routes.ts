@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
 import { AboutUs } from './pages/about-us/about-us';
 import { Blogs } from './pages/blogs/blogs';
+import { CaliforniaConsumerPrivacyAct } from './pages/california-consumer-privacy-act/california-consumer-privacy-act';
 import { ContactUs } from './pages/contact-us/contact-us';
 import { DataCollectionTimeClocks } from './pages/data-collection-time-clocks/data-collection-time-clocks';
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
@@ -19,6 +20,7 @@ export const routes: Routes = [
   { path: '831_832_upgrade', component: Upgrade831832 },
   { path: 'about-us', component: AboutUs },
   { path: 'blogs', component: Blogs },
+  { path: 'california_consumer_privacy_act', component: CaliforniaConsumerPrivacyAct },
   { path: 'contact-us', component: ContactUs },
   { path: 'data-collection-time-clocks', component: DataCollectionTimeClocks },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
