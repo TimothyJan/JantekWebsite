@@ -5,18 +5,19 @@ import { Blogs } from './pages/blogs/blogs';
 import { CaliforniaConsumerPrivacyAct } from './pages/california-consumer-privacy-act/california-consumer-privacy-act';
 import { ClockEthernetUpgrade } from './pages/clock-ethernet-upgrade/clock-ethernet-upgrade';
 import { ContactUs } from './pages/contact-us/contact-us';
+import { Daylight } from './pages/daylight/daylight';
 import { DataCollectionTimeClocks } from './pages/data-collection-time-clocks/data-collection-time-clocks';
 import { Demo } from './pages/demo/demo';
+import { Electriclock } from './pages/electriclock/electriclock';
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
 import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
-import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { JantekAccessControlSecuritySystem } from './pages/jantek-access-control-security-system/jantek-access-control-security-system';
 import { JantekJupiterTimeAndAttendanceSystem } from './pages/jantek-jupiter-time-and-attendance-system/jantek-jupiter-time-and-attendance-system';
 import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-attendance-add-on-modules/jantek-time-and-attendance-add-on-modules';
 import { Jobcosting } from './pages/jobcosting/jobcosting';
+import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
-import { Daylight } from './pages/daylight/daylight';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -29,6 +30,7 @@ export const routes: Routes = [
   { path: 'data-collection-time-clocks', component: DataCollectionTimeClocks },
   { path: 'daylight', component: Daylight },
   { path: 'demo', component: Demo },
+  { path: 'electriclock', component: Electriclock },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },

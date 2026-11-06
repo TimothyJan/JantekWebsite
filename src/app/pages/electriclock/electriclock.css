@@ -1,0 +1,258 @@
+/* ==========================================================================
+   Electric Lock Page Styles — scoped to .page-electriclock
+   ========================================================================== */
+
+.page-electriclock {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-electriclock .elc-hero {
+  position: relative;
+  background-image: url('/assets/images/Other-Page-Background-Option-1.jpg'); /* Fallback if no specific background is set */
+  background-color: #e0f2fe; /* Light blue fallback matching the screenshot */
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-electriclock .elc-hero-container {
+  text-align: center;
+}
+
+.page-electriclock .elc-hero-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #444444; /* Dark box behind the text */
+  padding: 15px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   2. GENERAL CONTAINER
+   ========================================================================== */
+.page-electriclock .elc-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   3. INTRO SECTION
+   ========================================================================== */
+.page-electriclock .elc-intro-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.page-electriclock .elc-intro-grid {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.page-electriclock .elc-intro-text {
+  flex: 1 1 55%;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.page-electriclock .elc-intro-image {
+  flex: 1 1 40%;
+}
+
+.page-electriclock .elc-intro-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   4. PRODUCT SECTIONS
+   ========================================================================== */
+.page-electriclock .elc-product-section {
+  padding: 50px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.page-electriclock .elc-bg-white {
+  background-color: #ffffff;
+}
+
+.page-electriclock .elc-bg-gray {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.page-electriclock .elc-product-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Grid layout for the Features/Specs split */
+.page-electriclock .elc-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.page-electriclock .elc-col-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   5. FEATURES LIST
+   ========================================================================== */
+.page-electriclock .elc-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.page-electriclock .elc-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.page-electriclock .elc-check {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  fill: #FAB607; /* Jantek Yellow */
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   6. TABLES (Specs & Price)
+   ========================================================================== */
+.page-electriclock .elc-specs-image {
+  margin-bottom: 20px;
+}
+
+.page-electriclock .elc-specs-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.page-electriclock .elc-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #333;
+}
+
+.page-electriclock .elc-specs-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.page-electriclock .elc-specs-table td:first-child {
+  font-weight: 600;
+  width: 35%;
+  color: #555;
+}
+
+/* Price Tables */
+.page-electriclock .elc-price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.page-electriclock .elc-price-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.page-electriclock .elc-price-table tr:first-child {
+  background-color: #fff; /* Ensure header is white */
+  font-weight: 600;
+}
+
+.page-electriclock .elc-price-table tr:first-child td {
+  border-bottom: 2px solid #ddd;
+}
+
+/* Price Button (for GK-300) */
+.page-electriclock .elc-price-btn-wrapper {
+  margin-top: 20px;
+}
+
+.page-electriclock .elc-price-btn {
+  display: inline-block;
+  background-color: #3162C9; /* Jantek Blue */
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.page-electriclock .elc-price-btn:hover {
+  background-color: #16AAF0;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 991px) {
+  .page-electriclock .elc-intro-grid {
+    flex-direction: column;
+  }
+
+  .page-electriclock .elc-product-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .page-electriclock .elc-intro-image img {
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-electriclock .elc-hero-title {
+    font-size: 24px;
+    padding: 15px 20px;
+  }
+
+  .page-electriclock .elc-product-title {
+    font-size: 24px;
+  }
+}
