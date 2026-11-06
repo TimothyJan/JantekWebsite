@@ -9,6 +9,8 @@ import { Daylight } from './pages/daylight/daylight';
 import { DataCollectionTimeClocks } from './pages/data-collection-time-clocks/data-collection-time-clocks';
 import { Demo } from './pages/demo/demo';
 import { Electriclock } from './pages/electriclock/electriclock';
+import { Ftpmerge } from './pages/ftpmerge/ftpmerge';
+
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
 import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
@@ -31,6 +33,7 @@ export const routes: Routes = [
   { path: 'daylight', component: Daylight },
   { path: 'demo', component: Demo },
   { path: 'electriclock', component: Electriclock },
+  { path: 'ftpmerge', component: Ftpmerge },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
