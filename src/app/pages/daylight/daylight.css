@@ -1,0 +1,446 @@
+/* ==========================================================================
+   Daylight Saving Time Blog Page — scoped to .page-daylight
+   ========================================================================== */
+
+.page-daylight {
+  color: #333;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ==========================================================================
+   1. HERO BANNER
+   ========================================================================== */
+.page-daylight .dyl-hero {
+  position: relative;
+  min-height: 396px;
+  background-image: url('/assets/images/Blog-Banner-News-and-Resources-1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.page-daylight .dyl-hero-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.page-daylight .dyl-hero-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #3162C9;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. MAIN CONTENT WRAPPER
+   ========================================================================== */
+.page-daylight .dyl-main {
+  padding: 50px 0 80px;
+}
+
+.page-daylight .dyl-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   3. POST TITLE & META
+   ========================================================================== */
+.page-daylight .dyl-post-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #3162C9;
+  margin: 0 0 20px;
+}
+
+.page-daylight .dyl-post-meta {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  margin: 0 0 40px;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 19px;
+  color: #FAB607;
+}
+
+.page-daylight .dyl-post-meta li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-daylight .dyl-meta-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: #FAB607;
+  display: block;
+}
+
+.page-daylight .dyl-meta-link {
+  color: #FAB607;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.page-daylight .dyl-meta-link:hover {
+  color: #3162C9;
+}
+
+.page-daylight .dyl-meta-separator {
+  width: 1px;
+  height: 20px;
+  background: #3162C9;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   4. BODY ROW (text | image)
+   ========================================================================== */
+.page-daylight .dyl-body-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.page-daylight .dyl-content-col {
+  flex: 1 1 55%;
+  min-width: 280px;
+}
+
+.page-daylight .dyl-image-col {
+  flex: 1 1 40%;
+  min-width: 280px;
+  position: relative;
+  padding-right: 40px;
+}
+
+.page-daylight .dyl-paragraph {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+.page-daylight .dyl-paragraph a {
+  color: #3162C9;
+  text-decoration: underline;
+}
+
+.page-daylight .dyl-hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 30px 0;
+}
+
+/* Table styling */
+.page-daylight .dyl-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+}
+
+.page-daylight .dyl-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.page-daylight .dyl-table td:first-child {
+  font-weight: bold;
+  width: 80px;
+  background-color: #f9f9f9;
+}
+
+/* Featured image */
+.page-daylight .dyl-featured-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.10);
+}
+
+/* Decorative "memphis" shape — absolutely positioned right side */
+.page-daylight .dyl-memphis {
+  position: absolute;
+  right: -27px;
+  top: 154px;
+  width: 188px;
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   5. POST NAVIGATION (prev / next)
+   ========================================================================== */
+.page-daylight .dyl-post-nav {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 60px;
+  padding: 45px 0;
+  border-top: 1px solid rgba(159, 163, 173, 0.2);
+  border-bottom: 1px solid rgba(159, 163, 173, 0.2);
+}
+
+.page-daylight .dyl-nav-prev,
+.page-daylight .dyl-nav-next {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.page-daylight .dyl-nav-next {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.page-daylight .dyl-nav-separator {
+  width: 1px;
+  background: rgba(159, 163, 173, 0.2);
+  margin: 0 20px;
+  flex: 0 0 auto;
+}
+
+.page-daylight .dyl-nav-arrow {
+  color: #FAB607;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.page-daylight .dyl-nav-arrow svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+  display: block;
+}
+
+.page-daylight .dyl-nav-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.page-daylight .dyl-nav-label {
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #F35325;
+  text-transform: uppercase;
+}
+
+.page-daylight .dyl-nav-title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #3162C9;
+  line-height: 1.4;
+}
+
+.page-daylight .dyl-nav-prev:hover .dyl-nav-title,
+.page-daylight .dyl-nav-next:hover .dyl-nav-title {
+  color: #16AAF0;
+}
+
+/* ==========================================================================
+   6. RECENT POSTS (matches other blog pages)
+   ========================================================================== */
+.page-daylight .recent-posts-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #FAB607;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.page-daylight .recent-post-item {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.page-daylight .recent-post-item:hover {
+  transform: translateY(-3px);
+}
+
+.page-daylight .recent-post-image-link {
+  flex: 0 0 30%;
+  display: block;
+  overflow: hidden;
+}
+
+.page-daylight .recent-post-image-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.page-daylight .recent-post-content {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-daylight .recent-post-content h4 {
+  margin: 0 0 10px 0;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.page-daylight .recent-post-content h4 a {
+  color: #3162C9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.page-daylight .recent-post-content h4 a:hover {
+  color: #16AAF0;
+}
+
+.page-daylight .recent-post-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .page-daylight .dyl-hero {
+    min-height: 260px;
+  }
+
+  .page-daylight .dyl-hero-title {
+    font-size: 36px;
+  }
+
+  .page-daylight .dyl-post-title {
+    font-size: 30px;
+  }
+
+  .page-daylight .dyl-memphis {
+    top: 61px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-daylight .dyl-hero {
+    min-height: 200px;
+    padding: 30px 0;
+  }
+
+  .page-daylight .dyl-hero-title {
+    font-size: 23px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .page-daylight .dyl-main {
+    padding: 30px 0 60px;
+  }
+
+  .page-daylight .dyl-post-title {
+    font-size: 23px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .page-daylight .dyl-post-meta {
+    justify-content: center;
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .page-daylight .dyl-body-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .page-daylight .dyl-image-col {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .page-daylight .dyl-memphis {
+    display: none;
+  }
+
+  .page-daylight .dyl-post-nav {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+    padding: 25px 0;
+  }
+
+  .page-daylight .dyl-nav-separator {
+    display: none;
+  }
+
+  .page-daylight .dyl-nav-next {
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: row-reverse;
+  }
+
+  .page-daylight .dyl-nav-next .dyl-nav-text {
+    align-items: flex-start;
+  }
+
+  .page-daylight .dyl-nav-label {
+    font-size: 16px;
+  }
+
+  .page-daylight .dyl-nav-title {
+    font-size: 16px;
+  }
+
+  /* Recent posts: stack image on top, text below */
+  .page-daylight .recent-post-item {
+    flex-direction: column;
+  }
+
+  .page-daylight .recent-post-image-link {
+    flex: 0 0 auto;
+    height: 200px;
+  }
+}

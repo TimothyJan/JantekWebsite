@@ -15,6 +15,7 @@ import { JantekJupiterTimeAndAttendanceSystem } from './pages/jantek-jupiter-tim
 import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-attendance-add-on-modules/jantek-time-and-attendance-add-on-modules';
 import { Jobcosting } from './pages/jobcosting/jobcosting';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
+import { Daylight } from './pages/daylight/daylight';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -25,6 +26,7 @@ export const routes: Routes = [
   { path: 'clock_ethernet_upgrade', component: ClockEthernetUpgrade },
   { path: 'contact-us', component: ContactUs },
   { path: 'data-collection-time-clocks', component: DataCollectionTimeClocks },
+  { path: 'daylight', component: Daylight },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
