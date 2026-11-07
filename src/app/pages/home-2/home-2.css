@@ -1,0 +1,506 @@
+/* ==========================================================================
+   Home 2 Page Styles — scoped to .page-home-2
+   ========================================================================== */
+
+.page-home-2 {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.page-home-2 .hm2-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-home-2 .hm2-hero {
+  position: relative;
+  background: linear-gradient(330deg, #67CEFF 0%, #E2F6FF 100%);
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Floating Person Image */
+.page-home-2 .hm2-hero::after {
+  content: '';
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  width: 400px;
+  height: 90%;
+  background-image: url('/assets/images/business-finance-2.png');
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.page-home-2 .hm2-hero-grid {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.page-home-2 .hm2-hero-content {
+  flex: 1 1 60%;
+  padding: 40px 0;
+}
+
+.page-home-2 .hm2-hero-title {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: #3162C9;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.page-home-2 .hm2-hero-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #151515;
+  letter-spacing: 0.8px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   2. BUTTONS
+   ========================================================================== */
+.page-home-2 .hm2-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.page-home-2 .hm2-btn-primary {
+  background-color: #3162C9;
+  color: #ffffff;
+  box-shadow: -3px 3px 25px rgba(0,0,0,0.1);
+}
+
+.page-home-2 .hm2-btn-primary:hover {
+  background-color: #151515;
+  transform: translateY(-2px);
+}
+
+.page-home-2 .hm2-btn-secondary {
+  background-color: #16AAF0;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(22, 170, 240, 0.3);
+}
+
+.page-home-2 .hm2-btn-secondary:hover {
+  background-color: #151515;
+  transform: translateY(-2px);
+}
+
+.page-home-2 .hm2-btn-secondary svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   3. ABOUT SECTION
+   ========================================================================== */
+.page-home-2 .hm2-about-section {
+  padding: 100px 0;
+}
+
+.page-home-2 .hm2-about-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.page-home-2 .hm2-about-left {
+  flex: 0 0 35%;
+  padding-right: 40px;
+}
+
+.page-home-2 .hm2-section-title {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 37px;
+  font-weight: 600;
+  color: #151515;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.page-home-2 .hm2-section-title.hm2-black {
+  color: #000000;
+}
+
+.page-home-2 .hm2-about-right {
+  flex: 1 1 65%;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  color: #000000;
+  padding-top: 10px;
+}
+
+/* ==========================================================================
+   4. PRODUCTS SECTION
+   ========================================================================== */
+.page-home-2 .hm2-products-section {
+  padding-bottom: 100px;
+}
+
+.page-home-2 .hm2-products-grid {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.page-home-2 .hm2-icon-grid {
+  flex: 1 1 65%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.page-home-2 .hm2-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  width: 110px;
+}
+
+.page-home-2 .hm2-icon-item img {
+  width: 73px;
+  height: 80px;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-home-2 .hm2-icon-item:hover img {
+  transform: translateY(-3px);
+  box-shadow: 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.page-home-2 .hm2-icon-item span {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #3162C9;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.page-home-2 .hm2-products-text {
+  flex: 0 0 35%;
+  padding-left: 40px;
+}
+
+.page-home-2 .hm2-products-text p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  color: #000000;
+}
+
+/* ==========================================================================
+   5. NEWSLETTER SECTION
+   ========================================================================== */
+.page-home-2 .hm2-newsletter-section {
+  padding: 50px 0 100px;
+}
+
+.page-home-2 .hm2-newsletter-wrapper {
+  display: flex;
+  align-items: stretch;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-home-2 .hm2-newsletter-bg {
+  background-color: #3162C9;
+  border-radius: 0 30px 0 0;
+  padding: 100px 50px;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+}
+
+.page-home-2 .hm2-newsletter-bg h2 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.page-home-2 .hm2-newsletter-card {
+  background-color: #ffffff;
+  border-radius: 30px 0 30px 0;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.08);
+  padding: 70px 30px;
+  flex: 1 1 50%;
+  margin-left: -30px; /* Overlaps the blue box */
+  margin-top: 50px;
+  margin-bottom: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.page-home-2 .hm2-newsletter-form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-home-2 .hm2-input {
+  width: 100%;
+  padding: 15px 25px;
+  border: 1px solid rgba(22, 170, 240, 0.5);
+  border-radius: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+  transition: border-color 0.2s;
+}
+
+.page-home-2 .hm2-input:focus {
+  border-color: #16AAF0;
+}
+
+.page-home-2 .hm2-newsletter-form .hm2-btn {
+  width: 100%;
+  padding: 12px;
+  flex-direction: row-reverse; /* Puts icon on the right */
+}
+
+/* ==========================================================================
+   6. RECENT BLOGS SECTION
+   ========================================================================== */
+.page-home-2 .hm2-blogs-section {
+  padding: 50px 0 100px;
+}
+
+.page-home-2 .hm2-blogs-title {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 37px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.page-home-2 .hm2-blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.page-home-2 .hm2-blog-card {
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.page-home-2 .hm2-blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.page-home-2 .hm2-blog-img-wrap {
+  display: block;
+  width: 100%;
+  padding-top: 65%; /* Aspect ratio */
+  position: relative;
+  overflow: hidden;
+}
+
+.page-home-2 .hm2-blog-img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-home-2 .hm2-blog-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.page-home-2 .hm2-blog-content h3 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+}
+
+.page-home-2 .hm2-blog-content h3 a {
+  color: #3162C9;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.page-home-2 .hm2-blog-content h3 a:hover {
+  color: #16AAF0;
+}
+
+.page-home-2 .hm2-blog-content p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.page-home-2 .hm2-blog-meta {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 13px;
+  color: #666;
+  border-top: 1px solid #16AAF0;
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 991px) {
+  .page-home-2 .hm2-hero::after {
+    display: none;
+  }
+
+  .page-home-2 .hm2-hero-grid {
+    text-align: center;
+  }
+
+  .page-home-2 .hm2-hero-content {
+    flex: 1 1 100%;
+  }
+
+  .page-home-2 .hm2-hero-text {
+    margin: 0 auto 30px auto;
+  }
+
+  .page-home-2 .hm2-about-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .page-home-2 .hm2-about-left {
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .page-home-2 .hm2-about-right {
+    text-align: center;
+  }
+
+  .page-home-2 .hm2-products-grid {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .page-home-2 .hm2-icon-grid {
+    justify-content: center;
+  }
+
+  .page-home-2 .hm2-products-text {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .page-home-2 .hm2-newsletter-wrapper {
+    flex-direction: column;
+  }
+
+  .page-home-2 .hm2-newsletter-bg {
+    border-radius: 30px 30px 0 0;
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .page-home-2 .hm2-newsletter-card {
+    margin-left: 0;
+    margin-top: -30px;
+    margin-bottom: 0;
+    border-radius: 0 0 30px 30px;
+    padding: 50px 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .page-home-2 .hm2-blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .page-home-2 .hm2-hero-title {
+    font-size: 32px;
+  }
+
+  .page-home-2 .hm2-section-title {
+    font-size: 28px;
+  }
+
+  .page-home-2 .hm2-newsletter-bg h2 {
+    font-size: 32px;
+  }
+
+  .page-home-2 .hm2-blogs-grid {
+    grid-template-columns: 1fr;
+  }
+}

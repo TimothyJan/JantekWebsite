@@ -13,6 +13,7 @@ import { Ftpmerge } from './pages/ftpmerge/ftpmerge';
 import { Government } from './pages/government/government';
 import { Handkey } from './pages/handkey/handkey';
 import { Healthcare } from './pages/healthcare/healthcare';
+import { Home2 } from './pages/home-2/home-2';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
@@ -23,6 +24,7 @@ import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-att
 import { Jobcosting } from './pages/jobcosting/jobcosting';
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
+
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -39,6 +41,7 @@ export const routes: Routes = [
   { path: 'ftpmerge', component: Ftpmerge },
   { path: 'government', component: Government },
   { path: 'handkey', component: Handkey },
+  { path: 'home-2', component: Home2 },
   { path: 'healthcare', component: Healthcare },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
