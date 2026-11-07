@@ -12,6 +12,7 @@ import { Electriclock } from './pages/electriclock/electriclock';
 import { Ftpmerge } from './pages/ftpmerge/ftpmerge';
 import { Government } from './pages/government/government';
 import { Handkey } from './pages/handkey/handkey';
+import { Healthcare } from './pages/healthcare/healthcare';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
@@ -38,6 +39,7 @@ export const routes: Routes = [
   { path: 'ftpmerge', component: Ftpmerge },
   { path: 'government', component: Government },
   { path: 'handkey', component: Handkey },
+  { path: 'healthcare', component: Healthcare },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
