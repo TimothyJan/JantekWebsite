@@ -1,0 +1,234 @@
+/* ==========================================================================
+   Infojta250-Securakey Page Styles — scoped to .page-infojta250-securakey
+   ========================================================================== */
+
+.page-infojta250-securakey {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-infojta250-securakey .jta-hero {
+  position: relative;
+  background-color: #e0f2fe; /* Light blue fallback */
+  background-image: url('/assets/images/Other-Page-Background-Option-1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.page-infojta250-securakey .jta-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.page-infojta250-securakey .jta-hero-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-infojta250-securakey .jta-hero-title {
+  display: inline-block;
+  background-color: #151515;
+  padding: 8px 16px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. GENERAL CONTAINER & TOP LAYOUT
+   ========================================================================== */
+.page-infojta250-securakey .jta-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-infojta250-securakey .jta-grid-layout {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.page-infojta250-securakey .jta-content-col {
+  flex: 1 1 60%;
+}
+
+.page-infojta250-securakey .jta-image-col {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.page-infojta250-securakey .jta-featured-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+/* Text */
+.page-infojta250-securakey p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ==========================================================================
+   3. FEATURES LIST SECTIONS
+   ========================================================================== */
+.page-infojta250-securakey .jta-features-section {
+  margin-bottom: 40px;
+}
+
+.page-infojta250-securakey .jta-section-title {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #151515;
+  margin-bottom: 20px;
+}
+
+.page-infojta250-securakey .jta-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-infojta250-securakey .jta-feature-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.page-infojta250-securakey .jta-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FAB607; /* Yellow border */
+  border-radius: 50%;
+  color: #FAB607; /* Yellow text */
+  font-size: 12px;
+  margin-right: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.page-infojta250-securakey .jta-feature-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Sub-list styling */
+.page-infojta250-securakey .jta-sub-list {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.page-infojta250-securakey .jta-sub-list li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* ==========================================================================
+   4. SPECIFICATIONS SECTION
+   ========================================================================== */
+.page-infojta250-securakey .jta-specs-section {
+  margin-bottom: 50px;
+}
+
+.page-infojta250-securakey .table-responsive {
+  overflow-x: auto;
+}
+
+.page-infojta250-securakey .jta-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.page-infojta250-securakey .jta-specs-table tr {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.page-infojta250-securakey .jta-specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.page-infojta250-securakey .jta-specs-table td {
+  padding: 12px 15px;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.page-infojta250-securakey .spec-label {
+  width: 30%;
+  color: #000;
+}
+
+.page-infojta250-securakey .spec-value {
+  width: 70%;
+  color: #444;
+}
+
+/* ==========================================================================
+   5. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 767px) {
+  .page-infojta250-securakey .jta-grid-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-infojta250-securakey .jta-image-col {
+    order: -1; /* Move image above text on mobile */
+    margin-bottom: 20px;
+  }
+
+  .page-infojta250-securakey .jta-hero-title {
+    font-size: 18px;
+  }
+
+  .page-infojta250-securakey .jta-feature-item {
+    align-items: flex-start;
+  }
+
+  .page-infojta250-securakey .jta-check-icon {
+    margin-top: 2px;
+  }
+}
