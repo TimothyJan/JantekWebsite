@@ -18,6 +18,7 @@ import { Hospitality } from './pages/hospitality/hospitality';
 import { Infofinger } from './pages/infofinger/infofinger';
 import { Infohand } from './pages/infohand/infohand';
 import { Infojta100 } from './pages/infojta100/infojta100';
+import { Infojta150 } from './pages/infojta150/infojta150';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
@@ -51,6 +52,7 @@ export const routes: Routes = [
   { path: 'infofinger', component: Infofinger },
   { path: 'infohand', component: Infohand },
   { path: 'infojta100', component: Infojta100 },
+  { path: 'infojta150', component: Infojta150 },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
