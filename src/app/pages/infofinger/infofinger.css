@@ -1,0 +1,226 @@
+/* ==========================================================================
+   Infofinger Page Styles — scoped to .page-infofinger
+   ========================================================================== */
+
+.page-infofinger {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-infofinger .info-hero {
+  position: relative;
+  background-color: #e0f2fe; /* Light blue fallback */
+  background-image: url('/assets/images/Other-Page-Background-Option-1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.page-infofinger .info-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.6; /* White overlay to match the faded look in screenshot */
+  z-index: 1;
+}
+
+.page-infofinger .info-hero-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-infofinger .info-hero-title {
+  display: inline-block;
+  background-color: #151515;
+  padding: 8px 16px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. GENERAL CONTAINER & TOP LAYOUT
+   ========================================================================== */
+.page-infofinger .info-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-infofinger .info-grid-layout {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start; /* Align to top instead of center */
+  margin-bottom: 50px;
+}
+
+.page-infofinger .info-content-col {
+  flex: 1 1 60%;
+}
+
+.page-infofinger .info-image-col {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.page-infofinger .info-featured-image img {
+  width: 100%;
+  max-width: 250px; /* Scaled down to match screenshot */
+  height: auto;
+  display: block;
+}
+
+/* Text */
+.page-infofinger p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ==========================================================================
+   3. FEATURES LIST SECTION
+   ========================================================================== */
+.page-infofinger .info-features-section {
+  margin-bottom: 50px;
+}
+
+.page-infofinger .info-features-main-title {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #151515;
+  margin-bottom: 20px;
+}
+
+.page-infofinger .info-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.page-infofinger .info-feature-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.page-infofinger .info-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FAB607; /* Yellow border */
+  border-radius: 50%;
+  color: #FAB607; /* Yellow text */
+  font-size: 12px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.page-infofinger .info-feature-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* ==========================================================================
+   4. SPECIFICATIONS SECTION
+   ========================================================================== */
+.page-infofinger .info-specs-section {
+  margin-bottom: 50px;
+}
+
+.page-infofinger .info-specs-title {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #151515;
+  margin-bottom: 20px;
+}
+
+.page-infofinger .table-responsive {
+  overflow-x: auto;
+}
+
+.page-infofinger .info-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.page-infofinger .info-specs-table tr {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.page-infofinger .info-specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.page-infofinger .info-specs-table td {
+  padding: 12px 15px;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.page-infofinger .spec-label {
+  width: 30%;
+  color: #000;
+}
+
+.page-infofinger .spec-value {
+  width: 70%;
+  color: #444;
+}
+
+/* ==========================================================================
+   5. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 767px) {
+  .page-infofinger .info-grid-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-infofinger .info-image-col {
+    order: -1; /* Move image above text on mobile */
+    margin-bottom: 20px;
+  }
+
+  .page-infofinger .info-hero-title {
+    font-size: 18px;
+  }
+
+  .page-infofinger .info-feature-item {
+    align-items: flex-start; /* Align top if text wraps */
+  }
+
+  .page-infofinger .info-check-icon {
+    margin-top: 2px;
+  }
+}
