@@ -19,6 +19,12 @@ import { Infofinger } from './pages/infofinger/infofinger';
 import { Infohand } from './pages/infohand/infohand';
 import { Infojta100 } from './pages/infojta100/infojta100';
 import { Infojta150 } from './pages/infojta150/infojta150';
+import { Infojta250 } from './pages/infojta250/infojta250';
+import { Infojta250Awid } from './pages/infojta250-awid/infojta250-awid';
+import { Infojta250Hid } from './pages/infojta250-hid/infojta250-hid';
+import { Infojta250Ioprox } from './pages/infojta250-ioprox/infojta250-ioprox';
+import { Infojta250Mifare } from './pages/infojta250-mifare/infojta250-mifare';
+import { Infojta250Securakey } from './pages/infojta250-securakey/infojta250-securakey';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
@@ -29,6 +35,7 @@ import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-att
 import { Jobcosting } from './pages/jobcosting/jobcosting';
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
+
 
 
 export const routes: Routes = [
@@ -53,6 +60,12 @@ export const routes: Routes = [
   { path: 'infohand', component: Infohand },
   { path: 'infojta100', component: Infojta100 },
   { path: 'infojta150', component: Infojta150 },
+  { path: 'infojta250', component: Infojta250 },
+  { path: 'infojta250-awid', component: Infojta250Awid },
+  { path: 'infojta250-hid', component: Infojta250Hid },
+  { path: 'infojta250-ioprox', component: Infojta250Ioprox },
+  { path: 'infojta250-mifare', component: Infojta250Mifare },
+  { path: 'infojta250-securakey', component: Infojta250Securakey },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
