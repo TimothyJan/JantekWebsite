@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Infohand Page Styles — scoped to .page-infohand
+   ========================================================================== */
+
+.page-infohand {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-infohand .hand-hero {
+  position: relative;
+  background-color: #e0f2fe; /* Light blue fallback */
+  background-image: url('/assets/images/Other-Page-Background-Option-1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.page-infohand .hand-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.page-infohand .hand-hero-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-infohand .hand-hero-title {
+  display: inline-block;
+  background-color: #151515;
+  padding: 8px 16px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. GENERAL CONTAINER & TOP LAYOUT
+   ========================================================================== */
+.page-infohand .hand-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-infohand .hand-grid-layout {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.page-infohand .hand-content-col {
+  flex: 1 1 55%;
+}
+
+.page-infohand .hand-image-col {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.page-infohand .hand-featured-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+/* Text */
+.page-infohand p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ==========================================================================
+   3. FEATURES LIST SECTIONS
+   ========================================================================== */
+.page-infohand .hand-features-section {
+  margin-bottom: 40px;
+}
+
+.page-infohand .hand-section-title {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #151515;
+  margin-bottom: 20px;
+}
+
+.page-infohand .hand-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-infohand .hand-feature-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.page-infohand .hand-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FAB607; /* Yellow border */
+  border-radius: 50%;
+  color: #FAB607; /* Yellow text */
+  font-size: 12px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.page-infohand .hand-feature-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* ==========================================================================
+   4. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 767px) {
+  .page-infohand .hand-grid-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-infohand .hand-image-col {
+    order: -1; /* Move image above text on mobile */
+    margin-bottom: 20px;
+  }
+
+  .page-infohand .hand-hero-title {
+    font-size: 18px;
+  }
+
+  .page-infohand .hand-feature-item {
+    align-items: flex-start; /* Align top if text wraps */
+  }
+
+  .page-infohand .hand-check-icon {
+    margin-top: 2px;
+  }
+}

@@ -16,6 +16,7 @@ import { Healthcare } from './pages/healthcare/healthcare';
 import { Home2 } from './pages/home-2/home-2';
 import { Hospitality } from './pages/hospitality/hospitality';
 import { Infofinger } from './pages/infofinger/infofinger';
+import { Infohand } from './pages/infohand/infohand';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
@@ -26,8 +27,6 @@ import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-att
 import { Jobcosting } from './pages/jobcosting/jobcosting';
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
-
-
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -48,6 +47,7 @@ export const routes: Routes = [
   { path: 'home-2', component: Home2 },
   { path: 'hospitality', component: Hospitality },
   { path: 'infofinger', component: Infofinger },
+  { path: 'infohand', component: Infohand },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
