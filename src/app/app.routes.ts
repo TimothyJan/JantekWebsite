@@ -14,6 +14,7 @@ import { Government } from './pages/government/government';
 import { Handkey } from './pages/handkey/handkey';
 import { Healthcare } from './pages/healthcare/healthcare';
 import { Home2 } from './pages/home-2/home-2';
+import { Hospitality } from './pages/hospitality/hospitality';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
@@ -41,8 +42,9 @@ export const routes: Routes = [
   { path: 'ftpmerge', component: Ftpmerge },
   { path: 'government', component: Government },
   { path: 'handkey', component: Handkey },
-  { path: 'home-2', component: Home2 },
   { path: 'healthcare', component: Healthcare },
+  { path: 'home-2', component: Home2 },
+  { path: 'hospitality', component: Hospitality },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
