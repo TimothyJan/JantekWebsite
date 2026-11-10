@@ -28,6 +28,7 @@ import { Infojta250Securakey } from './pages/infojta250-securakey/infojta250-sec
 import { Infojta550 } from './pages/infojta550/infojta550';
 import { JantekAccessControlSecuritySystem } from './pages/jantek-access-control-security-system/jantek-access-control-security-system';
 import { JantekJupiterClientServerVersionTimeAndAttendanceSoftware } from './pages/jantek-jupiter-client-server-version-time-and-attendance-software/jantek-jupiter-client-server-version-time-and-attendance-software';
+import { JantekJupiterSmallBusinessEditionTimeAndAttendanceSoftware } from './pages/jantek-jupiter-small-business-edition-time-and-attendance-software/jantek-jupiter-small-business-edition-time-and-attendance-software';
 
 import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-attendance-add-on-modules/jantek-time-and-attendance-add-on-modules';
 import { JantekJupiterTimeAndAttendanceSystem } from './pages/jantek-jupiter-time-and-attendance-system/jantek-jupiter-time-and-attendance-system';
@@ -69,6 +70,7 @@ export const routes: Routes = [
   { path: 'infojta550', component: Infojta550 },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-jupiter-client-server-version-time-and-attendance-software', component: JantekJupiterClientServerVersionTimeAndAttendanceSoftware},
+  { path: 'jantek-jupiter-small-business-edition-time-and-attendance-software', component: JantekJupiterSmallBusinessEditionTimeAndAttendanceSoftware},
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jobcosting', component: Jobcosting },

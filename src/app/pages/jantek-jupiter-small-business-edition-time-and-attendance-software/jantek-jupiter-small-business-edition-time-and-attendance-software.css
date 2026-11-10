@@ -1,0 +1,299 @@
+/* ==========================================================================
+   Jupiter SX Page Styles — scoped to .page-jupiter-sx
+   ========================================================================== */
+
+.page-jupiter-sx {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-jupiter-sx .sx-hero {
+  position: relative;
+  background-color: #e0f2fe;
+  background-image: url('/assets/images/pexels-olia-danilevich-4974914.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.page-jupiter-sx .sx-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.page-jupiter-sx .sx-hero-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-jupiter-sx .sx-hero-title {
+  display: inline-block;
+  background-color: rgba(21, 21, 21, 0.8);
+  padding: 10px 20px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. GENERAL LAYOUT
+   ========================================================================== */
+.page-jupiter-sx .sx-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-jupiter-sx .sx-grid-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+/* ==========================================================================
+   3. INTRO SECTION
+   ========================================================================== */
+.page-jupiter-sx .sx-content-col {
+  flex: 1 1 55%;
+}
+
+.page-jupiter-sx .sx-content-col h2 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #151515;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.page-jupiter-sx .sx-content-col p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.page-jupiter-sx .text-link {
+  color: #3162C9;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.page-jupiter-sx .sx-image-col {
+  flex: 1 1 45%;
+}
+
+.page-jupiter-sx .sx-image-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ==========================================================================
+   4. SOFTWARE FEATURES SECTION
+   ========================================================================== */
+.page-jupiter-sx .sx-features-section {
+  margin-bottom: 60px;
+}
+
+.page-jupiter-sx .sx-section-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #151515;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-jupiter-sx .sx-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.page-jupiter-sx .sx-feature-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.page-jupiter-sx .sx-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FAB607;
+  border-radius: 50%;
+  color: #FAB607;
+  font-size: 12px;
+  margin-right: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.page-jupiter-sx .sx-feature-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.page-jupiter-sx .sx-sub-list {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.page-jupiter-sx .sx-sub-list li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* ==========================================================================
+   5. QUICK LINKS / BUTTONS SECTION
+   ========================================================================== */
+.page-jupiter-sx .sx-quick-links-section {
+  padding-top: 20px;
+}
+
+.page-jupiter-sx .sx-links-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-jupiter-sx .sx-links-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.page-jupiter-sx .sx-links-row.sx-four-cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+/* Buttons (Top Row) */
+.page-jupiter-sx .sx-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff !important;
+  transition: opacity 0.3s;
+}
+
+.page-jupiter-sx .sx-btn:hover {
+  opacity: 0.9;
+}
+
+.page-jupiter-sx .sx-btn-blue {
+  background-color: #16AAF0;
+}
+
+.page-jupiter-sx .sx-btn-yellow {
+  background-color: #FAB607;
+}
+
+/* Tiles (Bottom Row) */
+.page-jupiter-sx .sx-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff !important;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 120px;
+}
+
+.page-jupiter-sx .sx-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.page-jupiter-sx .sx-tile-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.page-jupiter-sx .sx-tile-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Tile Colors */
+.page-jupiter-sx .sx-tile-cyan { background-color: #16AAF0; }
+.page-jupiter-sx .sx-tile-blue { background-color: #3162C9; }
+.page-jupiter-sx .sx-tile-orange { background-color: #F35325; }
+.page-jupiter-sx .sx-tile-green { background-color: #81BC06; }
+.page-jupiter-sx .sx-tile-yellow { background-color: #FAB607; }
+
+/* ==========================================================================
+   6. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .page-jupiter-sx .sx-links-row.sx-four-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .page-jupiter-sx .sx-grid-layout {
+    flex-direction: column;
+  }
+
+  .page-jupiter-sx .sx-content-col h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .page-jupiter-sx .sx-hero-title {
+    font-size: 20px;
+  }
+
+  .page-jupiter-sx .sx-links-row.sx-four-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-jupiter-sx .sx-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
