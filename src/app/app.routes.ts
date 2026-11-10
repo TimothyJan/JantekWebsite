@@ -37,6 +37,7 @@ import { JantekProductBrochures } from './pages/jantek-product-brochures/jantek-
 import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-attendance-add-on-modules/jantek-time-and-attendance-add-on-modules';
 import { Jobcosting } from './pages/jobcosting/jobcosting';
 import { Jpt724StandaloneBellTimer } from './pages/jpt-724-standalone-bell-timer/jpt-724-standalone-bell-timer';
+import { Jta250HidTimeClock } from './pages/jta250-hid-time-clock/jta250-hid-time-clock';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
@@ -84,6 +85,7 @@ export const routes: Routes = [
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jobcosting', component: Jobcosting },
   { path: 'jpt-724-standalone-bell-timer', component: Jpt724StandaloneBellTimer },
+  { path: 'jta250-hid-time-clock', component: Jta250HidTimeClock },
   { path: 'payroll-interfaces', component: PayrollInterfaces },
   { path: 'products', component: Products },
   { path: 'request-an-rma', component: RequestAnRma },
