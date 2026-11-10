@@ -1,0 +1,281 @@
+/* ==========================================================================
+   Jupiter Standard Page Styles — scoped to .page-jupiter-standard
+   ========================================================================== */
+
+.page-jupiter-standard {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-jupiter-standard .js-hero {
+  position: relative;
+  background-color: #e0f2fe;
+  background-image: url('/assets/images/software-development-g7e85f9a4f_1280.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.page-jupiter-standard .js-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.page-jupiter-standard .js-hero-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-jupiter-standard .js-hero-title {
+  display: inline-block;
+  background-color: rgba(21, 21, 21, 0.8);
+  padding: 10px 20px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. GENERAL LAYOUT
+   ========================================================================== */
+.page-jupiter-standard .js-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-jupiter-standard .js-grid-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.page-jupiter-standard .js-grid-layout.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ==========================================================================
+   3. INTRO SECTION
+   ========================================================================== */
+.page-jupiter-standard .js-title-col {
+  flex: 1 1 40%;
+}
+
+.page-jupiter-standard .js-title-col h2 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #151515;
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.page-jupiter-standard .js-title-col .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.page-jupiter-standard .js-description-col {
+  flex: 1 1 60%;
+}
+
+.page-jupiter-standard .js-description-col p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.page-jupiter-standard .js-btn {
+  display: inline-block;
+  background-color: #3162C9;
+  color: #ffffff !important;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(49, 98, 201, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.page-jupiter-standard .js-btn:hover {
+  background-color: #16AAF0;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   4. BENEFITS SECTION
+   ========================================================================== */
+.page-jupiter-standard .js-benefits-section {
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+
+.page-jupiter-standard .js-benefits-col {
+  flex: 1 1 55%;
+}
+
+.page-jupiter-standard .js-sub-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3162C9;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.page-jupiter-standard .js-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Updated item styling to match screenshot */
+.page-jupiter-standard .js-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff; /* White background */
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0; /* Subtle border */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02); /* Subtle shadow */
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Check icon style */
+.page-jupiter-standard .js-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FAB607;
+  border-radius: 50%;
+  color: #FAB607;
+  font-size: 12px;
+  margin-right: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   5. IMAGE COLLAGE
+   ========================================================================== */
+.page-jupiter-standard .js-image-col {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.page-jupiter-standard .js-image-collage {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 500px; /* Fixed height to contain absolute images */
+}
+
+.page-jupiter-standard .js-image-collage img {
+  border: 8px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: absolute;
+  object-fit: cover;
+}
+
+/* Top Image */
+.page-jupiter-standard .js-image-collage .img-top {
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 200px;
+  z-index: 1;
+}
+
+/* Middle Image */
+.page-jupiter-standard .js-image-collage .img-middle {
+  top: 150px;
+  left: 0;
+  width: 60%;
+  height: 220px;
+  z-index: 2;
+  border-right-width: 12px; /* Slightly thicker border for overlap effect */
+}
+
+/* Bottom Image */
+.page-jupiter-standard .js-image-collage .img-bottom {
+  bottom: 0;
+  right: 10%;
+  width: 65%;
+  height: 180px;
+  z-index: 3;
+}
+
+/* ==========================================================================
+   6. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 767px) {
+  .page-jupiter-standard .js-grid-layout,
+  .page-jupiter-standard .js-grid-layout.reverse {
+    flex-direction: column;
+  }
+
+  .page-jupiter-standard .js-title-col {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .page-jupiter-standard .js-hero-title {
+    font-size: 20px;
+  }
+
+  .page-jupiter-standard .js-image-collage {
+    height: 400px;
+    margin-top: 30px;
+  }
+
+  .page-jupiter-standard .js-image-collage .img-top {
+    height: 150px;
+  }
+
+  .page-jupiter-standard .js-image-collage .img-middle {
+    top: 100px;
+    height: 180px;
+  }
+
+  .page-jupiter-standard .js-image-collage .img-bottom {
+    height: 140px;
+  }
+}
