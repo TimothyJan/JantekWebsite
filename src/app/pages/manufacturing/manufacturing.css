@@ -1,0 +1,271 @@
+/* ==========================================================================
+   Manufacturing Page Styles
+   ========================================================================== */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 1. Page Banner */
+.page-banner {
+    background-size: cover;
+    background-position: center center;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-title {
+    font-family: "Exo 2", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* 2. Shared Content Section Styles */
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.column-text {
+    flex: 1;
+}
+
+.column-image-composition,
+.column-image {
+    flex: 1;
+}
+
+.column-text h2, .column-text h3, .column-text h4 {
+    font-family: "Nunito", sans-serif;
+    color: #3162C9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+.column-text h2 { font-size: 24px; }
+.column-text h3 { font-size: 18px; }
+.column-text h4 { font-size: 14px; color: #16AAF0; }
+
+.column-text p, .column-text li {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.column-text ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* 3. Specific Section Styling */
+.intro-section {
+    background-color: #ffffff;
+}
+
+.intro-section .column-text h2 {
+    font-size: 22px;
+    color: #3162C9;
+}
+
+.intro-section .column-text h3 {
+    font-size: 18px;
+    color: #3162C9;
+}
+
+.column-image-composition {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.column-image-composition .img-large {
+    width: 80%;
+    align-self: flex-end;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.column-image-composition .img-small {
+    width: 60%;
+    align-self: flex-start;
+    margin-top: -30%;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+/* Compliance & Accrual Section */
+.compliance-section, .accrual-section {
+    background-color: #f9f9f9;
+}
+
+.compliance-section .note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.column-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensure images in Compliance/Accrual sections fill their container */
+.compliance-section .column-image img,
+.accrual-section .column-image img,
+.accuracy-section .column-image img {
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+/* Accuracy Section */
+.accuracy-section {
+    background-color: #ffffff;
+}
+
+/* 4. Summary Section (Updated to match screenshot) */
+.summary-section {
+    background-color: #f4f5f7; /* Light gray background for the whole section */
+    padding: 60px 0;
+}
+
+.summary-box {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Ensures the yellow block stays within the border radius */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.summary-text-content {
+    padding: 35px 40px;
+    flex: 1;
+}
+
+.summary-text-content h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #3162C9; /* Blue primary color */
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: none; /* Override global h4 uppercase */
+}
+
+.summary-text-content p {
+    margin-bottom: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.summary-icon-block {
+    background-color: #FAB607; /* Yellow accent color */
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.summary-icon-block svg {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* 5. Responsive Design */
+@media (max-width: 992px) {
+    .content-section .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* For the intro section, image on top, text below */
+    .intro-section .container {
+        flex-direction: column-reverse;
+    }
+
+    .column-image-composition {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .column-image {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-title {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .column-text h2, .column-text h3, .column-text h4 {
+        text-align: center;
+    }
+    .column-text p, .column-text li {
+        text-align: left; /* Keep body text left-aligned for readability */
+    }
+
+    /* Responsive Summary Box */
+    .summary-box {
+        flex-direction: column;
+    }
+
+    .summary-icon-block {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .summary-text-content {
+        padding: 25px;
+    }
+
+    .summary-text-content h4 {
+        text-align: left;
+    }
+}

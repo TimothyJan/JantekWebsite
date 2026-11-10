@@ -40,13 +40,14 @@ import { Jpt724StandaloneBellTimer } from './pages/jpt-724-standalone-bell-timer
 import { Jta250HidTimeClock } from './pages/jta250-hid-time-clock/jta250-hid-time-clock';
 import { Jta250RosslareFaceReaderTimeClock } from './pages/jta250-rosslare-face-reader-time-clock/jta250-rosslare-face-reader-time-clock';
 import { Jta550RosslareTimeClockWithTemperatureScanner } from './pages/jta550-rosslare-time-clock-with-temperature-scanner/jta550-rosslare-time-clock-with-temperature-scanner';
-
+import { Manufacturing } from './pages/manufacturing/manufacturing';
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { Products } from './pages/products/products';
 import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
+
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -91,6 +92,7 @@ export const routes: Routes = [
   { path: 'jta250-hid-time-clock', component: Jta250HidTimeClock },
   { path: 'jta250-rosslare-face-reader-time-clock', component: Jta250RosslareFaceReaderTimeClock },
   { path: 'jta550-rosslare-time-clock-with-temperature-scanner', component: Jta550RosslareTimeClockWithTemperatureScanner },
+  { path: 'manufacturing', component: Manufacturing },
   { path: 'payroll-interfaces', component: PayrollInterfaces },
   { path: 'products', component: Products },
   { path: 'request-an-rma', component: RequestAnRma },
