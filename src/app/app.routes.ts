@@ -39,6 +39,7 @@ import { Products } from './pages/products/products';
 import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
+import { JantekJupiterWebTimeTimeAndAttendanceSaasSoftware } from './pages/jantek-jupiter-web-time-time-and-attendance-saas-software/jantek-jupiter-web-time-time-and-attendance-saas-software';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -74,6 +75,7 @@ export const routes: Routes = [
   { path: 'jantek-jupiter-small-business-edition-time-and-attendance-software', component: JantekJupiterSmallBusinessEditionTimeAndAttendanceSoftware},
   { path: 'jantek-jupiter-standard-version-time-and-attendance-software', component: JantekJupiterStandardVersionTimeAndAttendanceSoftware },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
+  { path: 'jantek-jupiter-web-time-time-and-attendance-saas-software', component: JantekJupiterWebTimeTimeAndAttendanceSaasSoftware },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jobcosting', component: Jobcosting },
   { path: 'payroll-interfaces', component: PayrollInterfaces },
