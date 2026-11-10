@@ -39,6 +39,7 @@ import { Jobcosting } from './pages/jobcosting/jobcosting';
 import { Jpt724StandaloneBellTimer } from './pages/jpt-724-standalone-bell-timer/jpt-724-standalone-bell-timer';
 import { Jta250HidTimeClock } from './pages/jta250-hid-time-clock/jta250-hid-time-clock';
 import { Jta250RosslareFaceReaderTimeClock } from './pages/jta250-rosslare-face-reader-time-clock/jta250-rosslare-face-reader-time-clock';
+import { Jta550RosslareTimeClockWithTemperatureScanner } from './pages/jta550-rosslare-time-clock-with-temperature-scanner/jta550-rosslare-time-clock-with-temperature-scanner';
 
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
@@ -89,6 +90,7 @@ export const routes: Routes = [
   { path: 'jpt-724-standalone-bell-timer', component: Jpt724StandaloneBellTimer },
   { path: 'jta250-hid-time-clock', component: Jta250HidTimeClock },
   { path: 'jta250-rosslare-face-reader-time-clock', component: Jta250RosslareFaceReaderTimeClock },
+  { path: 'jta550-rosslare-time-clock-with-temperature-scanner', component: Jta550RosslareTimeClockWithTemperatureScanner },
   { path: 'payroll-interfaces', component: PayrollInterfaces },
   { path: 'products', component: Products },
   { path: 'request-an-rma', component: RequestAnRma },
