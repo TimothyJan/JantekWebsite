@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Merge Module Page Styles
+   ========================================================================== */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 1. Page Banner */
+.page-banner {
+    background-size: cover;
+    background-position: center center;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+/* Optional overlay if your background image is too bright */
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background block behind text */
+    padding: 10px 30px;
+    margin: 0;
+}
+
+/* 2. Shared Content Section Styles */
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.column-text {
+    flex: 1;
+}
+
+.column-image {
+    flex: 1;
+    text-align: right;
+}
+
+.column-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.column-text p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 3. Features Section */
+.features-section {
+    background-color: #ffffff;
+    padding-top: 0;
+}
+
+.section-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-left: 3px solid #FAB607; /* Yellow accent border on the left */
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.feature-icon {
+    flex-shrink: 0;
+    color: #FAB607; /* Yellow icon */
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-item p {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* 4. Responsive Design */
+@media (max-width: 992px) {
+    .content-section .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .column-image {
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-title {
+        font-size: 22px;
+        padding: 8px 20px;
+    }
+
+    .column-text p {
+        text-align: left;
+    }
+
+    .feature-item {
+        padding: 12px 15px;
+    }
+}
