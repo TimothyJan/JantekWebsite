@@ -30,6 +30,7 @@ import { JantekAccessControlSecuritySystem } from './pages/jantek-access-control
 import { JantekJupiterClientServerVersionTimeAndAttendanceSoftware } from './pages/jantek-jupiter-client-server-version-time-and-attendance-software/jantek-jupiter-client-server-version-time-and-attendance-software';
 import { JantekJupiterSmallBusinessEditionTimeAndAttendanceSoftware } from './pages/jantek-jupiter-small-business-edition-time-and-attendance-software/jantek-jupiter-small-business-edition-time-and-attendance-software';
 import { JantekJupiterStandardVersionTimeAndAttendanceSoftware } from './pages/jantek-jupiter-standard-version-time-and-attendance-software/jantek-jupiter-standard-version-time-and-attendance-software';
+import { JantekPcPunch } from './pages/jantek-pc-punch/jantek-pc-punch';
 
 import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-attendance-add-on-modules/jantek-time-and-attendance-add-on-modules';
 import { JantekJupiterTimeAndAttendanceSystem } from './pages/jantek-jupiter-time-and-attendance-system/jantek-jupiter-time-and-attendance-system';
@@ -76,6 +77,7 @@ export const routes: Routes = [
   { path: 'jantek-jupiter-standard-version-time-and-attendance-software', component: JantekJupiterStandardVersionTimeAndAttendanceSoftware },
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
   { path: 'jantek-jupiter-web-time-time-and-attendance-saas-software', component: JantekJupiterWebTimeTimeAndAttendanceSaasSoftware },
+  { path: 'jantek-pc-punch', component: JantekPcPunch },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jobcosting', component: Jobcosting },
   { path: 'payroll-interfaces', component: PayrollInterfaces },
