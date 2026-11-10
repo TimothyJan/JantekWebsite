@@ -1,0 +1,222 @@
+/* ==========================================================================
+   Access Control Page Styles — scoped to .page-access-control
+   ========================================================================== */
+
+.page-access-control {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-access-control .ac-hero {
+  position: relative;
+  background-color: #e0f2fe;
+  background-image: url('/assets/images/access-control.jpg'); /* Adjust path if needed */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.page-access-control .ac-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.page-access-control .ac-hero-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-access-control .ac-hero-title {
+  display: inline-block;
+  background-color: rgba(21, 21, 21, 0.7);
+  padding: 10px 20px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. GENERAL LAYOUT
+   ========================================================================== */
+.page-access-control .ac-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-access-control .ac-intro-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.page-access-control .ac-intro-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-access-control .ac-section-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #151515;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   3. SOLUTION CARDS
+   ========================================================================== */
+.page-access-control .ac-solutions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.page-access-control .ac-card {
+  display: flex;
+  align-items: stretch;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.page-access-control .ac-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.page-access-control .ac-card-content {
+  flex: 1 1 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-access-control .ac-card-image {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.page-access-control .ac-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content Typography */
+.page-access-control .ac-card-content h3 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.page-access-control .ac-card-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Button Style */
+.page-access-control .ac-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+/* ==========================================================================
+   4. COLOR THEMES FOR CARDS
+   ========================================================================== */
+
+/* Light Blue Theme (PC-Based) */
+.page-access-control .ac-card.light-blue-bg .ac-card-content {
+  background-color: #E4F6FF;
+  color: #333333;
+}
+.page-access-control .ac-card.light-blue-bg h3 { color: #3162C9; }
+.page-access-control .ac-card.light-blue-bg .ac-btn { color: #3162C9; border-color: #3162C9; }
+.page-access-control .ac-card.light-blue-bg .ac-btn:hover { background: #3162C9; color: #fff; }
+
+/* Orange Theme (Biometric) */
+.page-access-control .ac-card.orange-bg .ac-card-content {
+  background-color: #F35325;
+  color: #ffffff;
+}
+.page-access-control .ac-card.orange-bg h3 { color: #ffffff; }
+.page-access-control .ac-card.orange-bg .ac-btn { color: #ffffff; border-color: #ffffff; }
+.page-access-control .ac-card.orange-bg .ac-btn:hover { background: #ffffff; color: #F35325; }
+
+/* Light Green Theme (Hardware) */
+.page-access-control .ac-card.light-green-bg .ac-card-content {
+  background-color: #F8FFE9;
+  color: #333333;
+}
+.page-access-control .ac-card.light-green-bg h3 { color: #81BC06; }
+.page-access-control .ac-card.light-green-bg .ac-btn { color: #81BC06; border-color: #81BC06; }
+.page-access-control .ac-card.light-green-bg .ac-btn:hover { background: #81BC06; color: #fff; }
+
+/* Yellow Theme (Standalone) */
+.page-access-control .ac-card.yellow-bg .ac-card-content {
+  background-color: #FAB607;
+  color: #ffffff;
+}
+.page-access-control .ac-card.yellow-bg h3 { color: #ffffff; }
+.page-access-control .ac-card.yellow-bg .ac-btn { color: #ffffff; border-color: #ffffff; }
+.page-access-control .ac-card.yellow-bg .ac-btn:hover { background: #ffffff; color: #FAB607; }
+
+/* ==========================================================================
+   5. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 767px) {
+  .page-access-control .ac-card,
+  .page-access-control .ac-card.reverse {
+    flex-direction: column;
+  }
+
+  .page-access-control .ac-card-image {
+    min-height: 250px;
+    order: -1; /* Move image above text on mobile */
+  }
+
+  .page-access-control .ac-card-content {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .page-access-control .ac-btn {
+    align-self: center;
+  }
+}
