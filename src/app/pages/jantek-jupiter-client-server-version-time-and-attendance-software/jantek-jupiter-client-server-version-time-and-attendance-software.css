@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Jupiter CS Page Styles — scoped to .page-jupiter-cs
+   ========================================================================== */
+
+.page-jupiter-cs {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-jupiter-cs .cs-hero {
+  position: relative;
+  background-color: #e0f2fe;
+  background-image: url('/assets/images/it-g7eb818f8c_1280.jpg'); /* Adjust path if needed */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.page-jupiter-cs .cs-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.page-jupiter-cs .cs-hero-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-jupiter-cs .cs-hero-title {
+  display: inline-block;
+  background-color: rgba(21, 21, 21, 0.8);
+  padding: 10px 20px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. GENERAL LAYOUT
+   ========================================================================== */
+.page-jupiter-cs .cs-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-jupiter-cs .cs-grid-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.page-jupiter-cs .cs-grid-layout.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ==========================================================================
+   3. INTRO & CHECKLIST SECTION
+   ========================================================================== */
+.page-jupiter-cs .cs-intro-section {
+  margin-bottom: 50px;
+}
+
+.page-jupiter-cs .cs-title-col {
+  flex: 1 1 40%;
+}
+
+.page-jupiter-cs .cs-title-col h2 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #151515;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.page-jupiter-cs .cs-title-col .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.page-jupiter-cs .cs-checklist-col {
+  flex: 1 1 60%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.page-jupiter-cs .checklist-intro {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.page-jupiter-cs .cs-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.page-jupiter-cs .cs-checklist li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.page-jupiter-cs .checklist-footer {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* ==========================================================================
+   4. DESCRIPTION SECTION
+   ========================================================================== */
+.page-jupiter-cs .cs-description-section {
+  margin-bottom: 60px;
+}
+
+.page-jupiter-cs .cs-text-col {
+  flex: 1 1 55%;
+}
+
+.page-jupiter-cs .cs-sub-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3162C9;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.page-jupiter-cs .cs-text-col p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.page-jupiter-cs .cs-image-col {
+  flex: 1 1 45%;
+}
+
+.page-jupiter-cs .cs-image-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ==========================================================================
+   5. ADVANTAGES SECTION
+   ========================================================================== */
+.page-jupiter-cs .cs-advantages-section {
+  margin-bottom: 50px;
+}
+
+.page-jupiter-cs .cs-section-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #151515;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-jupiter-cs .cs-adv-text-col {
+  flex: 1 1 50%;
+}
+
+.page-jupiter-cs .cs-adv-text-col p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.page-jupiter-cs .cs-adv-list-col {
+  flex: 1 1 50%;
+}
+
+/* Feature List with colored background */
+.page-jupiter-cs .cs-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.page-jupiter-cs .cs-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #333;
+  background-color: #FFF8E1; /* Light yellow background from screenshot */
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #FFE082;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.page-jupiter-cs .cs-btn {
+  display: inline-block;
+  background-color: #3162C9;
+  color: #ffffff !important;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(49, 98, 201, 0.3);
+  transition: all 0.3s ease;
+}
+
+.page-jupiter-cs .cs-btn:hover {
+  background-color: #16AAF0;
+  transform: translateY(-2px);
+}
+
+/* Check icon style */
+.page-jupiter-cs .cs-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FAB607;
+  border-radius: 50%;
+  color: #FAB607;
+  font-size: 12px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ==========================================================================
+   6. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 767px) {
+  .page-jupiter-cs .cs-grid-layout,
+  .page-jupiter-cs .cs-grid-layout.reverse {
+    flex-direction: column;
+  }
+
+  .page-jupiter-cs .cs-title-col {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .page-jupiter-cs .cs-image-col {
+    margin-top: 20px;
+  }
+
+  .page-jupiter-cs .cs-hero-title {
+    font-size: 20px;
+  }
+}
