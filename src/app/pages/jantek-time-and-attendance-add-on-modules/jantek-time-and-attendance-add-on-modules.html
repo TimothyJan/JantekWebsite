@@ -1,1 +1,378 @@
-<p>jantek-time-and-attendance-add-on-modules works!</p>
+<div class="page-add-on-modules">
+
+  <!-- ============================ HERO SECTION ============================ -->
+  <section class="jta-hero">
+    <div class="jta-hero-overlay"></div>
+    <div class="jta-hero-container">
+      <h1 class="jta-hero-title">ADD-ON MODULES OVERVIEW</h1>
+    </div>
+  </section>
+
+  <!-- ============================ INTRO SECTION ============================ -->
+  <section class="intro-section">
+    <div class="jta-container">
+      <p>An ever increasing list of optional modules makes the Jupiter Time & Attendance software the most versatile system available. Choices include "virtual" punch options that require no specialized time clock hardware, data merge, and Web-enabled modules that allow editing of timecards and printing of reports from remote locations through the Internet.</p>
+    </div>
+  </section>
+
+  <!-- ============================ MODULES FOR JUPITER SOFTWARE ============================ -->
+  <section class="modules-title-section">
+    <div class="jta-container">
+      <h2>Add-on Modules<br>for Jupiter Software</h2>
+    </div>
+  </section>
+
+  <section class="modules-list-section">
+    <div class="jta-container">
+
+      <!-- 1. Accrual Module -->
+      <div class="module-card green-bg">
+        <div class="module-content">
+          <h3>ACCRUAL MODULE</h3>
+          <p>Automatically calculates benefit hours such as sick and vacation time based on your company's policies and restrictions. The system performs availability checks when entering these hours at the time card edit screen, preventing the use and payment of hours not yet earned. Accrual reports display the number of hours accrued, earned, used and available for review by supervisors and management.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/accrual-module-graphic.png" alt="Accrual Module">
+        </div>
+      </div>
+
+      <!-- 2. Employee Web Time Entry -->
+      <div class="module-card light-blue-bg reverse">
+        <div class="module-content">
+          <h3>EMPLOYEE WEB TIME ENTRY</h3>
+          <p>With the Employee Time Entry program, employees can</p>
+          <ul>
+            <li>Enter their own start and end work times,</li>
+            <li>View their hours for the current and previous pay periods,</li>
+            <li>Check the amount of benefit hours available (requires the optional accrual module).</li>
+            <li>View their work schedule for the current and previous pay periods.</li>
+          </ul>
+          <p>This is an essential tool for those employees working from home, or from a remote job site, when they do not have access to a time clock to punch In or Out.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/clock-web-entry.png" alt="Employee Web Time Entry">
+        </div>
+      </div>
+
+      <!-- 3. Employee Self Service Module -->
+      <div class="module-card orange-bg">
+        <div class="module-content">
+          <h3>EMPLOYEE SELF SERVICE MODULE</h3>
+          <p>The employee (& supervisor) can view the employee's worked hours, personal hours, earnings, and shift/schedule for the current and previous pay periods.</p>
+          <p>The employee's available accrued hours (Sick, Vacation, etc.) can also be viewed if your Jantek software has the accrual module.</p>
+          <p>The Employee Self Service software allows employees to request Paid Time Off through an easy-to-use interface. An employee can also see whether a request has been approved or denied.</p>
+          <p>Supervisors use a separate interface for viewing employee requests and can approve or reject these requests as necessary. Once a request has been approved, it is automatically posted into the employee's time card.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/man-working-laptop.png" alt="Employee Self Service">
+        </div>
+      </div>
+
+      <!-- 4. Vacation Request/Approval -->
+      <div class="module-card light-blue-bg reverse">
+        <div class="module-content">
+          <h3>VACATION REQUEST/APPROVAL</h3>
+          <p>The Vacation Request/Approval module allows for employees to directly request vacation or PTO through a simple interface. Employees can login and request time under any Jantek pay code. </p>
+          <p>Supervisors use a separate interface for viewing employee requests and can approve or reject these requests as necessary. Once a request has been approved, it can then be posted into the employee's time card through the same interface.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/vacation-request.png" alt="Vacation Request">
+        </div>
+      </div>
+
+      <!-- 5. Lock-Out Module -->
+      <div class="module-card green-bg">
+        <div class="module-content">
+          <h3>LOCK-OUT MODULE</h3>
+          <p>Lock-out Module will prevent employees from clock in early and/or clock out late. It can prevent employees from punch IN/OUT outside their assigned shift.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/lock-out.png" alt="Lock-Out Module">
+        </div>
+      </div>
+
+      <!-- 6. Door Access Control -->
+      <div class="module-card orange-bg reverse">
+        <div class="module-content">
+          <h3>DOOR ACCESS CONTROL</h3>
+          <p>Use the same time card for door access control. Electric locks can be connected to our card reader to trigger a door to open with a valid time card. Program who can access which door at what time & what day. View or print door access history report from Jantek software. </p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/door-access.png" alt="Door Access Control">
+        </div>
+      </div>
+
+      <!-- 7. Payroll Interface -->
+      <div class="module-card light-blue-bg">
+        <div class="module-content">
+          <h3>PAYROLL INTERFACE</h3>
+          <p>Over 190 payroll interfaces are available, allowing connectivity to your company's payroll service provider or in-house payroll system. Available interfaces include ADP, Paychex, Evolution, Millennium and QuickBooks. Payroll interfaces ensure data transfers are 100% accurate, save valuable employee time and eliminate human error.</p>
+          <a [routerLink]="['/payroll-interfaces']" class="module-btn">Currently Available Payroll Interfaces &rarr;</a>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/payroll-interface.png" alt="Payroll Interface">
+        </div>
+      </div>
+
+      <!-- 8. Bell Scheduling -->
+      <div class="module-card green-bg reverse">
+        <div class="module-content">
+          <h3>BELL SCHEDULING</h3>
+          <p>Connect your Jantek time clock to an electric bell for automatic ringing. Different ring times can be programmed for each day of the week.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/bell-scheduling.png" alt="Bell Scheduling">
+        </div>
+      </div>
+
+      <!-- 9. Lunch Lock-out -->
+      <div class="module-card orange-bg">
+        <div class="module-content">
+          <h3>LUNCH LOCK-OUT</h3>
+          <p>This option will prevent employees from clocking back IN early from Lunch. Employees must take minimum 30 minutes lunch. Lunch Lock-out does not work across multiple time clocks. Employees must use the same time clock for both lunch punches. E-mail your time clock reader status report to support@jantek.com to see if your existing Jantek time clock supports Lunch Lock-out or not.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/lunch-lockout.png" alt="Lunch Lock-out">
+        </div>
+      </div>
+
+      <!-- 10. PBJ Report Export -->
+      <div class="module-card light-blue-bg reverse">
+        <div class="module-content">
+          <h3>PBJ REPORT EXPORT</h3>
+          <p>Payroll Based Journal report exporting software for Nursing Home to meet ACA Requirement.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/pbj-report.png" alt="PBJ Report Export">
+        </div>
+      </div>
+
+      <!-- 11. Import Schedule Utility -->
+      <div class="module-card green-bg">
+        <div class="module-content">
+          <h3>IMPORT SCHEDULE UTILITY</h3>
+          <p>Work schedule can be import to Jantek Jupiter software in Excel file format. Supervisors and employees do not need to have access to Jantek Jupiter software to create work schedule. </p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/import-schedule.png" alt="Import Schedule Utility">
+        </div>
+      </div>
+
+      <!-- 12. Punch Questionnaire (Attestation) -->
+      <div class="module-card orange-bg reverse">
+        <div class="module-content">
+          <h3>PUNCH QUESTIONNAIRE (ATTESTATION)</h3>
+          <p>Jantek Punch Questionnaire (Attestation) module allows employees to confirm meal break, have received, understood, and acknowledged certain information or requirements.<br>This option is available for Jantek FaceSCAN JTA550, and FaceSCAN JTA180 time clocks.</p>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/punch-questionnaire.png" alt="Punch Questionnaire">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ VIRTUAL PUNCH OPTIONS ============================ -->
+  <section class="modules-title-section">
+    <div class="jta-container">
+      <h2>Virtual Punch Options</h2>
+    </div>
+  </section>
+
+  <section class="modules-list-section">
+    <div class="jta-container">
+
+      <!-- 1. PC Punch -->
+      <div class="module-card light-blue-bg">
+        <div class="module-content">
+          <h3>PC PUNCH</h3>
+          <p>The PC Punch software utilizes the employee's workstation PC as a data collection device or a dedicated PC may be used for employees to record their hours worked. </p>
+          <p>Eliminates long lines at the time clock and the need for time clock and badges altogether.</p>
+          <div class="button-group">
+            <a [routerLink]="['/jantek-pc-punch']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/PC-Punch.png" alt="PC Punch">
+        </div>
+      </div>
+
+      <!-- 2. Web Punch -->
+      <div class="module-card green-bg reverse">
+        <div class="module-content">
+          <h3>WEB PUNCH</h3>
+          <p>Employees can punch IN and OUT through the Internet or company intranet using a web browser. It integrates directly to the JTA database on the server, eliminating the need to collect data. </p>
+          <p>In addition, powerful messaging features alert users when there are unviewed public and/or private messages. Employees can also review total hours worked in the pay period and previous punches.</p>
+          <p>Web Punch utilizes a 3-tier architecture to give excellent performance on even a low speed network as the entire calculation engine and business logic run solely on the server machine.</p>
+          <p>Web Punch is also available in a SQL version, compatible with the Jupiter 9.0 CS software.</p>
+          <div class="button-group">
+            <a [routerLink]="['/webpunch']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/Web-Punch.png" alt="Web Punch">
+        </div>
+      </div>
+
+      <!-- 3. Web Punch CS -->
+      <div class="module-card orange-bg">
+        <div class="module-content">
+          <h3>WEB PUNCH CS</h3>
+          <p>Employees can punch IN and OUT through the Internet or company intranet using a web browser. It integrates directly to the SQL database, eliminating the need to collect data. </p>
+          <p>In addition, powerful messaging features alert users when there are unviewed public and/or private messages. Employees can also review total hours worked in the pay period and previous punches.</p>
+          <p>Web Punch CS utilizes a 3-tier architecture to give excellent performance on even a low speed network as the entire calculation engine and business logic run solely on the server machine.</p>
+          <p>Web Punch is also available in a non-SQL version, compatible with the standard Jupiter Time & Attendance software.</p>
+          <div class="button-group">
+            <a [routerLink]="['/webpunchcs']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/web-punch-cs.png" alt="Web Punch CS">
+        </div>
+      </div>
+
+      <!-- 4. Phone Punch -->
+      <div class="module-card light-blue-bg reverse">
+        <div class="module-content">
+          <h3>PHONE PUNCH</h3>
+          <p>Phone Punch utilizes office equipment that is both familiar and comfortable to everyone. Not only is it convenient, it is also fast and easy to learn and use. </p>
+          <p>Employees simply punch IN and OUT using the keypad on the telephone.</p>
+          <div class="button-group">
+            <a [routerLink]="['/phonepunch']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/phone-punch.png" alt="Phone Punch">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ WEB-ENABLED MODULES ============================ -->
+  <section class="modules-title-section">
+    <div class="jta-container">
+      <h2>Web-Enabled Modules</h2>
+    </div>
+  </section>
+
+  <section class="modules-list-section">
+    <div class="jta-container">
+
+      <!-- 1. Web Timecards -->
+      <div class="module-card green-bg">
+        <div class="module-content">
+          <h3>WEB TIMECARDS</h3>
+          <p>Managers or supervisors don't need to be at the company's location to edit employees' timecards.</p>
+          <p>From any location in the world using a standard Web browser, additions, corrections, and deletions can be made and the information is instantaneously updated in Jupiter 9.0's database. In addition to hours worked, Web Timecards allow users to add earnings and deductions.</p>
+          <div class="button-group">
+            <a [routerLink]="['/webtimecards']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/web-timecards.png" alt="Web Timecards">
+        </div>
+      </div>
+
+      <!-- 2. Web Pay Data -->
+      <div class="module-card orange-bg reverse">
+        <div class="module-content">
+          <h3>WEB PAY DATA</h3>
+          <p>Jantek's Web Pay Data was designed for branch managers, company personnel, and small business owners to enter their employees' pay data through the Internet in any time zone anywhere in the world.</p>
+          <p>The data is instantly updated in the main database, ready for payroll processing.</p>
+          <div class="button-group">
+            <a [routerLink]="['/webpaydata']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/web-pay-data.png" alt="Web Pay Data">
+        </div>
+      </div>
+
+      <!-- 3. Web Reports -->
+      <div class="module-card light-blue-bg">
+        <div class="module-content">
+          <h3>WEB REPORTS</h3>
+          <p>The Web Reports module makes it easy for managers to run reports on employee time and attendance information through the convenience of an intranet or Internet Web page.</p>
+          <p>Management staff can view time card details, total hours worked and exceptions such as tardy arrivals and missing punches. Web Reports allows most up-to-date reports as data is drawn directly from the Jupiter 9.0 database.</p>
+          <div class="button-group">
+            <a [routerLink]="['/webreports']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/web-reports.png" alt="Web Reports">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ DATA MERGE ============================ -->
+  <section class="modules-title-section">
+    <div class="jta-container">
+      <h2>Data Merge</h2>
+    </div>
+  </section>
+
+  <section class="modules-list-section">
+    <div class="jta-container">
+
+      <!-- 1. Merge Module -->
+      <div class="module-card green-bg reverse">
+        <div class="module-content">
+          <h3>MERGE MODULE</h3>
+          <p>The Merge Module allows companies with multiple locations to manage employees time and attendance data from each location, and send a file to the headquarters to be merged for payroll processing. </p>
+          <p>Once the merge files are created, the data can be transported in a variety of methods including floppy disk, email, FTP, and pcAnywhere.*</p>
+          <div class="button-group">
+            <a [routerLink]="['/mergemodule']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/merge-module.png" alt="Merge Module">
+        </div>
+      </div>
+
+      <!-- 2. Web Merge -->
+      <div class="module-card orange-bg">
+        <div class="module-content">
+          <h3>WEB MERGE</h3>
+          <p>Utilizing the latest Internet technologies, Web Merge is an excellent solution for companies with multiple locations that edit their timecard data in each branch, then send the data to the corporate headquarters for payroll processing. </p>
+          <p>Using any standard Web browser, branches can upload their time and attendance data directly to the Jupiter Time & Attendance database.</p>
+          <div class="button-group">
+            <a [routerLink]="['/webmerge']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/web-merge.png" alt="Web Merge">
+        </div>
+      </div>
+
+      <!-- 3. FTP Merge -->
+      <div class="module-card light-blue-bg reverse">
+        <div class="module-content">
+          <h3>FTP MERGE</h3>
+          <p>Similar to other merge options, branches can upload their employees' data to be merged in headquarters' database. FTP Merge utilizes an FTP server which stores all the branches' data until headquarters retrieves and merges it into their Jupiter Time & Attendance database. </p>
+          <p>Eliminating the need for a wide-area network which can be costly, FTP Merge is an excellent solution to many companies' time management needs.</p>
+          <div class="button-group">
+            <a [routerLink]="['/ftpmerge']" class="module-btn">Product Info &rarr;</a>
+            <a [routerLink]="['/time-and-attendance-software']" class="module-btn">Software Features &rarr;</a>
+          </div>
+        </div>
+        <div class="module-image">
+          <img src="assets/images/ftp-merge.png" alt="FTP Merge">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>

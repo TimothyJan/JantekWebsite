@@ -1,0 +1,248 @@
+/* ==========================================================================
+   Add-on Modules Page Styles — scoped to .page-add-on-modules
+   ========================================================================== */
+
+.page-add-on-modules {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.page-add-on-modules .jta-hero {
+  position: relative;
+  background-color: #e0f2fe;
+  background-image: url('/assets/images/Other-Page-Background-Option-1.jpg'); /* Adjust path if needed */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.page-add-on-modules .jta-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.page-add-on-modules .jta-hero-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-add-on-modules .jta-hero-title {
+  display: inline-block;
+  background-color: #3162C9;
+  padding: 10px 20px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. GENERAL LAYOUT
+   ========================================================================== */
+.page-add-on-modules .jta-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-add-on-modules .intro-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.page-add-on-modules .intro-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-add-on-modules .modules-title-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.page-add-on-modules .modules-title-section h2 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #151515;
+  line-height: 1.2;
+}
+
+/* ==========================================================================
+   3. MODULE CARDS
+   ========================================================================== */
+.page-add-on-modules .modules-list-section {
+  margin-bottom: 50px;
+}
+
+.page-add-on-modules .module-card {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.page-add-on-modules .module-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.page-add-on-modules .module-content {
+  flex: 1 1 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-add-on-modules .module-image {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.page-add-on-modules .module-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Module Content Typography */
+.page-add-on-modules .module-content h3 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.page-add-on-modules .module-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.page-add-on-modules .module-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.page-add-on-modules .module-content li {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   4. COLOR THEMES FOR CARDS
+   ========================================================================== */
+
+/* Green Theme */
+.page-add-on-modules .module-card.green-bg .module-content {
+  background-color: #81BC06;
+  color: #ffffff;
+}
+.page-add-on-modules .module-card.green-bg h3 {
+  color: #ffffff;
+}
+.page-add-on-modules .module-card.green-bg .module-btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Light Blue Theme */
+.page-add-on-modules .module-card.light-blue-bg .module-content {
+  background-color: #e0f2fe;
+  color: #333333;
+}
+.page-add-on-modules .module-card.light-blue-bg h3 {
+  color: #3162C9;
+}
+.page-add-on-modules .module-card.light-blue-bg .module-btn {
+  color: #3162C9;
+  border-color: #3162C9;
+}
+
+/* Orange Theme */
+.page-add-on-modules .module-card.orange-bg .module-content {
+  background-color: #F35325;
+  color: #ffffff;
+}
+.page-add-on-modules .module-card.orange-bg h3 {
+  color: #ffffff;
+}
+.page-add-on-modules .module-card.orange-bg .module-btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Buttons inside modules */
+.page-add-on-modules .button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.page-add-on-modules .module-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.page-add-on-modules .module-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.page-add-on-modules .light-blue-bg .module-btn:hover {
+  background: rgba(49, 98, 201, 0.1);
+}
+
+/* ==========================================================================
+   5. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 767px) {
+  .page-add-on-modules .module-card,
+  .page-add-on-modules .module-card.reverse {
+    flex-direction: column;
+  }
+
+  .page-add-on-modules .module-image {
+    min-height: 250px;
+    order: -1; /* Move image above text on mobile */
+  }
+
+  .page-add-on-modules .module-content {
+    padding: 25px;
+  }
+}

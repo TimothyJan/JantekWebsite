@@ -28,13 +28,13 @@ import { Infojta250Securakey } from './pages/infojta250-securakey/infojta250-sec
 import { Infojta550 } from './pages/infojta550/infojta550';
 
 
-import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
-import { Products } from './pages/products/products';
-import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
 import { JantekAccessControlSecuritySystem } from './pages/jantek-access-control-security-system/jantek-access-control-security-system';
 import { JantekJupiterTimeAndAttendanceSystem } from './pages/jantek-jupiter-time-and-attendance-system/jantek-jupiter-time-and-attendance-system';
 import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-attendance-add-on-modules/jantek-time-and-attendance-add-on-modules';
 import { Jobcosting } from './pages/jobcosting/jobcosting';
+import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
+import { Products } from './pages/products/products';
+import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
 
