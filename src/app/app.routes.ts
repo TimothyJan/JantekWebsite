@@ -31,6 +31,7 @@ import { JantekJupiterClientServerVersionTimeAndAttendanceSoftware } from './pag
 import { JantekJupiterSmallBusinessEditionTimeAndAttendanceSoftware } from './pages/jantek-jupiter-small-business-edition-time-and-attendance-software/jantek-jupiter-small-business-edition-time-and-attendance-software';
 import { JantekJupiterStandardVersionTimeAndAttendanceSoftware } from './pages/jantek-jupiter-standard-version-time-and-attendance-software/jantek-jupiter-standard-version-time-and-attendance-software';
 import { JantekPcPunch } from './pages/jantek-pc-punch/jantek-pc-punch';
+import { JantekProductBrochures } from './pages/jantek-product-brochures/jantek-product-brochures';
 
 import { JantekTimeAndAttendanceAddOnModules } from './pages/jantek-time-and-attendance-add-on-modules/jantek-time-and-attendance-add-on-modules';
 import { JantekJupiterTimeAndAttendanceSystem } from './pages/jantek-jupiter-time-and-attendance-system/jantek-jupiter-time-and-attendance-system';
@@ -41,6 +42,7 @@ import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
 import { JantekJupiterWebTimeTimeAndAttendanceSaasSoftware } from './pages/jantek-jupiter-web-time-time-and-attendance-saas-software/jantek-jupiter-web-time-time-and-attendance-saas-software';
+
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -78,6 +80,7 @@ export const routes: Routes = [
   { path: 'jantek-jupiter-time-and-attendance-system', component: JantekJupiterTimeAndAttendanceSystem },
   { path: 'jantek-jupiter-web-time-time-and-attendance-saas-software', component: JantekJupiterWebTimeTimeAndAttendanceSaasSoftware },
   { path: 'jantek-pc-punch', component: JantekPcPunch },
+  { path: 'jantek-product-brochures', component: JantekProductBrochures },
   { path: 'jantek-time-and-attendance-add-on-modules', component: JantekTimeAndAttendanceAddOnModules },
   { path: 'jobcosting', component: Jobcosting },
   { path: 'payroll-interfaces', component: PayrollInterfaces },
