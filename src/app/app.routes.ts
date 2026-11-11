@@ -64,6 +64,7 @@ import { Webpaydata } from './pages/webpaydata/webpaydata';
 import { Webpunch } from './pages/webpunch/webpunch';
 import { Webpunchcs } from './pages/webpunchcs/webpunchcs';
 import { Webreports } from './pages/webreports/webreports';
+import { Webtimecards } from './pages/webtimecards/webtimecards';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -131,5 +132,6 @@ export const routes: Routes = [
   { path: 'webpunch', component: Webpunch },
   { path: 'webpunchcs', component: Webpunchcs },
   { path: 'webreports', component: Webreports },
+  { path: 'webtimecards', component: Webtimecards },
   { path: '**', redirectTo: '' } // Fallback
 ];
