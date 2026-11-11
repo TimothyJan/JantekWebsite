@@ -1,0 +1,261 @@
+/* ==========================================================================
+   Standalone Access Control Page Styles
+   ========================================================================== */
+
+/* 1. Page Banner */
+.page-banner {
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: #f0f4f8;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.banner-title {
+    font-family: "Exo 2", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: rgba(21, 21, 21, 0.85);
+    padding: 15px 30px;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+/* 2. Main Content Layout */
+.standalone-content {
+    background-color: #ffffff;
+}
+
+.content-section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.column-text {
+    flex: 1;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.column-image {
+    flex: 1;
+}
+
+.column-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 3. Product Section Specifics */
+.product-section {
+    border-top: 1px solid #eee;
+}
+
+.bg-light {
+    background-color: #F9F9F9;
+}
+
+.product-title {
+    font-family: "Exo 2", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #151515;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.product-intro {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.product-intro p {
+    flex: 1;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.product-main-img {
+    flex: 0 0 300px;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+/* Updated to center the side images */
+.product-side-img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Top, Right, Bottom, Left */
+}
+
+/* Product Details Grid (Features & Specs) */
+.product-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* Headings */
+.features-column h3,
+.specs-column h3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #151515;
+    margin-bottom: 20px;
+}
+
+/* Feature List */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23FAB607'%3E%3Cpath d='M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Specs Table */
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+}
+
+.specs-table td {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    vertical-align: top;
+}
+
+.specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+.specs-table td:first-child {
+    font-weight: 600;
+    width: 40%;
+}
+
+/* Contact Button */
+.contact-btn-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-btn-wrapper.text-left {
+    text-align: left;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #3162C9;
+    color: #ffffff !important;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #16AAF0;
+}
+
+.contact-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+    order: -1; /* Puts icon on the left */
+}
+
+/* 4. Responsive Design */
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .row-layout,
+    .product-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .product-main-img {
+        margin: 0 auto;
+    }
+
+    .product-details-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-btn-wrapper.text-left {
+        text-align: center;
+    }
+}

@@ -54,6 +54,7 @@ import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
 import { Requirements } from './pages/requirements/requirements';
 import { Retail } from './pages/retail/retail';
 import { ReturnOnInvestment } from './pages/return-on-investment/return-on-investment';
+import { Standalone } from './pages/standalone/standalone';
 
 
 
@@ -117,6 +118,7 @@ export const routes: Routes = [
   { path: 'requirements', component: Requirements },
   { path: 'retail', component: Retail },
   { path: 'return-on-investment', component: ReturnOnInvestment },
+  { path: 'standalone', component: Standalone },
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },
   { path: '**', redirectTo: '' } // Fallback
 ];
