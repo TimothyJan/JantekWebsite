@@ -49,11 +49,12 @@ import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces
 import { PcbasedAccesscontrol } from './pages/pcbased-accesscontrol/pcbased-accesscontrol';
 import { Phonepunch } from './pages/phonepunch/phonepunch';
 import { PrivacyPolicyAndBipaPolicy } from './pages/privacy-policy-and-bipa-policy/privacy-policy-and-bipa-policy';
-
-
-
 import { Products } from './pages/products/products';
 import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
+import { Requirements } from './pages/requirements/requirements';
+
+
+
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
 
@@ -111,6 +112,7 @@ export const routes: Routes = [
   { path: 'privacy-policy-and-bipa-policy', component: PrivacyPolicyAndBipaPolicy },
   { path: 'products', component: Products },
   { path: 'request-an-rma', component: RequestAnRma },
+  { path: 'requirements', component: Requirements },
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },
   { path: '**', redirectTo: '' } // Fallback
 ];

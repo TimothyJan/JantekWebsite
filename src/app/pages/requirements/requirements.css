@@ -1,0 +1,163 @@
+/* ==========================================================================
+   Requirements Page Styles
+   ========================================================================== */
+
+/* 1. Page Banner (Reused from phonepunch to maintain consistency) */
+.page-banner {
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    /* Fallback background if image is missing */
+    background-color: #f0f4f8;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.banner-title {
+    font-family: "Exo 2", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #333333; /* Dark background matching screenshot */
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+/* 2. Main Content Layout */
+.requirements-content {
+    background-color: #ffffff;
+}
+
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section .container {
+    max-width: 900px; /* Constrain width to match the screenshot */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 3. Typography */
+.section-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.sub-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+/* 4. Requirement List & Items */
+.requirements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.requirement-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    border-left: 3px solid #FAB607; /* Yellow accent border */
+    padding: 12px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Soft shadow */
+    border-radius: 2px;
+}
+
+/* Indented items (System RAM) */
+.indented-group {
+    margin-left: 50px; /* Indent the group */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.requirement-item.indented {
+    margin-left: 20px; /* Further indent individual items */
+}
+
+/* Icon Styling */
+.req-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: #FAB607; /* Yellow checkmark */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.req-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Text Styling */
+.requirement-item p {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Note Box */
+.note-box {
+    margin-top: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* 5. Responsive Design */
+@media (max-width: 767px) {
+    .banner-title {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .indented-group {
+        margin-left: 20px;
+    }
+
+    .requirement-item {
+        align-items: flex-start; /* Align icon to top on mobile for long text */
+        padding: 12px 15px;
+    }
+
+    .req-icon {
+        margin-top: 3px; /* Adjust alignment with text */
+    }
+}
