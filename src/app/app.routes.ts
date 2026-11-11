@@ -52,6 +52,7 @@ import { PrivacyPolicyAndBipaPolicy } from './pages/privacy-policy-and-bipa-poli
 import { Products } from './pages/products/products';
 import { RequestAnRma } from './pages/request-an-rma/request-an-rma';
 import { Requirements } from './pages/requirements/requirements';
+import { Retail } from './pages/retail/retail';
 
 
 
@@ -113,6 +114,8 @@ export const routes: Routes = [
   { path: 'products', component: Products },
   { path: 'request-an-rma', component: RequestAnRma },
   { path: 'requirements', component: Requirements },
+  { path: 'retail', component: Retail },
+
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },
   { path: '**', redirectTo: '' } // Fallback
 ];
