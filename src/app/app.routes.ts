@@ -45,6 +45,7 @@ import { Mergemodule } from './pages/mergemodule/mergemodule';
 import { NjPaidSickLeaveActForNewJerseyCustomers } from './pages/nj-paid-sick-leave-act-for-new-jersey-customers/nj-paid-sick-leave-act-for-new-jersey-customers';
 import { PayrollBasedJournal } from './pages/payroll-based-journal/payroll-based-journal';
 import { Payrolls } from './pages/payrolls/payrolls';
+import { PcbasedAccesscontrol } from './pages/pcbased-accesscontrol/pcbased-accesscontrol';
 
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
@@ -102,6 +103,7 @@ export const routes: Routes = [
   { path: 'payroll-interfaces', component: PayrollInterfaces },
   { path: 'payroll-based-journal', component: PayrollBasedJournal },
   { path: 'payrolls', component: Payrolls },
+  { path: 'pcbased_accesscontrol', component: PcbasedAccesscontrol },
   { path: 'products', component: Products },
   { path: 'request-an-rma', component: RequestAnRma },
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },
