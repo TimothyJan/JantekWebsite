@@ -65,6 +65,7 @@ import { Webpunch } from './pages/webpunch/webpunch';
 import { Webpunchcs } from './pages/webpunchcs/webpunchcs';
 import { Webreports } from './pages/webreports/webreports';
 import { Webtimecards } from './pages/webtimecards/webtimecards';
+import { Wirelesswebpunch } from './pages/wirelesswebpunch/wirelesswebpunch';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -133,5 +134,6 @@ export const routes: Routes = [
   { path: 'webpunchcs', component: Webpunchcs },
   { path: 'webreports', component: Webreports },
   { path: 'webtimecards', component: Webtimecards },
+  { path: 'wirelesswebpunch', component: Wirelesswebpunch },
   { path: '**', redirectTo: '' } // Fallback
 ];
