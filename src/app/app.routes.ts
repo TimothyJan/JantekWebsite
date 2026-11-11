@@ -59,6 +59,7 @@ import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
 import { Timerecorder } from './pages/timerecorder/timerecorder';
 import { WebTimeCloudBasedSaasTimekeeping } from './pages/web-time-cloud-based-saas-timekeeping/web-time-cloud-based-saas-timekeeping';
+import { Webmerge } from './pages/webmerge/webmerge';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -121,5 +122,6 @@ export const routes: Routes = [
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },
   { path: 'timerecorder', component: Timerecorder },
   { path: 'web-time-cloud-based-saas-timekeeping', component: WebTimeCloudBasedSaasTimekeeping },
+  { path: 'webmerge', component: Webmerge },
   { path: '**', redirectTo: '' } // Fallback
 ];
