@@ -48,6 +48,8 @@ import { Payrolls } from './pages/payrolls/payrolls';
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
 import { PcbasedAccesscontrol } from './pages/pcbased-accesscontrol/pcbased-accesscontrol';
 import { Phonepunch } from './pages/phonepunch/phonepunch';
+import { PrivacyPolicyAndBipaPolicy } from './pages/privacy-policy-and-bipa-policy/privacy-policy-and-bipa-policy';
+
 
 
 import { Products } from './pages/products/products';
@@ -106,6 +108,7 @@ export const routes: Routes = [
   { path: 'payrolls', component: Payrolls },
   { path: 'pcbased_accesscontrol', component: PcbasedAccesscontrol },
   { path: 'phonepunch', component: Phonepunch },
+  { path: 'privacy-policy-and-bipa-policy', component: PrivacyPolicyAndBipaPolicy },
   { path: 'products', component: Products },
   { path: 'request-an-rma', component: RequestAnRma },
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },

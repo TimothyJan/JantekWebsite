@@ -1,0 +1,79 @@
+/* Scoped styles for the Privacy Policy and BIPA Policy page */
+
+.privacy-policy-page {
+  /* Add padding to the top and bottom of the page content */
+  padding: 40px 0 80px 0;
+  background-color: #ffffff;
+}
+
+/* Ensure headings within the content match the original WordPress theme */
+.privacy-policy-page .elementor-widget-text-editor h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 32px; /* Slightly larger for main H1 */
+  font-weight: 700;
+  color: #3162C9; /* Primary Blue */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-page .elementor-widget-text-editor h1:first-child {
+  margin-top: 0; /* Remove top margin for the very first H1 */
+}
+
+.privacy-policy-page .elementor-widget-text-editor h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3162C9; /* Primary Blue */
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Paragraph text styling */
+.privacy-policy-page .elementor-widget-text-editor p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.privacy-policy-page .elementor-widget-text-editor ul {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding-left: 40px; /* Indent the lists */
+}
+
+.privacy-policy-page .elementor-widget-text-editor li {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Bold text emphasis */
+.privacy-policy-page .elementor-widget-text-editor strong {
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .privacy-policy-page {
+    padding: 20px 0 40px 0;
+  }
+
+  .privacy-policy-page .elementor-widget-text-editor h1 {
+    font-size: 28px;
+  }
+
+  .privacy-policy-page .elementor-widget-text-editor h2 {
+    font-size: 22px;
+  }
+
+  .privacy-policy-page .elementor-widget-text-editor p,
+  .privacy-policy-page .elementor-widget-text-editor li {
+    font-size: 16px; /* Slightly smaller text on mobile for readability */
+  }
+}
