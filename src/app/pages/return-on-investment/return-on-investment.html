@@ -1,0 +1,149 @@
+<!-- Top Banner Section -->
+<section class="page-banner" style="background-image: url('assets/images/Other-Page-Background-Option-1.jpg');">
+    <div class="banner-content">
+        <h1 class="banner-title">RETURN ON INVESTMENT</h1>
+    </div>
+</section>
+
+<!-- Main Content Area -->
+<div class="roi-content">
+
+    <!-- Section 1: Introduction -->
+    <section class="content-section intro-section">
+        <div class="container row-layout">
+            <div class="column-text">
+                <h2 class="section-title">Automated Time & Attendance vs. Manual Calculation</h2>
+                <p>Many companies only consider the potential cost savings from the elimination of manual calculations, when their total return on investment is generated from three different areas: reducing processing time, eliminating human errors in calculation, and preventing time theft.</p>
+                <p>Your largest savings may come from hidden costs that may not have been considered. By targeting only the savings possible by eliminating manual calculations, a small company of only 10 employees would most likely elect not to purchase. This decision would cost the company thousands of dollars annually!</p>
+                <p>Enter your own information into the form below to calculate the approximate amount of money your company would save on an annual basis. Note: This form requires JavaScript.</p>
+            </div>
+            <div class="column-image">
+                <img src="assets/images/Return-On-Investment-1.jpg" alt="Return on Investment" class="roi-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Input Variables Form -->
+    <section class="content-section form-section">
+        <div class="container">
+            <h2 class="form-main-heading">Input Variables &mdash; Enter Your Information</h2>
+
+            <form class="roi-form main-calculator-form">
+                <div class="form-grid">
+                    <!-- Row 1 -->
+                    <div class="form-group">
+                        <label>Pay Period (number per year):</label>
+                        <select class="form-control">
+                            <option value="Weekly (52)">Weekly (52)</option>
+                            <option value="Bi-Weekly (26)">Bi-Weekly (26)</option>
+                            <option value="Semi-monthly (24)">Semi-monthly (24)</option>
+                            <option value="Monthly (12)">Monthly (12)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Number of Employees:</label>
+                        <input type="number" class="form-control" placeholder="Employees">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="form-group">
+                        <label>Hourly Wage of Payroll Staff: (per hour)</label>
+                        <input type="text" class="form-control" placeholder="Hourly Wage of Payroll Staff:">
+                    </div>
+                    <div class="form-group">
+                        <label>Hourly Employees' Average Wage: (per hour)</label>
+                        <input type="text" class="form-control" placeholder="Hourly Employees' Average Wage:">
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="form-group">
+                        <label>Number of Hours in Work Week: (hours)</label>
+                        <input type="text" class="form-control" placeholder="Number of Hours in Work Week:">
+                    </div>
+                    <div class="form-group">
+                        <label>Number of Work Weeks per Year: (work week)</label>
+                        <input type="text" class="form-control" placeholder="Number of Work Weeks per Year:">
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="form-group">
+                        <label>Minutes Spent Calculating 1 Time Card: (minute)</label>
+                        <input type="text" class="form-control" placeholder="Minutes Spent Calculating 1 Time Card">
+                    </div>
+                    <div class="form-group">
+                        <label>Time Theft per Employee per Day: (minutes)</label>
+                        <input type="text" class="form-control" placeholder="Time Theft per Employee per Day:">
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div class="form-group">
+                        <label>Margin of Error: (%)</label>
+                        <input type="text" class="form-control" placeholder="Margin of Error:">
+                    </div>
+                    <div class="form-group submit-group">
+                        <button type="button" class="calc-btn">CALCULATE</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section 3: Results Boxes -->
+    <section class="content-section results-section">
+        <div class="container">
+            <div class="results-grid">
+
+                <!-- Box 1: Manual Calculations Waste Time -->
+                <div class="result-box box-light-blue">
+                    <h3>Manual Calculations Waste Time</h3>
+                    <p class="box-desc">The American Payroll Association (APA) estimates that about 2½ minutes is spent manually adding each employee’s time card.</p>
+                    <div class="result-form">
+                        <label>Time Saved per Year (A x B x G / 60): (hours)</label>
+                        <input type="text" class="form-control readonly-input" readonly>
+
+                        <label>Annual Savings (J x C): ($)</label>
+                        <input type="text" class="form-control readonly-input" readonly>
+                    </div>
+                </div>
+
+                <!-- Box 2: Errors in Manual Calculations -->
+                <div class="result-box box-light-red">
+                    <h3>Errors in Manual Calculations</h3>
+                    <p class="box-desc">When totaling employee hours manually with a calculator, human errors are bound to occur and go unnoticed. The APA estimates that manual payroll has an error rate of at least 1%.</p>
+                    <div class="result-form">
+                        <label>Annual Gross Payroll (B x D x E x F): ($)</label>
+                        <input type="text" class="form-control readonly-input" readonly>
+
+                        <label>Annual Savings (L x I): ($)</label>
+                        <input type="text" class="form-control readonly-input" readonly>
+                    </div>
+                </div>
+
+                <!-- Box 3: Reduction of Time Theft -->
+                <div class="result-box box-light-green">
+                    <h3>Reduction of Time Theft</h3>
+                    <p class="box-desc">Tardy arrivals, early departures, long breaks and lunches are all examples of employee time theft that can be eliminated by an automated Time & Attendance system. The APA estimates as much as 5 minutes per day are lost due to these factors.</p>
+                    <div class="result-form">
+                        <label>Time Saved per Year (B x F x 5 x H / 60): (hours)</label>
+                        <input type="text" class="form-control readonly-input" readonly>
+
+                        <label>Annual Savings (D x N): ($)</label>
+                        <input type="text" class="form-control readonly-input" readonly>
+                    </div>
+                </div>
+
+                <!-- Box 4: Total Return on Investment -->
+                <div class="result-box box-light-yellow">
+                    <h3>Total Return on Investment</h3>
+                    <p class="box-desc">Add up the savings from manual calculations that are no longer necessary, reduction of errors and the elimination of time theft, and you’ll see that a Jantek Time & Attendance system will pay for itself in less than a year.</p>
+                    <div class="result-form">
+                        <label>Total Annual Savings (K + M + O):</label>
+                        <input type="text" class="form-control readonly-input" readonly>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>
