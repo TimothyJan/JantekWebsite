@@ -62,6 +62,7 @@ import { WebTimeCloudBasedSaasTimekeeping } from './pages/web-time-cloud-based-s
 import { Webmerge } from './pages/webmerge/webmerge';
 import { Webpaydata } from './pages/webpaydata/webpaydata';
 import { Webpunch } from './pages/webpunch/webpunch';
+import { Webpunchcs } from './pages/webpunchcs/webpunchcs';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -127,5 +128,6 @@ export const routes: Routes = [
   { path: 'webmerge', component: Webmerge },
   { path: 'webpaydata', component: Webpaydata },
   { path: 'webpunch', component: Webpunch },
+  { path: 'webpunchcs', component: Webpunchcs },
   { path: '**', redirectTo: '' } // Fallback
 ];
