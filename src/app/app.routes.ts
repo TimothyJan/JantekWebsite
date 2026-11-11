@@ -55,11 +55,9 @@ import { Requirements } from './pages/requirements/requirements';
 import { Retail } from './pages/retail/retail';
 import { ReturnOnInvestment } from './pages/return-on-investment/return-on-investment';
 import { Standalone } from './pages/standalone/standalone';
-
-
-
 import { TimeAndAttendanceSoftware } from './pages/time-and-attendance-software/time-and-attendance-software';
 import { Upgrade831832 } from './pages/upgrade-831-832/upgrade-831-832';
+import { Timerecorder } from './pages/timerecorder/timerecorder';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -120,5 +118,6 @@ export const routes: Routes = [
   { path: 'return-on-investment', component: ReturnOnInvestment },
   { path: 'standalone', component: Standalone },
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },
+  { path: 'timerecorder', component: Timerecorder },
   { path: '**', redirectTo: '' } // Fallback
 ];
