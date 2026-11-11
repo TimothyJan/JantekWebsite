@@ -1,0 +1,32 @@
+<!-- Top Banner Section -->
+<section class="page-banner" style="background-image: url('assets/images/Products-Payroll-Interfaces.jpg');">
+    <div class="banner-content">
+        <h1 class="banner-title">PAYROLL INTERFACES</h1>
+    </div>
+</section>
+
+<!-- Main Content Section -->
+<section class="content-section payrolls-content-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Payroll Interfaces for Jantek Time<br>& Attendance Software</h2>
+        </div>
+
+        <div class="table-container">
+            <div class="payroll-grid">
+                @for (name of payrollNames; track $index) {
+                    <div class="payroll-item">
+                        <span class="payroll-number">{{ $index + 1 }}.</span>
+                        <span class="payroll-name" [innerHTML]="name"></span>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="table-footer">
+            <span>* 3rd Party Software May Be Needed</span>
+            <span>&dagger; Allows Import of Employee Data</span>
+            <span>&Dagger; Not Compatible with Basic Edition</span>
+        </div>
+    </div>
+</section>

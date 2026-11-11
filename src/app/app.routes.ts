@@ -44,6 +44,7 @@ import { Manufacturing } from './pages/manufacturing/manufacturing';
 import { Mergemodule } from './pages/mergemodule/mergemodule';
 import { NjPaidSickLeaveActForNewJerseyCustomers } from './pages/nj-paid-sick-leave-act-for-new-jersey-customers/nj-paid-sick-leave-act-for-new-jersey-customers';
 import { PayrollBasedJournal } from './pages/payroll-based-journal/payroll-based-journal';
+import { Payrolls } from './pages/payrolls/payrolls';
 
 
 import { PayrollInterfaces } from './pages/payroll-interfaces/payroll-interfaces';
@@ -100,6 +101,7 @@ export const routes: Routes = [
   { path: 'nj-paid-sick-leave-act-for-new-jersey-customers', component: NjPaidSickLeaveActForNewJerseyCustomers },
   { path: 'payroll-interfaces', component: PayrollInterfaces },
   { path: 'payroll-based-journal', component: PayrollBasedJournal },
+  { path: 'payrolls', component: Payrolls },
   { path: 'products', component: Products },
   { path: 'request-an-rma', component: RequestAnRma },
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },
