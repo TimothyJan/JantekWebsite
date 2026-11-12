@@ -11,11 +11,11 @@ export class Home implements OnInit {
 
   // 1. Define all 5 industries
   allIndustries = [
-    { name: 'Government', image: '/assets/images/Government-Time-and-Attendance-Workforce-Management-Solution.jpg' },
-    { name: 'Healthcare', image: '/assets/images/Workforce-Management-for-Healthcare.jpg' },
-    { name: 'Hospitality', image: '/assets/images/Workforce-Management-for-Hospitality-1.jpg' },
-    { name: 'Manufacturing', image: '/assets/images/Workforce-Management-Manufacturing-1.jpg' },
-    { name: 'Retail', image: '/assets/images/Workforce-Management-for-Retail-Supermarkets.jpg' }
+    { name: 'Government', image: 'assets/images/Government-Time-and-Attendance-Workforce-Management-Solution.jpg' },
+    { name: 'Healthcare', image: 'assets/images/Workforce-Management-for-Healthcare.jpg' },
+    { name: 'Hospitality', image: 'assets/images/Workforce-Management-for-Hospitality-1.jpg' },
+    { name: 'Manufacturing', image: 'assets/images/Workforce-Management-Manufacturing-1.jpg' },
+    { name: 'Retail', image: 'assets/images/Workforce-Management-for-Retail-Supermarkets.jpg' }
   ];
 
   // 2. State for the carousel
