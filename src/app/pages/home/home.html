@@ -288,15 +288,13 @@
     </div>
   </section>
 
-  <!-- ============ INDUSTRIES CAROUSEL (ANGULAR REWORK) ============ -->
+  <!-- ============ INDUSTRIES CAROUSEL ============ -->
   <section class="elementor-section elementor-top-section elementor-element elementor-element-d9ac033 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d9ac033" data-element_type="section" data-settings='{"background_background":"classic"}'>
       <div class="elementor-container elementor-column-gap-no">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-979b261" data-id="979b261" data-element_type="column">
           <div class="elementor-widget-wrap elementor-element-populated">
 
-            <!-- Custom Angular Carousel Container -->
             <div class="custom-industry-carousel">
-
               <!-- Navigation Arrows -->
               <button class="custom-carousel-btn prev" (click)="prevIndustry()" aria-label="Previous">
                 <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>
@@ -307,15 +305,48 @@
 
               <!-- Visible Cards Track -->
               <div class="custom-carousel-track">
-                <!-- We use *ngFor to loop through our visible subset of industries -->
-                <div class="industry-card" *ngFor="let industry of visibleIndustries">
+
+                <!-- Card 1 (Dynamically bound based on current index) -->
+                <div class="industry-card">
                   <figure class="industry-card-inner">
-                    <img [src]="industry.image" [alt]="industry.name" class="industry-image">
-                    <figcaption class="industry-caption">{{ industry.name }}</figcaption>
+                    <img [src]="allIndustries[(startIndex + 0) % allIndustries.length].image"
+                         [alt]="allIndustries[(startIndex + 0) % allIndustries.length].name"
+                         class="industry-image">
+                    <figcaption class="industry-caption">{{ allIndustries[(startIndex + 0) % allIndustries.length].name }}</figcaption>
                   </figure>
                 </div>
-              </div>
 
+                <!-- Card 2 -->
+                <div class="industry-card">
+                  <figure class="industry-card-inner">
+                    <img [src]="allIndustries[(startIndex + 1) % allIndustries.length].image"
+                         [alt]="allIndustries[(startIndex + 1) % allIndustries.length].name"
+                         class="industry-image">
+                    <figcaption class="industry-caption">{{ allIndustries[(startIndex + 1) % allIndustries.length].name }}</figcaption>
+                  </figure>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="industry-card">
+                  <figure class="industry-card-inner">
+                    <img [src]="allIndustries[(startIndex + 2) % allIndustries.length].image"
+                         [alt]="allIndustries[(startIndex + 2) % allIndustries.length].name"
+                         class="industry-image">
+                    <figcaption class="industry-caption">{{ allIndustries[(startIndex + 2) % allIndustries.length].name }}</figcaption>
+                  </figure>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="industry-card">
+                  <figure class="industry-card-inner">
+                    <img [src]="allIndustries[(startIndex + 3) % allIndustries.length].image"
+                         [alt]="allIndustries[(startIndex + 3) % allIndustries.length].name"
+                         class="industry-image">
+                    <figcaption class="industry-caption">{{ allIndustries[(startIndex + 3) % allIndustries.length].name }}</figcaption>
+                  </figure>
+                </div>
+
+              </div>
             </div>
 
           </div>
