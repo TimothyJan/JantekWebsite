@@ -1,137 +1,170 @@
-<header id="site-header" class="clr custom-header" data-height="74" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+<header class="custom-header">
 
-	<header data-elementor-type="header" data-elementor-id="15" class="elementor elementor-15 elementor-location-header" data-elementor-post-type="elementor_library">
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left"></div>
+      <div class="top-bar-right">
+        <a class="call-sales-btn" href="tel:+16263504198">
+          Call Sales at 1-626-350-4198
+        </a>
+      </div>
+    </div>
+  </div>
 
-		<!-- Top Bar (Call Sales & Translate) -->
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-737a56c elementor-section-full_width" data-id="737a56c" data-element_type="section">
-			<div class="elementor-container elementor-column-gap-default top-bar-container">
-				<div class="top-bar-left"></div>
-				<div class="top-bar-right">
-					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="tel:+16263504198">
-						<span class="elementor-button-content-wrapper">
-							<span class="elementor-button-text">Call Sales at 1-626-350-4198</span>
-						</span>
-					</a>
-					<div class="gtranslate_wrapper">
-						<span style="font-weight:600; color:#666; font-size:14px; margin-left:20px;">🇺🇸 EN &nbsp; 🇲🇽 ES</span>
-					</div>
-				</div>
-			</div>
-		</section>
+  <!-- Main Navigation -->
+  <div class="main-nav-wrapper">
+    <div class="container nav-bar-container">
 
-		<!-- Main Nav Bar (Logo + Menu) -->
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-37264bc elementor-section-full_width" data-id="37264bc" data-element_type="section">
-			<div class="elementor-container elementor-column-gap-default nav-bar-container">
+      <!-- Logo -->
+      <div class="logo-column">
+        <a routerLink="/">
+          <img src="assets/images/Jantek-png-final.png" class="custom-logo" alt="Jantek Electronics">
+        </a>
+      </div>
 
-				<!-- Logo -->
-				<div class="logo-column">
-					<a routerLink="/">
-						<img fetchpriority="high" width="500" height="156" src="assets/images/Jantek-png-final.png" class="custom-logo" alt="Jantek Electronics">
-					</a>
-				</div>
+      <!-- Desktop Menu -->
+      <nav class="desktop-nav">
+        <ul class="nav-menu-main">
+          <!-- ... (Keep your existing menu items exactly the same) ... -->
+          <li class="menu-item" routerLinkActive="current-menu-item" [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/">Home</a>
+          </li>
+          <li class="menu-item" routerLinkActive="current-menu-item">
+            <a routerLink="/about-us">About Us</a>
+          </li>
 
-				<!-- Desktop & Mobile Menu Wrapper -->
-				<div class="menu-column">
-					<div class="elementor-widget-container">
+          <li class="menu-item menu-item-has-children" routerLinkActive="current-menu-item">
+            <a routerLink="/products">
+              Products
+              <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+            </a>
+            <ul class="sub-menu">
+              <li class="menu-item menu-item-has-children">
+                <a routerLink="/jantek-jupiter-time-and-attendance-system">
+                  Time & Attendance
+                  <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+                </a>
+                <ul class="sub-menu">
+                  <li><a routerLink="/time-and-attendance-software">Software Features</a></li>
+                  <li><a routerLink="/jantek-jupiter-standard-version-time-and-attendance-software">Standard Version Timekeeping</a></li>
+                  <li><a routerLink="/jantek-jupiter-client-server-version-time-and-attendance-software">Client/Server Version Timekeeping</a></li>
+                  <li><a routerLink="/jantek-jupiter-small-business-edition-time-and-attendance-software">Small Business Edition Timekeeping</a></li>
+                  <li><a routerLink="/web-time-cloud-based-saas-timekeeeping">Web Time Cloud-Based Saas Timekeeping</a></li>
+                  <li><a routerLink="/jantek_time_and_attendance_add-on_modules">Add-on Modules</a></li>
+                  <li><a routerLink="/jobcosting">Job Costing / Tracking</a></li>
+                  <li><a routerLink="/jpt-724-standalone-bell-timer">Standalone Bell Timer</a></li>
+                </ul>
+              </li>
+              <li><a routerLink="/data-collection-time-clocks">Data Collection & Time Clocks</a></li>
+              <li><a routerLink="/payroll-interfaces">Payroll Interfaces</a></li>
+              <li><a routerLink="/jantek-access-control-security-system">Access Control</a></li>
+            </ul>
+          </li>
 
-						<!-- Desktop Menu -->
-						<nav aria-label="Menu" class="desktop-nav">
-							<ul class="nav-menu-main">
-								<li class="menu-item" routerLinkActive="current-menu-item" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
-								<li class="menu-item" routerLinkActive="current-menu-item"><a routerLink="/about-us">About Us</a></li>
-								<li class="menu-item menu-item-has-children" routerLinkActive="current-menu-item">
-									<a routerLink="/products">Products <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
-									<ul class="sub-menu">
-										<li class="menu-item menu-item-has-children">
-											<a routerLink="/jantek-jupiter-time-and-attendance-system">Time & Attendance <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
-											<ul class="sub-menu">
-												<li><a routerLink="/time-and-attendance-software">Software Features</a></li>
-												<li><a routerLink="/jantek-jupiter-standard-version-time-and-attendance-software">Standard Version Timekeeping</a></li>
-												<li><a routerLink="/jantek-jupiter-client-server-version-time-and-attendance-software">Client/Server Version Timekeeping</a></li>
-												<li><a routerLink="/jantek-jupiter-small-business-edition-time-and-attendance-software">Small Business Edition Timekeeping</a></li>
-												<li><a routerLink="/web-time-cloud-based-saas-timekeeeping">Web Time Cloud-Based Saas Timekeeping</a></li>
-												<li><a routerLink="/jantek_time_and_attendance_add-on_modules">Add-on Modules</a></li>
-												<li><a routerLink="/jobcosting">Job Costing / Tracking</a></li>
-												<li><a routerLink="/jpt-724-standalone-bell-timer">Standalone Bell Timer</a></li>
-											</ul>
-										</li>
-										<li><a routerLink="/data-collection-time-clocks">Data Collection & Time Clocks</a></li>
-										<li><a routerLink="/payroll-interfaces">Payroll Interfaces</a></li>
-										<li><a routerLink="/jantek-access-control-security-system">Access Control</a></li>
-									</ul>
-								</li>
-								<li class="menu-item menu-item-has-children">
-									<a href="javascript:void(0)">Industry Solutions <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
-									<ul class="sub-menu">
-										<li><a routerLink="/government">Government</a></li>
-										<li><a routerLink="/healthcare">Healthcare</a></li>
-										<li><a routerLink="/hospitality">Hospitality</a></li>
-										<li><a routerLink="/manufacturing">Manufacturing</a></li>
-										<li><a routerLink="/retail">Retail</a></li>
-									</ul>
-								</li>
-								<li class="menu-item" routerLinkActive="current-menu-item"><a routerLink="/blogs">Blogs</a></li>
-								<li class="menu-item" routerLinkActive="current-menu-item"><a routerLink="/contact-us">Contact Us</a></li>
-							</ul>
-						</nav>
+          <li class="menu-item menu-item-has-children">
+            <a href="javascript:void(0)">
+              Industry Solutions
+              <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+            </a>
+            <ul class="sub-menu">
+              <li><a routerLink="/government">Government</a></li>
+              <li><a routerLink="/healthcare">Healthcare</a></li>
+              <li><a routerLink="/hospitality">Hospitality</a></li>
+              <li><a routerLink="/manufacturing">Manufacturing</a></li>
+              <li><a routerLink="/retail">Retail</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" routerLinkActive="current-menu-item"><a routerLink="/blogs">Blogs</a></li>
+          <li class="menu-item" routerLinkActive="current-menu-item"><a routerLink="/contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
 
-						<!-- Mobile Controls (Search + Burger) -->
-						<div class="mobile-controls">
-							<div class="search-column-mobile">
-								<svg viewBox="0 0 512 512" width="20" height="20" fill="#3162C9"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-							</div>
-							<div class="mobile-menu-toggle" (click)="toggleMenu()">
-								@if (!isMenuOpen) {
-									<span class="burger-icon">&#9776;</span>
-								} @else {
-									<span class="close-icon">&times;</span>
-								}
-							</div>
-						</div>
+      <!-- Search & Mobile Controls -->
+      <div class="search-column" (click)="toggleSearch()">
+        <svg viewBox="0 0 512 512" width="20" height="20" fill="#3162C9"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </div>
 
-					</div>
-				</div>
+      <div class="mobile-controls">
+        <div class="mobile-menu-toggle" (click)="toggleMenu()">
+          @if (!isMenuOpen) {
+            <span class="burger-icon">&#9776;</span>
+          } @else {
+            <span class="close-icon">&times;</span>
+          }
+        </div>
+      </div>
 
-				<!-- Desktop Search Icon -->
-				<div class="search-column">
-					<svg viewBox="0 0 512 512" width="20" height="20" fill="#3162C9"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-				</div>
-			</div>
+    </div>
 
-			<!-- Mobile Dropdown Menu -->
-			<nav class="mobile-nav-dropdown" [class.active]="isMenuOpen">
-				<ul class="nav-menu-dropdown">
-					<li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
-					<li><a routerLink="/about-us" (click)="toggleMenu()">About Us</a></li>
+    <!-- Search Overlay (Displays below Nav) -->
+    <div class="search-overlay" [class.active]="isSearchOpen">
+      <div class="container">
+        <div class="search-input-wrapper">
+          <svg viewBox="0 0 512 512" width="24" height="24" fill="#999"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+          <input
+            type="text"
+            placeholder="Search for products, pages, or info..."
+            [(ngModel)]="searchQuery"
+            (ngModelChange)="onSearch()"
+            autofocus>
+          <button class="close-search-btn" (click)="toggleSearch()">&times;</button>
+        </div>
 
-					<!-- Mobile Products Dropdown -->
-					<li class="menu-item-has-children">
-						<!-- Changed this to routerLink so clicking the text goes to the page -->
-						<a routerLink="/products" (click)="toggleMenu()">Products <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
-						<ul class="sub-menu" [class.active]="openDropdowns['products']">
-							<li><a routerLink="/jantek-jupiter-time-and-attendance-system" (click)="toggleMenu()">Time & Attendance</a></li>
-							<li><a routerLink="/data-collection-time-clocks" (click)="toggleMenu()">Data Collection & Time Clocks</a></li>
-							<li><a routerLink="/payroll-interfaces" (click)="toggleMenu()">Payroll Interfaces</a></li>
-							<li><a routerLink="/jantek-access-control-security-system" (click)="toggleMenu()">Access Control</a></li>
-						</ul>
-					</li>
+        <!-- Search Results Dropdown -->
+        <div class="search-results" *ngIf="searchQuery && searchResults.length > 0">
+          <ul>
+            <li *ngFor="let result of searchResults">
+              <a (click)="goToResult(result.url)">
+                <span class="result-title">{{ result.title }}</span>
+                <span class="result-desc">{{ result.desc }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-					<!-- Mobile Industry Solutions Dropdown -->
-					<li class="menu-item-has-children">
-						<a href="javascript:void(0)" (click)="toggleDropdown('industries')">Industry Solutions <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></a>
-						<ul class="sub-menu" [class.active]="openDropdowns['industries']">
-							<li><a routerLink="/government" (click)="toggleMenu()">Government</a></li>
-							<li><a routerLink="/healthcare" (click)="toggleMenu()">Healthcare</a></li>
-							<li><a routerLink="/hospitality" (click)="toggleMenu()">Hospitality</a></li>
-							<li><a routerLink="/manufacturing" (click)="toggleMenu()">Manufacturing</a></li>
-							<li><a routerLink="/retail" (click)="toggleMenu()">Retail</a></li>
-						</ul>
-					</li>
+        <div class="search-results" *ngIf="searchQuery && searchResults.length === 0">
+          <p class="no-results">No results found for "{{ searchQuery }}"</p>
+        </div>
+      </div>
+    </div>
 
-					<li><a routerLink="/blogs" (click)="toggleMenu()">Blogs</a></li>
-					<li><a routerLink="/contact-us" (click)="toggleMenu()">Contact Us</a></li>
-				</ul>
-			</nav>
-		</section>
-	</header>
+    <!-- Mobile Dropdown Menu -->
+    <nav class="mobile-nav-dropdown" [class.active]="isMenuOpen">
+      <!-- ... (Keep your existing mobile menu items exactly the same) ... -->
+      <ul class="nav-menu-dropdown">
+        <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
+        <li><a routerLink="/about-us" (click)="toggleMenu()">About Us</a></li>
+
+        <li class="menu-item-has-children">
+          <a routerLink="/products" (click)="toggleMenu()">
+            Products <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+          </a>
+          <ul class="sub-menu" [class.active]="openDropdowns['products']">
+            <li><a routerLink="/jantek-jupiter-time-and-attendance-system" (click)="toggleMenu()">Time & Attendance</a></li>
+            <li><a routerLink="/data-collection-time-clocks" (click)="toggleMenu()">Data Collection & Time Clocks</a></li>
+            <li><a routerLink="/payroll-interfaces" (click)="toggleMenu()">Payroll Interfaces</a></li>
+            <li><a routerLink="/jantek-access-control-security-system" (click)="toggleMenu()">Access Control</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item-has-children">
+          <a href="javascript:void(0)" (click)="toggleDropdown('industries')">
+            Industry Solutions <span class="sub-arrow"><svg viewBox="0 0 448 512" width="12" height="12"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+          </a>
+          <ul class="sub-menu" [class.active]="openDropdowns['industries']">
+            <li><a routerLink="/government" (click)="toggleMenu()">Government</a></li>
+            <li><a routerLink="/healthcare" (click)="toggleMenu()">Healthcare</a></li>
+            <li><a routerLink="/hospitality" (click)="toggleMenu()">Hospitality</a></li>
+            <li><a routerLink="/manufacturing" (click)="toggleMenu()">Manufacturing</a></li>
+            <li><a routerLink="/retail" (click)="toggleMenu()">Retail</a></li>
+          </ul>
+        </li>
+
+        <li><a routerLink="/blogs" (click)="toggleMenu()">Blogs</a></li>
+        <li><a routerLink="/contact-us" (click)="toggleMenu()">Contact Us</a></li>
+      </ul>
+    </nav>
+
+  </div>
 </header>
