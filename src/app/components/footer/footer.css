@@ -1,0 +1,157 @@
+/* ==========================================================================
+   FOOTER COMPONENT STYLES
+   ========================================================================== */
+
+.custom-footer {
+  width: 100%;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* 1. Main Footer Area */
+.footer-main {
+  background-color: #3162C9;
+  padding: 60px 0;
+  color: #ffffff;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 30% 20% 20% 30%;
+  gap: 20px;
+}
+
+/* Headings */
+.footer-heading {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+
+/* Blue Divider Line */
+.footer-divider {
+  width: 75px;
+  height: 3px;
+  background-color: #16AAF0;
+  margin-bottom: 25px;
+}
+
+/* Text */
+.footer-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Links List */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-links a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  transition: opacity 0.3s;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+/* Icons */
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px; /* Align with text */
+}
+
+.footer-icon svg {
+  fill: #ffffff;
+}
+
+/* Contact Links Specific */
+.contact-links li {
+  gap: 12px;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.contact-links .footer-icon {
+  margin-top: 2px;
+  width: 20px;
+  text-align: center;
+}
+
+/* 2. Bottom Copyright Area */
+.footer-bottom {
+  background-color: #16AAF0;
+  padding: 15px 0;
+  color: #ffffff;
+}
+
+.footer-copyright {
+  font-size: 15px;
+  margin: 0;
+  text-align: left;
+}
+
+/* 3. Responsive Design */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-divider {
+    margin: 0 auto 25px auto;
+  }
+
+  .footer-links a,
+  .contact-links li {
+    justify-content: center;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
