@@ -30,9 +30,7 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "src/wp-content/themes/oceanwp/assets/css/style.min.css",
-              "src/wp-content/plugins/elementor/assets/css/frontend.min.css"
+              "src/styles.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
