@@ -109,7 +109,7 @@
   position: absolute;
   top: 0; right: 0; bottom: 0;
   width: 60%;
-  background-image: url('assets/images/vertical-banner.png'); /* Assuming you move this to assets */
+  background-image: url('/assets/images/vertical-banner.png'); /* Assuming you move this to assets */
   background-size: 110%;
   background-position: 70% center;
   background-repeat: no-repeat;
@@ -313,7 +313,7 @@
 
 /* 5. Industries Carousel */
 .industries-carousel-section {
-  background-image: linear-gradient(rgba(22, 170, 240, 0.9), rgba(22, 170, 240, 0.9)), url('assets/images/Jantek-About-Us-Time-and-Attendance-Workforce-Management-Solution-Provider.jpg');
+  background-image: linear-gradient(rgba(22, 170, 240, 0.9), rgba(22, 170, 240, 0.9)), url('/assets/images/Jantek-About-Us-Time-and-Attendance-Workforce-Management-Solution-Provider.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
