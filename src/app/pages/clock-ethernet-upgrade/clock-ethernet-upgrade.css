@@ -1,6 +1,5 @@
 /* ==========================================================================
    Clock Ethernet Upgrade page — scoped to .page-clock-ethernet-upgrade
-   Global header, footer, and generic Elementor resets live in src/styles.css
    ========================================================================== */
 
 .page-clock-ethernet-upgrade {
@@ -14,15 +13,24 @@
 .page-clock-ethernet-upgrade .ceu-hero {
   position: relative;
   min-height: 396px;
-  background-image: url('/assets/images/Blog-Banner-News-and-Resources-1.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #f0f0f0;
+  overflow: hidden;
   display: flex;
   align-items: center;
 }
 
+.page-clock-ethernet-upgrade .ceu-hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+}
+
 .page-clock-ethernet-upgrade .ceu-hero-inner {
+  position: relative;
+  z-index: 1;
   max-width: 1140px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -30,14 +38,7 @@
 }
 
 .page-clock-ethernet-upgrade .ceu-hero-title {
-  font-family: "Exo 2", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: #3162C9;
-  margin: 0;
+  display: none; /* Hidden because text is part of the background image */
 }
 
 /* ==========================================================================
@@ -112,7 +113,7 @@
 }
 
 /* ==========================================================================
-   4. BODY ROW (text | image)
+   4. BODY ROW (Text Left, Image Right)
    ========================================================================== */
 .page-clock-ethernet-upgrade .ceu-body-row {
   display: flex;
@@ -130,8 +131,6 @@
 .page-clock-ethernet-upgrade .ceu-image-col {
   flex: 1 1 40%;
   min-width: 280px;
-  position: relative;
-  padding-right: 40px;
 }
 
 .page-clock-ethernet-upgrade .ceu-paragraph {
@@ -148,18 +147,6 @@
   width: 100%;
   height: auto;
   border-radius: 2px;
-  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.10);
-}
-
-/* Decorative "memphis" shape — absolutely positioned right side */
-.page-clock-ethernet-upgrade .ceu-memphis {
-  position: absolute;
-  right: -27px;
-  top: 154px;
-  width: 188px;
-  height: auto;
-  pointer-events: none;
-  z-index: 0;
 }
 
 /* ==========================================================================
@@ -241,7 +228,7 @@
 }
 
 /* ==========================================================================
-   6. RECENT POSTS (matches california-consumer-privacy-act)
+   6. RECENT POSTS
    ========================================================================== */
 .page-clock-ethernet-upgrade .recent-posts-title {
   font-family: "Exo 2", sans-serif;
@@ -319,16 +306,8 @@
     min-height: 260px;
   }
 
-  .page-clock-ethernet-upgrade .ceu-hero-title {
-    font-size: 36px;
-  }
-
   .page-clock-ethernet-upgrade .ceu-post-title {
     font-size: 30px;
-  }
-
-  .page-clock-ethernet-upgrade .ceu-memphis {
-    top: 61px;
   }
 }
 
@@ -336,12 +315,6 @@
   .page-clock-ethernet-upgrade .ceu-hero {
     min-height: 200px;
     padding: 30px 0;
-  }
-
-  .page-clock-ethernet-upgrade .ceu-hero-title {
-    font-size: 23px;
-    line-height: 1.4;
-    text-align: center;
   }
 
   .page-clock-ethernet-upgrade .ceu-main {
@@ -363,14 +336,6 @@
   .page-clock-ethernet-upgrade .ceu-body-row {
     flex-direction: column;
     gap: 25px;
-  }
-
-  .page-clock-ethernet-upgrade .ceu-image-col {
-    padding-right: 0;
-  }
-
-  .page-clock-ethernet-upgrade .ceu-memphis {
-    display: none;
   }
 
   .page-clock-ethernet-upgrade .ceu-post-nav {
@@ -402,7 +367,6 @@
     font-size: 16px;
   }
 
-  /* Recent posts: stack image on top, text below */
   .page-clock-ethernet-upgrade .recent-post-item {
     flex-direction: column;
   }

@@ -14,13 +14,21 @@
 .page-government .gov-hero {
   position: relative;
   background-color: #16AAF0; /* Fallback */
-  background-image: url('/assets/images/Government-Time-and-Attendance-Workforce-Management-Solution2.jpg');
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: 50% auto;
   min-height: 256px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+
+/* Background image tag styling */
+.page-government .gov-hero-bg {
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  z-index: 0;
 }
 
 .page-government .gov-hero-overlay {
@@ -141,13 +149,28 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('/assets/images/Contact-Us-2.jpg'); /* Dark texture fallback */
-  background-color: #333;
   padding: 40px;
   border: 8px solid #ffffff;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 10;
+  overflow: hidden;
+}
+
+/* Background texture tag styling */
+.page-government .gov-play-box-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  background-color: #333; /* Fallback behind image */
+}
+
+.page-government .gov-play-btn {
+  position: relative;
+  z-index: 1;
+  display: block;
 }
 
 .page-government .gov-play-btn svg {
@@ -211,18 +234,12 @@
 
 .page-government .gov-feature-content {
   flex: 1;
-  /* Changed from '30px 40px 30px 0' to '30px 40px' to add horizontal padding on both sides */
   padding: 30px 40px;
 }
 
 /* Reverse layout for the middle card */
 .page-government .gov-feature-card.gov-reverse {
   flex-direction: row-reverse;
-}
-
-.page-government .gov-feature-card.gov-reverse .gov-feature-content {
-  /* Changed from '30px 0 30px 40px' to '30px 40px' to maintain symmetrical spacing */
-  padding: 30px 40px;
 }
 
 .page-government .gov-feature-content h3 {

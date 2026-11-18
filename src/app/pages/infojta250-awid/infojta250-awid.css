@@ -15,15 +15,25 @@
 .page-infojta250-awid .jta-hero {
   position: relative;
   background-color: #e0f2fe; /* Light blue fallback */
-  background-image: url('/assets/images/Other-Page-Background-Option-1.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* Hero image now rendered from HTML */
+.page-infojta250-awid .jta-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .page-infojta250-awid .jta-hero-overlay {

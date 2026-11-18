@@ -4,17 +4,29 @@
 
 /* 1. Top Banner */
 .products-banner {
-    background-image: url('/assets/images/Jantek-Jupiter-Time-and-Attendance-Workforce-Management-Products-Banner.jpg'); /* Update path if needed */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
     min-height: 256px;
     display: flex;
     align-items: center;
-    position: relative;
+    overflow: hidden;
+}
+
+/* Banner image now rendered from HTML */
+.products-banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .products-banner .elementor-container {
+    position: relative;
+    z-index: 1;
     max-width: 1140px;
     margin: 0 auto;
     width: 100%;

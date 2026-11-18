@@ -12,17 +12,27 @@
    ========================================================================== */
 .page-electriclock .elc-hero {
   position: relative;
-  background-image: url('/assets/images/Other-Page-Background-Option-1.jpg'); /* Fallback if no specific background is set */
   background-color: #e0f2fe; /* Light blue fallback matching the screenshot */
-  background-size: cover;
-  background-position: center;
   min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+/* Background image tag styling */
+.page-electriclock .elc-hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .page-electriclock .elc-hero-container {
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
 

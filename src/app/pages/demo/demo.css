@@ -13,12 +13,21 @@
    ========================================================================== */
 .page-demo .dmo-hero {
   position: relative;
-  background-image: url('/assets/images/demo-hero.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #0349B3; /* Fallback color */
   min-height: 280px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+
+/* Background image tag styling */
+.page-demo .dmo-hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .page-demo .dmo-hero-overlay {
@@ -26,11 +35,12 @@
   top: 0; left: 0; right: 0; bottom: 0;
   background-color: #0349B3;
   opacity: 0.52;
+  z-index: 1;
 }
 
 .page-demo .dmo-hero-container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 1250px;
   margin: 0 auto;
   width: 100%;
@@ -76,7 +86,6 @@
   background-color: #fff;
   position: relative;
   z-index: 2;
-  /* Note: In the original it sits below the hero. We'll push the main container up over it slightly */
 }
 
 /* ==========================================================================
@@ -318,7 +327,7 @@
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
-  color: #16AAF0; /* Blue on light, might want to adjust on dark */
+  color: #16AAF0;
 }
 
 .page-demo .dmo-bg-dark .dmo-eyebrow {

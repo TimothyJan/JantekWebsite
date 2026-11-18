@@ -15,15 +15,25 @@
 .page-jobcosting .jc-hero {
   position: relative;
   background-color: #e0f2fe;
-  background-image: url('/assets/images/job-costing-system-accounting.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* Hero image now rendered from HTML */
+.page-jobcosting .jc-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .page-jobcosting .jc-hero-overlay {

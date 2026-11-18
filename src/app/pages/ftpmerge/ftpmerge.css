@@ -13,14 +13,22 @@
    ========================================================================== */
 .page-ftpmerge .ftp-hero {
   position: relative;
-  background-image: url('/assets/images/Other-Page-Background-Option-1.jpg'); /* Fallback */
   background-color: #e0f2fe;
-  background-size: cover;
-  background-position: center;
   min-height: 256px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+/* Background image tag styling */
+.page-ftpmerge .ftp-hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .page-ftpmerge .ftp-hero-overlay {
@@ -70,14 +78,23 @@
    ========================================================================== */
 .page-ftpmerge .ftp-intro-section {
   padding: 60px 0;
-  background-image: url('/assets/images/adwadadwa.png'); /* Subtle background texture */
-  background-position: 0 -63px;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
-/* Optional: add a white overlay to fade the texture like the original */
+/* Background texture tag styling */
+.page-ftpmerge .ftp-intro-bg {
+  position: absolute;
+  top: -63px; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+  z-index: 0;
+  opacity: 0.1; /* This replicates the elementor overlay opacity */
+}
+
+/* White overlay to fade the texture */
 .page-ftpmerge .ftp-intro-section::before {
   content: '';
   position: absolute;

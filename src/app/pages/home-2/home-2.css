@@ -27,18 +27,15 @@
   overflow: hidden;
 }
 
-/* Floating Person Image */
-.page-home-2 .hm2-hero::after {
-  content: '';
+/* Floating Person Image - now an img tag */
+.page-home-2 .hm2-hero-bg {
   position: absolute;
   right: 5%;
   bottom: 0;
   width: 400px;
   height: 90%;
-  background-image: url('/assets/images/business-finance-2.png');
-  background-size: contain;
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  object-fit: contain;
+  object-position: bottom right;
   z-index: 1;
 }
 
@@ -272,7 +269,7 @@
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.08);
   padding: 70px 30px;
   flex: 1 1 50%;
-  margin-left: -30px; /* Overlaps the blue box */
+  margin-left: -30px;
   margin-top: 50px;
   margin-bottom: -50px;
   display: flex;
@@ -308,7 +305,7 @@
 .page-home-2 .hm2-newsletter-form .hm2-btn {
   width: 100%;
   padding: 12px;
-  flex-direction: row-reverse; /* Puts icon on the right */
+  flex-direction: row-reverse;
 }
 
 /* ==========================================================================
@@ -353,7 +350,7 @@
 .page-home-2 .hm2-blog-img-wrap {
   display: block;
   width: 100%;
-  padding-top: 65%; /* Aspect ratio */
+  padding-top: 65%;
   position: relative;
   overflow: hidden;
 }
@@ -417,7 +414,7 @@
    7. RESPONSIVE
    ========================================================================== */
 @media (max-width: 991px) {
-  .page-home-2 .hm2-hero::after {
+  .page-home-2 .hm2-hero-bg {
     display: none;
   }
 

@@ -13,22 +13,32 @@
    ========================================================================== */
 .page-healthcare .hc-hero {
   position: relative;
-  background-image: url('/assets/images/Healthcare-Time-and-Attendance-Workforce-Management-Solution.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #f0f0f0;
   min-height: 256px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.page-healthcare .hc-hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .page-healthcare .hc-hero-container {
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
 
 .page-healthcare .hc-title-box {
   display: inline-block;
-  background-color: rgba(21, 21, 21, 0.73); /* #151515BA */
+  background-color: rgba(21, 21, 21, 0.73);
   padding: 10px 20px;
 }
 
@@ -145,20 +155,24 @@
   flex-direction: row-reverse;
 }
 
+/* Reduced horizontal padding to close the gap */
 .page-healthcare .hc-row-content {
   flex: 1 1 50%;
   display: flex;
   align-items: center;
-  padding: 80px 10%; /* Deep horizontal padding */
+  justify-content: center;
+  padding: 60px 40px;
+  box-sizing: border-box;
 }
 
 .page-healthcare .hc-bg-light {
   background-color: #F9F9F9;
 }
 
+/* Constrain the inner text block */
 .page-healthcare .hc-row-inner {
-  max-width: 550px;
-  margin: 0 auto;
+  max-width: 480px;
+  width: 100%;
 }
 
 .page-healthcare .hc-row-title {
@@ -181,18 +195,17 @@
 
 .page-healthcare .hc-row-image {
   flex: 1 1 50%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 400px;
+  position: relative;
+  overflow: hidden;
 }
 
-.page-healthcare .hc-img-aca {
-  background-image: url('/assets/images/Healthcare-Time-and-Attendance-1-ACA-Payroll-Based-Journal.jpg');
-}
-
-.page-healthcare .hc-img-meal {
-  background-image: url('/assets/images/Healthcare-Time-and-Attendance-2-Meal-Break-Management-for-Nonexempt-Employees.jpg');
+.page-healthcare .hc-row-image img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* ==========================================================================
@@ -227,24 +240,16 @@
   fill: #ffffff;
 }
 
-/* Specific Icon Background Colors */
 .page-healthcare .hc-icon-yellow { background-color: #FAB607; }
 .page-healthcare .hc-icon-green { background-color: #81BC06; }
 
 .page-healthcare .hc-feature-content {
   flex: 1;
-  /* Changed from '30px 40px 30px 0' to '30px 40px' to add horizontal padding on both sides */
   padding: 30px 40px;
 }
 
-/* Reverse layout */
 .page-healthcare .hc-feature-card.hc-reverse {
   flex-direction: row-reverse;
-}
-
-.page-healthcare .hc-feature-card.hc-reverse .hc-feature-content {
-  /* Changed from '30px 0 30px 40px' to '30px 40px' to maintain symmetrical spacing */
-  padding: 30px 40px;
 }
 
 .page-healthcare .hc-feature-content h3 {
@@ -314,7 +319,7 @@
   }
 
   .page-healthcare .hc-overlap-image {
-    display: none; /* Hide overlap on mobile for cleaner look */
+    display: none;
   }
 
   .page-healthcare .hc-memphis {

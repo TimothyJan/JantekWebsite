@@ -14,14 +14,23 @@
 .page-hospitality .hosp-hero {
   position: relative;
   background-color: #16AAF0; /* Fallback */
-  /* Using the hero image from the static files */
-  background-image: url('/assets/images/Hospitality-Time-and-Attendance-Workforce-Management-Solution.png');
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: 50% auto;
   min-height: 256px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+
+/* Hero image now rendered from HTML */
+.page-hospitality .hosp-hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  object-fit: contain;
+  object-position: center right;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .page-hospitality .hosp-hero-overlay {
@@ -249,6 +258,11 @@
   .page-hospitality .hosp-hero-title {
     max-width: 100%;
     text-align: center;
+  }
+
+  .page-hospitality .hosp-hero-img {
+    width: 100%;
+    object-position: center;
   }
 
   .page-hospitality .hosp-grid-layout {
