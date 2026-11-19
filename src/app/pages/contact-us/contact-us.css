@@ -22,16 +22,20 @@
     background-color: #ffffff;
 }
 
-.info-cards-container {
+/* Cards share one row height: the tallest card sets it and the rest stretch to match */
+.contact-info-cards-section .info-cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
     gap: 15px;
 }
 
-.info-card {
+.contact-info-cards-section .info-card {
     flex: 1 1 150px;
     max-width: 180px;
+    align-self: stretch;
+    box-sizing: border-box;
     text-align: center;
     padding: 20px 10px;
     border-radius: 6px;
@@ -40,6 +44,7 @@
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /* icons and titles line up at the same height in every card */
     align-items: center;
     text-decoration: none;
     cursor: pointer;
@@ -93,8 +98,28 @@
     padding: 60px 0;
 }
 
+/* Flex-wrap: info and form sit side by side, and stack when space runs out */
+.main-contact-section .elementor-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 .contact-info-col {
-    padding-right: 40px;
+    flex: 1 1 340px;
+    min-width: 0;
+}
+
+.form-col {
+    flex: 1 1 340px;
+    max-width: 460px;
+    min-width: 0;
 }
 
 .main-contact-section h2 {
@@ -128,33 +153,40 @@
 
 .contact-list-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 20px;
 }
 
+/* Orange circle with a white icon */
 .contact-list-icon {
-    flex: 0 0 30px;
-    margin-right: 15px;
-    margin-top: 3px;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: #F35325;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-list-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: #F35325;
+    width: 14px;
+    height: 14px;
+    fill: #ffffff;
 }
 
 .contact-list-content h3 {
     font-family: "Exo 2", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     color: #3162C9;
-    margin: 0 0 5px 0;
-    text-transform: capitalize;
+    margin: 0 0 2px 0;
+    text-transform: none;
 }
 
 .contact-list-content a {
-    font-size: 15px;
+    font-size: 14px;
     color: #333;
     text-decoration: none;
     transition: color 0.3s;
@@ -162,6 +194,134 @@
 
 .contact-list-content a:hover {
     color: #16AAF0;
+}
+
+/* Dummy Form Card */
+.form-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-card .form-incomplete-note {
+    font-family: "Exo 2", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #F35325;
+    margin: 0 0 20px 0;
+}
+
+/* Step indicator */
+.form-steps {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.form-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20px;
+}
+
+.step-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #cfcfcf;
+    background-color: #ffffff;
+    color: #bbbbbb;
+    font-family: "Exo 2", sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.step-label {
+    width: 70px;
+    margin-top: 4px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 10px;
+    line-height: 1.3;
+    text-align: center;
+    color: #bbbbbb;
+}
+
+.form-step.active .step-circle {
+    background-color: #F35325;
+    border-color: #F35325;
+    color: #ffffff;
+}
+
+.form-step.active .step-label {
+    color: #F35325;
+}
+
+.step-line {
+    flex: 1;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #cfcfcf;
+}
+
+/* Form fields */
+.form-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid #16AAF0;
+    border-radius: 18px;
+    background-color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3162C9;
+    box-shadow: 0 0 0 2px rgba(49, 98, 201, 0.15);
+}
+
+.form-salutation {
+    flex: 0 0 70px;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.form-next-btn {
+    width: 100%;
+    padding: 9px 0;
+    border: none;
+    border-radius: 18px;
+    background-color: #3162C9;
+    color: #ffffff;
+    font-family: "Exo 2", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-next-btn:hover {
+    background-color: #16AAF0;
 }
 
 /* Form Placeholder */
@@ -201,15 +361,33 @@
     background-color: #F9F9F9;
 }
 
+/* Two 50% columns side by side, stretched to equal height */
 .bottom-info-section .elementor-container {
+    display: flex;
+    flex-wrap: nowrap;
     align-items: stretch;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-info-section .elementor-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
 }
 
 .bottom-text-col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 80px 10%;
+    justify-content: center; /* vertically centers the text beside the image */
+    padding: 80px 10% 80px 20%; /* text-left, image-right row */
+}
+
+/* Image-left row: text column is second, so mirror the padding */
+.bottom-info-section .bottom-img-col + .bottom-text-col {
+    padding: 80px 20% 80px 10%;
 }
 
 .bottom-text-col h2 {
@@ -230,7 +408,7 @@
 }
 
 .bottom-text-col a {
-    color: #3162C9;
+    color: #333;
     text-decoration: underline;
 }
 
@@ -243,12 +421,18 @@
 
 /* Responsive */
 @media (max-width: 767px) {
-    .contact-info-col {
-        padding-right: 10px;
-        margin-bottom: 40px;
+    .bottom-info-section .elementor-container {
+        flex-direction: column;
     }
 
-    .bottom-text-col {
+    .bottom-info-section .elementor-column {
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .bottom-text-col,
+    .bottom-info-section .bottom-img-col + .bottom-text-col {
         padding: 50px 15px;
     }
 

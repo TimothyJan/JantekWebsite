@@ -131,19 +131,71 @@
             </div>
         </div>
 
-        <!-- Right Column: Form Placeholder -->
+        <!-- Right Column: Dummy Form (backend not built yet) -->
         <div class="elementor-column elementor-col-50 form-col">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="form-placeholder-box">
-                    <!--
-                        NOTE: This form previously relied on WordPress backend scripts.
-                        To make it functional, you need a backend service (like Formspree, Netlify Forms, or your own API).
-                    -->
-                    <h3>INCOMPLETE- IN PROGRESS, NEED TO MAKE BACKEND</h3>
-                    <h3>Contact Form</h3>
-                    <p>The interactive contact form requires a backend service to process submissions.</p>
-                    <p>Please use the direct contact information on the left to reach us, or implement a form service in <code>contact-us.html</code>.</p>
+            <div class="form-card">
+                <p class="form-incomplete-note">INCOMPLETE - IN PROGRESS, NEED TO MAKE BACKEND</p>
+
+                <!-- Step indicator (static for now) -->
+                <div class="form-steps">
+                    <div class="form-step active"><span class="step-circle">1</span><span class="step-label">Basic Info</span></div>
+                    <span class="step-line"></span>
+                    <div class="form-step"><span class="step-circle">2</span><span class="step-label">Time &amp; Attendance</span></div>
+                    <span class="step-line"></span>
+                    <div class="form-step"><span class="step-circle">3</span><span class="step-label">Access Control</span></div>
                 </div>
+
+                <form class="dummy-form" novalidate>
+                    <div class="form-row">
+                        <select class="form-input form-salutation" aria-label="Salutation">
+                            <option>Mr.</option>
+                            <option>Mrs.</option>
+                            <option>Ms.</option>
+                            <option>Dr.</option>
+                        </select>
+                        <input class="form-input" type="text" placeholder="Name *" aria-label="Name">
+                    </div>
+                    <div class="form-row">
+                        <input class="form-input" type="text" placeholder="Title" aria-label="Title">
+                    </div>
+                    <div class="form-row">
+                        <input class="form-input" type="text" placeholder="Company *" aria-label="Company">
+                    </div>
+                    <div class="form-row">
+                        <textarea class="form-input form-textarea" rows="4" placeholder="Address" aria-label="Address"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input class="form-input" type="text" placeholder="City" aria-label="City">
+                    </div>
+                    <div class="form-row">
+                        <input class="form-input" type="text" placeholder="State/Province" aria-label="State or Province">
+                        <input class="form-input" type="text" placeholder="Zip/Postal Code" aria-label="Zip or Postal Code">
+                    </div>
+                    <div class="form-row">
+                        <select class="form-input" aria-label="Country">
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>Mexico</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input class="form-input" type="tel" placeholder="Phone" aria-label="Phone">
+                        <input class="form-input" type="tel" placeholder="Fax" aria-label="Fax">
+                    </div>
+                    <div class="form-row">
+                        <input class="form-input" type="email" placeholder="Email *" aria-label="Email">
+                    </div>
+                    <div class="form-row">
+                        <select class="form-input" aria-label="What best describes you?">
+                            <option>-- What best describes you? Please Select --</option>
+                            <option>End User</option>
+                            <option>Dealer / Reseller</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button type="button" class="form-next-btn">Next</button>
+                </form>
             </div>
         </div>
 
@@ -174,7 +226,7 @@
     <div class="elementor-container elementor-column-gap-default">
 
         <!-- Technical Support Image -->
-        <div class="elementor-column elementor-col-50 bottom-img-col" style="background-image: url('/assets/images/Contact-Us-2.jpg');">
+        <div class="elementor-column elementor-col-50 bottom-img-col" style="background-image: url('assets/images/Contact-Us-2.jpg');">
         </div>
 
         <!-- Technical Support Text -->
