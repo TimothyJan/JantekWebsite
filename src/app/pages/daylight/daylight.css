@@ -186,17 +186,6 @@
   box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.10);
 }
 
-/* Decorative "memphis" shape — absolutely positioned right side */
-.page-daylight .dyl-memphis {
-  position: absolute;
-  right: -27px;
-  top: 154px;
-  width: 188px;
-  height: auto;
-  pointer-events: none;
-  z-index: 0;
-}
-
 /* ==========================================================================
    5. POST NAVIGATION (prev / next)
    ========================================================================== */
@@ -357,10 +346,6 @@
   .page-daylight .dyl-post-title {
     font-size: 30px;
   }
-
-  .page-daylight .dyl-memphis {
-    top: 61px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -393,10 +378,6 @@
   .page-daylight .dyl-image-col {
     padding-right: 0;
     width: 100%;
-  }
-
-  .page-daylight .dyl-memphis {
-    display: none;
   }
 
   .page-daylight .dyl-post-nav {
