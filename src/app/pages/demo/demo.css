@@ -271,86 +271,7 @@
 }
 
 /* ==========================================================================
-   4. VIDEO SECTIONS
-   ========================================================================== */
-.page-demo .dmo-video-section {
-  padding: 70px 0;
-}
-
-.page-demo .dmo-bg-dark {
-  background-color: #666666;
-  color: #ffffff;
-}
-
-.page-demo .dmo-bg-dark .dmo-video-title,
-.page-demo .dmo-bg-dark .dmo-video-desc {
-  color: #ffffff;
-}
-
-.page-demo .dmo-bg-light {
-  background-color: #ffffff;
-  color: #333333;
-}
-
-.page-demo .dmo-bg-light .dmo-video-title {
-  color: #3162C9;
-}
-
-.page-demo .dmo-video-container {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-
-.page-demo .dmo-video-image-col {
-  flex: 1 1 50%;
-}
-
-.page-demo .dmo-video-image-col img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.page-demo .dmo-video-content-col {
-  flex: 1 1 50%;
-}
-
-.page-demo .dmo-eyebrow {
-  display: block;
-  font-family: "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: #16AAF0;
-}
-
-.page-demo .dmo-bg-dark .dmo-eyebrow {
-  color: #ffffff;
-}
-
-.page-demo .dmo-video-title {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 33px;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.page-demo .dmo-video-desc {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-/* ==========================================================================
-   5. RESPONSIVE
+   4. RESPONSIVE
    ========================================================================== */
 @media (max-width: 991px) {
   .page-demo .dmo-main-container {
@@ -364,15 +285,6 @@
   .page-demo .dmo-form-col {
     margin-top: 0;
     width: 100%;
-  }
-
-  .page-demo .dmo-video-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .page-demo .dmo-reverse-layout .dmo-video-container {
-    flex-direction: column-reverse;
   }
 }
 
@@ -388,9 +300,5 @@
   .page-demo .dmo-form-row {
     flex-direction: column;
     gap: 0;
-  }
-
-  .page-demo .dmo-video-title {
-    font-size: 24px;
   }
 }
