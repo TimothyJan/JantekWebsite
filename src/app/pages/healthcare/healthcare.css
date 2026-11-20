@@ -115,23 +115,6 @@
   border-radius: 4px;
 }
 
-.page-healthcare .hc-overlap-image {
-  position: absolute;
-  bottom: -40px;
-  right: 20px;
-  width: 250px;
-  height: 225px;
-  border: 8px solid #ffffff;
-  box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-}
-
-.page-healthcare .hc-overlap-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* ==========================================================================
    4. FULL WIDTH ROWS (ACA & Meal Break)
    ========================================================================== */
@@ -306,10 +289,6 @@
   .page-healthcare .hc-section-title {
     font-size: 22px;
     text-align: center;
-  }
-
-  .page-healthcare .hc-overlap-image {
-    display: none;
   }
 
   .page-healthcare .hc-row-title {
