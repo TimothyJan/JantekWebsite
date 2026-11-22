@@ -69,7 +69,6 @@ import { Wirelesswebpunch } from './pages/wirelesswebpunch/wirelesswebpunch';
 
 export const routes: Routes = [
   { path: '', component: Home },
-  { path: '831_832_upgrade', component: Upgrade831832 },
   { path: 'about-us', component: AboutUs },
   { path: 'blogs', component: Blogs },
   { path: 'california_consumer_privacy_act', component: CaliforniaConsumerPrivacyAct },
@@ -127,6 +126,7 @@ export const routes: Routes = [
   { path: 'standalone', component: Standalone },
   { path: 'time-and-attendance-software', component: TimeAndAttendanceSoftware },
   { path: 'timerecorder', component: Timerecorder },
+  { path: 'upgrade_831-832', component: Upgrade831832 },
   { path: 'web-time-cloud-based-saas-timekeeping', component: WebTimeCloudBasedSaasTimekeeping },
   { path: 'webmerge', component: Webmerge },
   { path: 'webpaydata', component: Webpaydata },

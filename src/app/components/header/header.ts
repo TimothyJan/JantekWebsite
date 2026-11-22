@@ -26,7 +26,7 @@ export class Header {
   // The Static Search Index (Sorted alphabetically by URL to match app.routes.ts)
   searchIndex = [
     { title: 'Home', desc: 'Jantek Electronics Workforce Management and Time & Attendance Solutions', url: '/' },
-    { title: '831 to 832 Upgrade', desc: 'Software upgrade instructions for Jupiter versions 8.31 to 8.32', url: '/831_832_upgrade' },
+    { title: '831 to 832 Upgrade', desc: 'Software upgrade instructions for Jupiter versions 8.31 to 8.32', url: '/upgrade_831-832' },
     { title: 'About Us', desc: 'Learn about Jantek Electronics, our history since 1986, and our mission', url: '/about-us' },
     { title: 'Blogs', desc: 'Read the latest news, articles, and compliance updates from Jantek', url: '/blogs' },
     { title: 'California Consumer Privacy Act', desc: 'CCPA compliance information and employee rights', url: '/california_consumer_privacy_act' },
