@@ -14,16 +14,25 @@
    ========================================================================== */
 .page-web-time-saas .saas-hero {
   position: relative;
-  background-color: #e0f2fe;
-  background-image: url('/assets/images/Blog-Banner-News-and-Resources-1.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #e0f2fe; /* Fallback if image is missing */
   min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Align left like screenshot */
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* Hero image is loaded from the HTML and fills the banner */
+.page-web-time-saas .saas-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
 }
 
 .page-web-time-saas .saas-hero-overlay {
