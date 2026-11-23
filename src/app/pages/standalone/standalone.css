@@ -168,12 +168,23 @@
     color: #333;
 }
 
-.feature-icon {
+/* Checkmark icon (same styling as the requirements page) */
+.req-icon {
     position: absolute;
     left: 0;
-    top: 2px;
-    width: 18px;
-    height: 18px;
+    top: 1px;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: #FAB607; /* Yellow checkmark */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.req-icon svg {
+    width: 100%;
+    height: 100%;
 }
 
 /* Specs Table */
