@@ -25,6 +25,7 @@ import { Infojta250Hid } from './pages/infojta250-hid/infojta250-hid';
 import { Infojta250Ioprox } from './pages/infojta250-ioprox/infojta250-ioprox';
 import { Infojta250Mifare } from './pages/infojta250-mifare/infojta250-mifare';
 import { Infojta250Securakey } from './pages/infojta250-securakey/infojta250-securakey';
+import { Infojta250Uapocket } from './pages/infojta250-uapocket/infojta250-uapocket';
 import { Infojta550 } from './pages/infojta550/infojta550';
 import { JantekAccessControlSecuritySystem } from './pages/jantek-access-control-security-system/jantek-access-control-security-system';
 import { JantekJupiterClientServerVersionTimeAndAttendanceSoftware } from './pages/jantek-jupiter-client-server-version-time-and-attendance-software/jantek-jupiter-client-server-version-time-and-attendance-software';
@@ -94,6 +95,7 @@ export const routes: Routes = [
   { path: 'infojta250-ioprox', component: Infojta250Ioprox },
   { path: 'infojta250-mifare', component: Infojta250Mifare },
   { path: 'infojta250-securakey', component: Infojta250Securakey },
+  { path: 'infojta250-uapocket', component: Infojta250Uapocket },
   { path: 'infojta550', component: Infojta550 },
   { path: 'jantek-access-control-security-system', component: JantekAccessControlSecuritySystem },
   { path: 'jantek-jupiter-client-server-version-time-and-attendance-software', component: JantekJupiterClientServerVersionTimeAndAttendanceSoftware},
